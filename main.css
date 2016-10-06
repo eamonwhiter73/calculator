@@ -1,0 +1,2254 @@
+.qdisplayprops {
+	display: block;
+	background-color: #EEE;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #808080;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	float: left;
+}
+
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.times {
+	text-decoration: underline;
+}
+
+.yrs {
+
+}
+
+.lifetime {
+	text-indent: 0px;
+}
+
+.yr {
+	margin-top: -28px;
+	text-align: center;
+}
+
+.dol {
+	font-size: 18px;
+	margin-top: 18px;
+	display: inline-block;
+}
+
+.reslife {
+	margin-top: 28px;
+	margin-left: 54px;
+}
+
+.q1indentno {
+	float: right;
+	padding-bottom: 0px;
+	text-indent: 0px;
+	line-height: 1;
+}
+
+.info {
+	display: block;
+	font-size: 7pt;
+	float: right;
+	text-align: right;
+}
+
+.labels {
+	margin-left:86px;
+	position: absolute;
+}
+
+.labelsyrs {
+	margin-left:102px;
+	position: absolute;
+}
+
+.labelsdol {
+	margin-left:6px;
+	position: absolute;
+}
+
+.dropdown-menu {
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #628fd1;
+	min-width: 110px;
+	border-radius: 0px;
+}
+
+.dropdown-item {
+	max-width: 100%;
+	color: #FFF;
+	cursor: pointer;
+    cursor: hand;
+    display: block;
+}
+
+.btn-sm {
+	background-color: #628fd1;
+	color: #fff;
+	font-size: 12pt;
+	line-height: 1.1;
+	border-radius: 0;
+	margin-bottom: 3px;
+}
+
+.form-control {
+	border-radius: 0;
+	margin-bottom: 3px;
+	height: 26px;
+	line-height: 12px;
+	font-size: 9.5pt;
+	width: auto;
+	margin-right: 0px;
+	margin: 0;
+	display: inline-block;
+}
+
+.timeperyrbis {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #808080;
+}
+
+input {
+    max-width: 100%;
+    border-radius: 0px;
+    /*padding-top: 20px;*/
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+}
+
+/*select {
+   border: 1px solid #555;
+   padding: 0.5em;
+   line-height: 1.2em;
+   max-width: 50%;
+   background: #fff;
+   -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+   -webkit-appearance: none;
+   -webkit-box-shadow: 1px 1px 1px #fff;
+   -webkit-border-radius: 0.5em;
+}*/
+
+.calccont {
+	background-color: #FFF;
+}
+
+.titlephoto {
+	background-color: #fff5ea;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	box-shadow: 0px 0.5px 1px 1px rgba(0,0,0,0.3);
+}
+
+.forshadow {
+	display: inline-block;
+    width: 100%;
+	box-shadow: 0px 0.5px 1px 1px rgba(0,0,0,0.3);
+}
+
+.logomore {
+	background-color: #FFF;
+	padding-top:35px;
+	padding-bottom:10px;
+}
+
+.calculate {
+	background-color: #628fd1;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	border-radius: 6px;
+	cursor: hand;
+	cursor: pointer;
+	box-shadow: 0px 0.5px 1px 1px rgba(0,0,0,0.3);
+}
+
+.newcust {}
+
+p {
+	color: #FFF;
+	font-family: Helvetica;
+	font-size: 18pt;
+	font-style: bold;
+	font-family: 'Karla', sans-serif;
+}
+
+.pchange {
+	font-size: 14pt;
+}
+
+.words {
+	background-color: #FFF;
+	padding-bottom: 25px;
+	margin-top: 2px;
+}
+
+.coupons {
+	background-color: #FFF;
+}
+
+.postwords {
+	background-color: #FFF;
+	padding-bottom: 80px;
+}
+
+.corypic {
+	float: right;
+	position: relative;
+	display: inline-block;
+	max-width: 75%;
+	display: block;
+}
+
+.newpicspot {
+	float: right;
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.vallog {
+	float: left;
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+}
+
+.submit {
+	height: 18px;
+	display: block;
+	line-height: 0px;
+	font-size: 14px;
+	padding-top: 2px;
+}
+
+.inchoose {
+	font-size: 7pt;
+	line-height: 7pt;
+	margin-top: 12px;
+	height: 20px;
+}	
+
+.textchoice {
+	font-size: 10pt;
+	line-height: 10pt;
+	margin-top: 8px;
+	height: 20px;
+	display: block;
+}
+
+.companytext {
+	float: left;
+	display: inline-block;
+	position: relative;
+	height: 20px;
+	margin-top: 8px;
+	font-size: 6pt;
+	line-height: 6pt;
+}
+
+.comptextdisplay {
+	display: none;
+	margin-top: 5px;
+	min-height: 73px;
+	text-align: center;
+	padding-top: 1px;
+}
+
+.comptextdisplay>span {
+	display: table-cell;
+	/*margin: 0 auto;*/
+	vertical-align: middle;
+	position: relative;
+	width: 100%;
+	color: black;
+	font-style: bold;
+	font-family: 'Baloo Bhai', cursive;
+	font-size: 46px;
+	text-align: center;
+	height: 73px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.clilog {
+    width: auto;
+	float: left;
+	position: relative;
+	display: inline-block;
+	height: 73px;
+}
+
+.equals {
+	margin-top: 20px;
+	font-size: 24pt;
+	color: #000;
+	margin-left: 4px;
+	font-family: 'Baloo Bhai', cursive;
+}
+
+.plus {
+	float: left;
+	display: inline-block;
+	font-size: 24pt;
+	color: #000;
+	padding-top: 20px;
+	margin-left: 4px;
+	font-family: 'Baloo Bhai', cursive;
+}
+
+.splitthree {
+	display: inline-block;
+	padding-top: 0px;
+	padding-left: 0;
+	margin-left: 0;
+	margin-top: 4px;
+}
+
+.one {
+	position: relative;
+	display: block;
+	font-size: 12pt;
+	color: #000;
+	text-align: center;
+	font-family: 'Baloo Bhai', cursive;
+}
+
+.calctitle {
+	float: left;
+	position: relative;
+	font-size: 25pt;
+	font-family: 'Karla', sans-serif;
+
+}
+
+.calctitleu {
+	display: inline-block;
+	position: relative;
+	font-size: 25pt;
+	font-family: 'Karla', sans-serif;
+
+}
+
+.qtext {
+	float: left;
+	display: inline-block;
+	font-size: 14pt;
+	text-align: left;
+	font-family: 'Karla', sans-serif;
+
+}
+
+.lineheightback {
+	line-height: 1.42857143;
+	padding-top: 20px;
+}
+
+.choose {
+	margin-top: 6px;
+}
+
+.numtwo {
+	position: relative;
+	display: inline-block;
+	font-size: 14pt;
+	margin-left: 10px;
+	margin-right: 4px;
+	margin-top: 3px;
+}
+
+.numtwocorr {
+	margin-right: 2px;
+}
+
+.custdropcorr {
+	margin-left: 4px;
+}
+
+.qcont {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.q1box {
+	float: right;
+	padding-bottom: 0px;
+	text-indent: 20px;
+	line-height: 1;
+}
+
+.q1res {
+	float: right;
+	padding-top: 10px;
+}
+
+.tbd {
+	display: inline-block;
+	font-size: 14pt;
+	margin-top: 3px;
+	margin-right: 2px;
+}
+
+.result {
+	padding-bottom: 15px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #808080;
+	box-shadow: 0px 0.5px 1px 1px rgba(0,0,0,0.3);
+}
+
+.fontchange {
+	position: relative;
+	font-size: 16pt;
+	margin-top: 24px;
+	margin-left: 0px;
+}
+
+.displayinword {
+	background-color: #628fd1;
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 10px;
+	height: 25px;
+}
+
+.couponpic {
+	position: relative;
+	display: inline-block;
+	padding-bottom: 67px;
+}
+
+.postwordsize {
+	font-size: 12pt;
+}
+
+.pinq {
+	color: #000;
+	font-size: 14pt;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+	.qdisplayprops {
+		display: block;
+		background-color: #EEE;
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-top-color: #808080;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+
+	.times {
+		text-decoration: underline;
+	}
+
+	.yrs {
+
+	}
+
+	.lifetime {
+		text-indent: 0px;
+	}
+
+	.yr {
+		margin-top: -28px;
+		text-align: center;
+	}
+
+	.dol {
+		font-size: 18px;
+		margin-top: 18px;
+		display: inline-block;
+	}
+
+	.reslife {
+		margin-top: 28px;
+		margin-left: 20px;
+	}
+
+	.q1indentno {
+		float: right;
+		padding-bottom: 0px;
+		text-indent: 0px;
+		line-height: 1;
+	}
+
+	.info {
+		display: block;
+		font-size: 7pt;
+		float: right;
+		text-align: right;
+	}
+
+	.labels {
+		margin-left:86px;
+		position: absolute;
+	}
+
+	.labelsyrs {
+		margin-left:102px;
+		position: absolute;
+	}
+
+	.labelsdol {
+		margin-left:6px;
+		position: absolute;
+	}
+
+	.dropdown-menu {
+		padding-left: 5px;
+		padding-right: 5px;
+		background-color: #628fd1;
+		min-width: 110px;
+		border-radius: 0px;
+	}
+
+	.dropdown-item {
+		max-width: 100%;
+		color: #FFF;
+		cursor: pointer;
+	    cursor: hand;
+	    display: block;
+	}
+
+	.btn-sm {
+		background-color: #628fd1;
+		color: #fff;
+		font-size: 12pt;
+		line-height: 1.1;
+		border-radius: 0;
+		margin-bottom: 3px;
+	}
+
+	.form-control {
+		border-radius: 0;
+		margin-bottom: 3px;
+		height: 26px;
+		line-height: 12px;
+		font-size: 9.5pt;
+		width: auto;
+		margin-right: 0px;
+		margin: 0;
+		display: inline-block;
+	}
+
+	.timeperyrbis {
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: #808080;
+	}
+
+	input {
+	    max-width: 100%;
+	    border-radius: 0px;
+	    /*padding-top: 20px;*/
+	    height: 60px;
+	    line-height: 60px;
+	    font-size: 30px;
+	}
+
+	/*select {
+	   border: 1px solid #555;
+	   padding: 0.5em;
+	   line-height: 1.2em;
+	   max-width: 50%;
+	   background: #fff;
+	   -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+	   -webkit-appearance: none;
+	   -webkit-box-shadow: 1px 1px 1px #fff;
+	   -webkit-border-radius: 0.5em;
+	}*/
+
+	.calccont {
+		background-color: #FFF;
+	}
+
+	.titlephoto {
+		background-color: #fff5ea;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		padding-right: 10px;
+	}
+
+	.logomore {
+		background-color: #FFF;
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+
+	.calculate {
+		background-color: #628fd1;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding-top: 10px;
+		border-radius: 6px;
+	}
+
+	p {
+		color: #FFF;
+		font-family: Helvetica;
+		font-size: 18pt;
+		font-style: bold;
+	}
+
+	.pchange {
+		font-size: 14pt;
+	}
+
+	.words {
+		background-color: #FFF;
+		padding-bottom: 25px;
+	}
+
+	.coupons {
+		background-color: #FFF;
+	}
+
+	.postwords {
+		background-color: #FFF;
+		padding-bottom: 80px;
+	}
+
+	.corypic {
+		float: right;
+		position: relative;
+		display: inline-block;
+		max-width: 14%;
+		display: block;
+	}
+
+	.vallog {
+		float: left;
+		position: relative;
+		display: inline-block;
+		max-width: 100%;
+	}
+
+	.submit {
+		height: 18px;
+		display: block;
+		line-height: 0px;
+		font-size: 14px;
+		padding-top: 2px;
+	}
+
+	.inchoose {
+		font-size: 7pt;
+		line-height: 7pt;
+		margin-top: 28px;
+	}	
+
+	.clilog {
+	        width: auto;
+		float: left;
+		position: relative;
+		display: inline-block;
+		height: 73px;
+	}
+
+	.equals {
+		margin-top: 20px;
+		font-size: 24pt;
+		color: #000;
+		margin-left: 4px;
+	}
+
+	.plus {
+		float: left;
+		display: inline-block;
+		font-size: 24pt;
+		color: #000;
+		padding-top: 20px;
+		margin-left: 4px;
+	}
+
+	.splitthree {
+		display: inline-block;
+		padding-top: 0px;
+		padding-left: 0;
+		margin-left: 0;
+		margin-top: 8px;
+	}
+
+	.one {
+		position: relative;
+		display: block;
+		font-size: 12pt;
+		color: #000;
+		text-align: center;
+	}
+
+	.calctitle {
+		float: left;
+		position: relative;
+		font-size: 24pt;
+	}
+
+	.calctitleu {
+		display: inline-block;
+		position: relative;
+		font-size: 24pt;
+	}
+
+	.qtext {
+		float: left;
+		display: inline-block;
+		font-size: 14pt;
+		text-align: left;
+	}
+
+	.lineheightback {
+		line-height: 1.42857143;
+		padding-top: 20px;
+	}
+
+	.choose {
+		margin-top: 6px;
+	}
+
+	.numtwo {
+		position: relative;
+		display: inline-block;
+		font-size: 14pt;
+		margin-left: 10px;
+		margin-right: 4px;
+		margin-top: 3px;
+	}
+
+	.numtwocorr {
+		margin-right: 2px;
+	}
+
+	.custdropcorr {
+		margin-left: 4px;
+	}
+
+	.qcont {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
+	.q1box {
+		float: right;
+		padding-bottom: 0px;
+		text-indent: 20px;
+		line-height: 1;
+	}
+
+	.q1res {
+		float: right;
+		padding-top: 10px;
+	}
+
+	.tbd {
+		display: inline-block;
+		font-size: 14pt;
+		margin-top: 3px;
+		margin-right: 2px;
+	}
+
+	.result {
+		padding-bottom: 15px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: #808080;
+	}
+
+	.fontchange {
+		position: relative;
+		font-size: 17pt;
+		margin-top: 24px;
+		margin-left: 0px;
+	}
+
+	.displayinword {
+		background-color: #628fd1;
+		display: inline-block;
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-top: 10px;
+		height: 25px;
+	}
+
+	.couponpic {
+		position: relative;
+		display: inline-block;
+		padding-bottom: 67px;
+	}
+
+	.postwordsize {
+		font-size: 12pt;
+	}
+
+	.pinq {
+		color: #000;
+		font-size: 14pt;
+		display: inline-block;
+		margin-bottom: 0;
+	}
+}
+/* Portrait tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.form-control {
+		padding-bottom: 2px;
+		font-size: 14px;
+		padding-top: 2px;
+	}
+
+	.pinq {
+		line-height: 1.7;
+	}
+
+	.inchoose {
+		font-size: 9pt;
+		line-height: 9pt;
+	}
+
+	.labels {
+		margin-left:46px;
+		position: absolute;
+	}
+
+	.labelsyrs {
+		margin-left:62px;
+		position: absolute;
+	}
+
+	.labelsdol {
+		margin-left:6px;
+		position: absolute;
+	}
+
+	.clilog {
+        width: auto;
+		height: 70px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+	}
+
+	.dol {
+		font-size: 28px;
+		margin-top: 9px;
+		display: inline-block;
+	}
+
+	.reslife {
+		margin-top: 20px;
+		margin-left: 12px;
+	}
+
+	.fontchange {
+		margin-top: 23px;
+	}
+
+	.corypic {
+		max-width: 21%;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media screen and (min-width: 749px) and (max-width: 767px) {
+	.pinq {
+		font-size: 12pt;
+		line-height: 1.7;
+	}
+
+	.averagedol {
+		padding-bottom: 10px;
+	}
+
+	.timeperyrbuy {
+		padding-bottom: 10px;
+	}
+
+	.btn-sm {
+		margin-bottom: 0px;
+	}
+
+	.one {
+		font-size: 16pt;
+	}
+
+	.submit {
+		margin-top: 0px;
+	}
+
+	.plus {
+		margin-top: 10px;
+	}
+
+	.equals {
+		margin-top: 28px;
+	}
+
+	.corypic {
+    	max-width: 12%;
+    }
+
+    .labels {
+		margin-left:72px;
+		position: absolute;
+	}
+
+	.labelsyrs {
+		margin-left:88px;
+		position: absolute;
+	}
+
+	.labelsdol {
+		margin-left:6px;
+		position: absolute;
+	}
+
+	.inchoose {
+		margin-top: 40px;
+	}
+
+	.clilog {
+        width: auto;
+		height: 110px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+	}
+
+	.dol {
+		font-size: 18px;
+		margin-top: 18px;
+		display: inline-block;
+	}
+
+	.reslife {
+		margin-top: 27px;
+		margin-left: 18px;
+	}
+
+	.fontchange {
+		margin-top: 23px;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media screen and (min-width: 679px) and (max-width: 748px) {
+	.pinq {
+		font-size: 10.5pt;
+		line-height: 1.7;
+	}
+
+	.inchoose {
+		margin-top: 40px;
+	}
+
+	.averagedol {
+		padding-bottom: 10px;
+	}
+
+	.timeperyrbuy {
+		padding-bottom: 10px;
+	}
+
+	.btn-sm {
+		margin-bottom: 0px;
+	}
+
+	.one {
+		font-size: 15pt;
+	}
+
+	.submit {
+		margin-top: 0px;
+	}
+
+	.plus {
+		margin-top: 12px;
+	}
+
+	.equals {
+		margin-top: 32px;
+	}
+
+	.corypic {
+    	max-width: 13%;
+    }
+
+    .labels {
+		margin-left:60px;
+		position: absolute;
+	}
+
+	.labelsyrs {
+		margin-left:76px;
+		position: absolute;
+	}
+
+	.labelsdol {
+		margin-left:6px;
+		position: absolute;
+	}
+
+	.clilog {
+        width: auto;
+		height: 101px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+	}
+
+	.dol {
+		font-size: 18px;
+		margin-top: 18px;
+		display: inline-block;
+	}
+
+	.reslife {
+		margin-top: 27px;
+		margin-left: 18px;
+	}
+
+	.fontchange {
+		margin-top: 23px;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media screen and (min-width: 658px) and (max-width: 678px) {
+	.pinq {
+		font-size: 10.5pt;
+		line-height: 1.7;
+		float: none;
+		max-width: 100%;
+	}
+
+	.inchoose {
+		margin-top:30px;
+	}
+
+	.corypic {
+    	max-width: 14%;
+    }
+
+	.averagedol {
+		padding-bottom: 10px;
+	}
+
+	.timeperyrbuy {
+		padding-bottom: 10px;
+	}
+
+	.calculate>p {
+		font-size: 12pt;
+	}
+
+	.btn-sm {
+		margin-bottom: 0px;
+	}
+
+	.one {
+		font-size: 13pt;
+	}
+
+	.equals {
+		margin-top: 22px;
+	}
+
+	.plus {
+		margin-top: 2px;
+	}
+
+	.labels {
+		margin-left:48px;
+		position: absolute;
+	}
+
+	.labelsyrs {
+		margin-left:64px;
+		position: absolute;
+	}
+
+	.labelsdol {
+		margin-left:6px;
+		position: absolute;
+	}
+
+	.clilog {
+        width: auto;
+		height: 90px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+	}
+
+	.dol {
+		font-size: 18px;
+		margin-top: 18px;
+		display: inline-block;
+	}
+
+	.reslife {
+		margin-top: 27px;
+		margin-left: 18px;
+	}
+
+	.fontchange {
+		margin-top: 23px;
+	}
+}
+
+@media screen and (min-width: 609px) and (max-width: 657px) {
+	.pinq {
+		font-size: 10.5pt;
+		line-height: 1.7;
+		float: none;
+		max-width: 100%;
+	}
+
+	.inchoose {
+		margin-top:30px;
+	}
+
+	.corypic {
+    	max-width: 21%;
+    }
+
+	.averagedol {
+		padding-bottom: 10px;
+	}
+
+	.timeperyrbuy {
+		padding-bottom: 10px;
+	}
+
+	.calculate>p {
+		font-size: 12pt;
+	}
+
+	.btn-sm {
+		margin-bottom: 0px;
+	}
+
+	.one {
+		font-size: 13pt;
+	}
+
+	.equals {
+		margin-top: 21px;
+	}
+
+	.plus {
+		margin-top: 2px;
+	}
+
+	.labels {
+		margin-left:48px;
+		position: absolute;
+	}
+
+	.labelsyrs {
+		margin-left:64px;
+		position: absolute;
+	}
+
+	.labelsdol {
+		margin-left:6px;
+		position: absolute;
+	}
+
+	.clilog {
+        width: auto;
+		height: 90px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+	}
+
+	.dol {
+		font-size: 18px;
+		margin-top: 18px;
+		display: inline-block;
+	}
+
+	.reslife {
+		margin-top: 27px;
+		margin-left: 18px;
+	}
+
+	.fontchange {
+		margin-top: 23px;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media screen and (min-width: 520px) and (max-width: 608px) {
+	.pinq {
+		font-size: 12pt;
+		line-height: 1.7;
+	}
+	.calculate>p {
+		font-size: 12pt;
+	}
+
+	.btn-sm {
+		margin-bottom: 0px;
+	}
+
+	.splitthree {
+		padding-top: 5px;
+	}
+
+	.one {
+    	font-size: 10pt;
+    }
+
+    .plus {
+    	margin-top: -4px;
+    }
+
+    .equals {
+    	margin-top:15px
+    }
+
+    .inchoose {
+		margin-top:24px;
+	}
+
+    input[type="file"] {
+	    display: block;
+	}
+
+	.choosediv {
+		display: none;
+	}
+
+	.corypic {
+    	max-width: 22%;
+    }
+
+    .yr {
+		margin-top: -20px;
+		text-align: center;
+	}
+
+    .labels {
+		margin-left:46px;
+		position: absolute;
+		font-size: 8pt;
+	}
+
+	.labelsyrs {
+		margin-left:52px;
+		position: absolute;
+	}
+
+	.labelsdol {
+		margin-left:6px;
+		position: absolute;
+	}
+
+	.fontchange {
+		font-size: 14pt;
+		margin-top: 27px;
+	}
+
+	.dol {
+		font-size: 18px;
+		margin-top: 18px;
+		display: inline-block;
+	}
+
+	.q1box {
+		float: right;
+		padding-top: 22px;
+		text-indent: 13px;
+	}
+
+	.clilog {
+        width: auto;
+		height: 64px;
+		margin-top: 10px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+	}
+
+	.reslife {
+		margin-top: 27px;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 519px) {
+	.pinq {
+		font-size: 12pt;
+		line-height: 1.7;
+	}
+	.calculate>p {
+		font-size: 12pt;
+	}
+
+	.btn-sm {
+		margin-bottom: 0px;
+	}
+
+	.splitthree {
+		padding-top: 8px;
+	}
+
+	.one {
+    	font-size: 10pt;
+    }
+
+    .clilog {
+        width: auto;
+		height: 69px;
+	}
+
+    .plus {
+    	margin-top: -4px;
+    }
+
+    .equals {
+    	margin-top:15px;
+    }
+
+    input[type="file"] {
+	    display: block;
+	}
+
+	.choosediv {
+		display: none;
+	}
+
+	.corypic {
+    	max-width: 22%;
+    }
+
+    .yr {
+		margin-top: -20px;
+		text-align: center;
+	}
+
+    .labels {
+		margin-left:40px;
+		position: absolute;
+		font-size: 8pt;
+	}
+
+	.labelsyrs {
+		margin-left:46px;
+		position: absolute;
+	}
+
+	.labelsdol {
+		margin-left:6px;
+		position: absolute;
+	}
+
+	.fontchange {
+		font-size: 13pt;
+		margin-top: 28px;
+	}
+
+	.dol {
+		font-size: 18px;
+		margin-top: 18px;
+		display: inline-block;
+	}
+
+	.q1box {
+		float: right;
+		padding-top: 22px;
+		text-indent: 13px;
+	}
+
+	.inchoose {
+		margin-top: 24px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+	}
+
+	.reslife {
+		margin-top: 27px;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (min-width: 475px) and (max-width: 480px) {
+	.one {
+    	font-size: 7.5pt;
+    }
+
+    .splitthree {
+		padding-top: 8px;
+	}
+
+	.clilog {
+        width: auto;
+		height: 69px;
+	}
+
+	.plus {
+		margin-right: 8px;
+		margin-left: 0px;
+		margin-top: -8px;
+	}
+
+	.calctitle {
+		font-size: 15pt;
+	}
+
+	.calctitleu {
+		font-size: 15pt;
+	}
+
+	.pinq {
+		font-size: 9.9pt;
+		line-height: 1.42857143;
+	}
+
+	.numtwo {
+		margin-top: 0px;
+	}
+
+	.inchoose {
+		margin-top: 20px;
+	}
+
+	.submit {
+		margin-top: -6px;
+	}
+
+	.equals {
+		margin-top: 12px;
+	}
+
+	.qdisplayprops {
+	}
+
+	.tbd {
+		margin-top: 0;
+	}
+
+	.fontchanget {
+		font-size: 8.7pt;
+	}
+
+	.calculate>p {
+		font-size: 10pt;
+	}
+
+	.fontchange {
+		font-size: 11pt;
+		margin-top: 24px;
+		margin-left: 0px;
+	}
+
+	.qcont {
+		padding-bottom: 0;
+		padding-top: 0;
+		position: absolute;
+	}
+
+	.qdisplayprops {
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+
+	.timeperyrbis {
+		padding-bottom: 10px;
+	}
+
+	.result {
+		padding-bottom: 10px;
+	}
+
+	.btn-sm {
+		background-color: #628fd1;
+		color: #fff;
+		line-height: 0.6;
+		font-size: 9pt;
+		margin-top: 4px;
+	}
+
+	input {
+	    font-size: 14px;
+	}
+
+	input[type="file"] {
+	    display: none;
+	}
+
+	.choose {
+		/*border: 1px solid #ccc;
+	    display: inline-block;
+	    padding: 8px;
+	    cursor: pointer;
+	    margin-top: -5px;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;*/
+	}
+
+	.form-control {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.corypic {
+    	max-width: 13%;
+    }
+
+    .labels {
+		margin-left:30px;
+		position: absolute;
+		font-size: 8pt;
+	}
+
+	.labelsyrs {
+		margin-left:38px;
+		position: absolute;
+	}
+
+	.labelsdol {
+		margin-left:6px;
+		position: absolute;
+	}
+
+	.yr {
+		margin-top: -20px;
+	}
+
+	.dol {
+		font-size: 18px;
+		margin-top: 18px;
+		display: inline-block;
+	}
+
+	.q1box {
+		float: right;
+		padding-top: 22px;
+		text-indent: 13px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+	}
+
+	.reslife {
+		margin-top: 27px;
+		margin-left: 10px;
+	}
+
+	.fontchange{
+		margin-top: 30px;
+	}
+}
+
+/* Portrait phones and smaller */
+@media screen and (min-width: 460px) and (max-width: 474px) {
+	.one {
+    	font-size: 7.5pt;
+    }
+
+    .splitthree {
+		padding-top: 0px;
+	}
+
+	.clilog {
+        width: auto;
+		height: 63px;
+	}
+
+	.plus {
+		margin-right: 8px;
+		margin-left: 0px;
+		margin-top: -12px;
+	}
+
+	.calctitle {
+		font-size: 15pt;
+	}
+
+	.calctitleu {
+		font-size: 15pt;
+	}
+
+	.pinq {
+		font-size: 9.9pt;
+		line-height: 1.42857143;
+	}
+
+	.numtwo {
+		margin-top: 0px;
+	}
+
+	.inchoose {
+		margin-top: -5px;
+	}
+
+	.submit {
+		margin-top: -6px;
+	}
+
+	.equals {
+		margin-top: 8px;
+	}
+
+	.qdisplayprops {
+	}
+
+	.tbd {
+		margin-top: 0;
+	}
+
+	.fontchanget {
+		font-size: 8.7pt;
+	}
+
+	.calculate>p {
+		font-size: 10pt;
+	}
+
+	.fontchange {
+		font-size: 11pt;
+		margin-top: 30px;
+		margin-left: 0px;
+	}
+
+	.qcont {
+		padding-bottom: 0;
+		padding-top: 0;
+		position: absolute;
+	}
+
+	.qdisplayprops {
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+
+	.timeperyrbis {
+		padding-bottom: 10px;
+	}
+
+	.result {
+		padding-bottom: 10px;
+	}
+
+	.btn-sm {
+		background-color: #628fd1;
+		color: #fff;
+		line-height: 0.6;
+		font-size: 9pt;
+		margin-top: 4px;
+	}
+
+	input {
+	    font-size: 14px;
+	}
+
+	input[type="file"] {
+	    display: none;
+	}
+
+	.choose {
+		border: 1px solid #ccc;
+	    display: inline-block;
+	    padding: 8px;
+	    cursor: pointer;
+	    margin-top: 15px;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	}
+
+	.form-control {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.corypic {
+    	max-width: 13%;
+    }
+
+    .labels {
+		margin-left:30px;
+		position: absolute;
+		font-size: 8pt;
+	}
+
+	.labelsyrs {
+		margin-left:38px;
+		position: absolute;
+	}
+
+	.labelsdol {
+		margin-left:6px;
+		position: absolute;
+	}
+
+	.yr {
+		margin-top: -20px;
+	}
+
+	.dol {
+		font-size: 18px;
+		margin-top: 18px;
+		display: inline-block;
+	}
+
+	.q1box {
+		float: right;
+		padding-top: 22px;
+		text-indent: 13px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+	}
+
+	.reslife {
+		margin-top: 27px;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (min-width: 417px) and (max-width: 459px) {
+	.one {
+    	font-size: 7.5pt;
+    }
+
+    .splitthree {
+		padding-top: 0px;
+	}
+
+	.clilog {
+        width: auto;
+    	height: 60px;
+    }
+
+	.plus {
+		margin-right: 8px;
+		margin-left: 0px;
+		margin-top: -12px;
+	}
+
+	.calctitle {
+		font-size: 15pt;
+	}
+
+	.calctitleu {
+		font-size: 15pt;
+	}
+
+	.pinq {
+		font-size: 9.9pt;
+		line-height: 1.42857143;
+	}
+
+	.numtwo {
+		margin-top: 0px;
+	}
+
+	.inchoose {
+		margin-top: -26px;
+	}
+
+	.submit {
+		margin-top: -6px;
+	}
+
+	.equals {
+		margin-top: 8px;
+	}
+
+	.qdisplayprops {
+	}
+
+	.tbd {
+		margin-top: 0;
+	}
+
+	.fontchanget {
+		font-size: 8.7pt;
+	}
+
+	.calculate>p {
+		font-size: 10pt;
+	}
+
+	.fontchange {
+		font-size: 11pt;
+		margin-top: 30px;
+		margin-left: 0px;
+	}
+
+	.qcont {
+		padding-bottom: 0;
+		padding-top: 0;
+		position: absolute;
+	}
+
+	.qdisplayprops {
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+
+	.timeperyrbis {
+		padding-bottom: 10px;
+	}
+
+	.result {
+		padding-bottom: 10px;
+	}
+
+	.btn-sm {
+		background-color: #628fd1;
+		color: #fff;
+		line-height: 0.6;
+		font-size: 9pt;
+		margin-top: 4px;
+	}
+
+	input {
+	    font-size: 14px;
+	}
+
+	input[type="file"] {
+	    display: none;
+	}
+
+	.choose {
+		border: 1px solid #ccc;
+	    display: inline-block;
+	    padding: 8px;
+	    cursor: pointer;
+	    margin-top: 15px;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	}
+
+	.form-control {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.corypic {
+    	max-width: 13%;
+    }
+
+    .labels {
+		margin-left:24px;
+		position: absolute;
+		font-size: 8pt;
+	}
+
+	.labelsyrs {
+		margin-left:32px;
+		position: absolute;
+	}
+
+	.labelsdol {
+		margin-left:6px;
+		position: absolute;
+	}
+
+	.yr {
+		margin-top: -20px;
+	}
+
+	.dol {
+		font-size: 18px;
+		margin-top: 9px;
+		display: inline-block;
+	}
+
+	.q1box {
+		float: right;
+		padding-top: 22px;
+		text-indent: 13px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+		float: right;
+		display: inline-block;
+	}
+
+	.reslife {
+		margin-top: 27px;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 416px) {
+	.one {
+    	font-size: 7.5pt;
+    }
+
+    .splitthree {
+		padding-top: 0px;
+	}
+
+	.clilog {
+        width: auto;
+    	height: 52px;
+    }
+
+    .lifetime {
+		text-indent: 0px;
+	}
+
+	.plus {
+		margin-right: 8px;
+		margin-left: 0px;
+		margin-top: -12px;
+	}
+
+	.calctitle {
+		font-size: 19pt;
+	}
+
+	.calctitleu {
+		font-size: 19pt;
+	}
+
+	.pinq {
+		font-size: 9.9pt;
+		line-height: 1.42857143;
+	}
+
+	.numtwo {
+		margin-top: 0px;
+	}
+
+	.inchoose {
+		margin-top: -26px;
+	}
+
+	.submit {
+		margin-top: -6px;
+	}
+
+	.equals {
+		margin-top: 8px;
+	}
+
+	.qdisplayprops {
+	}
+
+	.tbd {
+		margin-top: 0;
+	}
+
+	.fontchanget {
+		font-size: 8.7pt;
+	}
+
+	.calculate>p {
+		font-size: 10pt;
+	}
+
+	.fontchange {
+		font-size: 10pt;
+		margin-top: 24px;
+		margin-left: 0px;
+	}
+
+	.qcont {
+		padding-bottom: 0;
+		padding-top: 0;
+		position: absolute;
+	}
+
+	.qdisplayprops {
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+
+	.timeperyrbis {
+		padding-bottom: 10px;
+	}
+
+	.result {
+		padding-bottom: 10px;
+	}
+
+	.btn-sm {
+		background-color: #628fd1;
+		color: #fff;
+		line-height: 0.6;
+		font-size: 9pt;
+		margin-top: 4px;
+	}
+
+	input {
+	    font-size: 14px;
+	    height: 45px;
+	}
+
+	input[type="file"] {
+	    display: none;
+	}
+
+	.choose {
+		border: 1px solid #ccc;
+	    display: inline-block;
+	    padding: 8px;
+	    cursor: pointer;
+	    margin-top: 15px;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	}
+
+	.form-control {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.corypic {
+    	max-width: 23%;
+    }
+
+    .labels {
+		margin-left:20px;
+		position: absolute;
+		font-size: 8pt;
+	}
+
+	.labelsyrs {
+		margin-left:28px;
+		position: absolute;
+	}
+
+	.labelsdol {
+		margin-left:6px;
+		position: absolute;
+	}
+
+	.yr {
+		margin-top: -20px;
+	}
+
+	.dol {
+		font-size: 18px;
+		margin-top: 9px;
+		display: inline-block;
+	}
+
+	.q1box {
+		float: right;
+		padding-top: 0px;
+		text-indent: 13px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+		float: right;
+		display: inline-block;
+	}
+
+	.reslife {
+		margin-top: 21px;
+		margin-left: 8px;
+	}
+}
+
+@media (max-width: 320px) {
+	.inchoose {
+		margin-top: -26px;
+	}
+
+	.submit {
+		margin-top: -6px;
+	}
+
+	.equals {
+		margin-top: 2px;
+	}
+
+	.clilog {
+    	height: 43px;
+    	width: auto;
+    }
+
+	.one {
+    	font-size: 6.2pt;
+    }
+
+    .corypic {
+    	margin-top: 10px;
+    	max-width: 23%;
+    }
+
+    .splitthree {
+		padding-top: 0px;
+		margin-top: 5px;
+		margin-left: 4px;
+	}
+
+	.plus {
+		margin-right: 10px;
+		margin-left: -2px;
+		margin-top: -18px;
+	}
+
+	.calctitle {
+		font-size: 15pt;
+	}
+
+	.calctitleu {
+		font-size: 15pt;
+	}
+
+	.pinq {
+		font-size: 8.5pt;
+		line-height: 1.42857143;
+	}
+
+	.numtwo {
+		margin-top: 0px;
+	}
+
+	.qdisplayprops {
+	}
+
+	.tbd {
+		margin-top: 0;
+	}
+
+	.fontchanget {
+		font-size: 6.1pt;
+	}
+
+	.calculate>p {
+		font-size: 10pt;
+	}
+
+	.fontchange {
+		font-size: 8.5pt;
+		margin-top: 25px;
+		margin-left: 0px;
+	}
+
+	.qcont {
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+
+	.qdisplayprops {
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+
+	.result {
+		padding-bottom: 10px;
+	}
+
+	.btn-sm {
+		background-color: #628fd1;
+		color: #fff;
+		line-height: 0.6;
+		font-size: 9pt;
+		margin-top: 4px;
+	}
+
+	input {
+	    font-size: 14px;
+	    height: 45px;
+	}
+
+	input[type="file"] {
+	    display: none;
+	}
+
+	.choose {
+		border: 1px solid #ccc;
+	    display: inline-block;
+	    padding: 0;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	    margin-top: 17px;
+	}
+
+	.labels {
+		margin-left:11px;
+		position: absolute;
+		font-size: 8pt;
+	}
+
+	.labelsyrs {
+		margin-left:19px;
+		position: absolute;
+	}
+
+	.labelsdol {
+		margin-left:6px;
+		position: absolute;
+	}
+
+	.yr {
+		margin-top: -20px;
+	}
+
+	.dol {
+		font-size: 18px;
+		margin-top: 9px;
+		display: inline-block;
+	}
+
+	.q1box {
+		float: right;
+		padding-top: 0px;
+		text-indent: 13px;
+	}
+
+	.yrs {
+		margin-top: -4px;
+	}
+
+	.q1indentno {
+		float: right;
+		padding-top:12px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+	}
+
+	.reslife {
+		margin-top: 19px;
+		margin-left: 6px;
+	}
+}
+
+.fontchangeag {
+	font-size: 7pt;
+}
+
+.addfont {
+
+}
