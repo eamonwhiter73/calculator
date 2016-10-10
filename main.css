@@ -223,6 +223,16 @@ p {
 	max-width: 100%;
 }
 
+.vallogunder {
+	display: block;
+	max-width: 100%;
+}
+
+.logcont {
+	padding-top: 27px;
+	position: relative;
+}
+
 .submit {
 	height: 18px;
 	display: block;
@@ -281,15 +291,26 @@ p {
 }
 
 .clilog {
-    width: auto;
-	float: left;
-	position: relative;
-	display: inline-block;
-	height: 73px;
+    height: auto; 
+    width: auto; 
+    max-width: 192px; 
+    max-height: 80px;
+    margin: 0;
+	margin-top: -3px;
+	/*display: table-cell;
+	vertical-align: middle;*/
+}
+
+.clilogcont {
+	height: 80px;
+	/*margin-left: -7px;
+	margin-right: 5px;*/
+	align-items: center;
+  	justify-content: center
 }
 
 .equals {
-	margin-top: 20px;
+	margin-top: 18px;
 	font-size: 24pt;
 	color: #000;
 	margin-left: 4px;
@@ -301,7 +322,7 @@ p {
 	display: inline-block;
 	font-size: 24pt;
 	color: #000;
-	padding-top: 20px;
+	padding-top: 18px;
 	margin-left: 4px;
 	font-family: 'Baloo Bhai', cursive;
 }
@@ -311,7 +332,7 @@ p {
 	padding-top: 0px;
 	padding-left: 0;
 	margin-left: 0;
-	margin-top: 4px;
+	margin-top: -2px;
 }
 
 .one {
@@ -458,6 +479,11 @@ p {
 
 	}
 
+	.comptextdisplay {
+		margin-top: 1px;
+		padding-top: 0;
+	}
+
 	.lifetime {
 		text-indent: 0px;
 	}
@@ -465,6 +491,13 @@ p {
 	.yr {
 		margin-top: -28px;
 		text-align: center;
+	}
+
+	.newpicspot {
+		float: right;
+		display: inline-block;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 
 	.dol {
@@ -584,7 +617,7 @@ p {
 
 	.logomore {
 		background-color: #FFF;
-		padding-top:10px;
+		padding-top:35px;
 		padding-bottom:10px;
 	}
 
@@ -625,7 +658,7 @@ p {
 		float: right;
 		position: relative;
 		display: inline-block;
-		max-width: 14%;
+		max-width: 75%;
 		display: block;
 	}
 
@@ -651,35 +684,30 @@ p {
 	}	
 
 	.clilog {
-	        width: auto;
-		float: left;
-		position: relative;
-		display: inline-block;
-		height: 73px;
+        height: auto; 
+	    width: auto; 
+	    max-width: 192px; 
+	    max-height: 80px;
+    	margin-top: -7px;
+    	margin-left: 17px;
+    }
+
+    .clilogcont {
+    	height: 80px;
+    	margin-left: -7px;
+    	margin-right: 5px;
+    }
+
+    .splitthree {
+    	margin-top: -4px;
+    }
+
+    .plus {
+		padding-top: 13px;
 	}
 
 	.equals {
-		margin-top: 20px;
-		font-size: 24pt;
-		color: #000;
-		margin-left: 4px;
-	}
-
-	.plus {
-		float: left;
-		display: inline-block;
-		font-size: 24pt;
-		color: #000;
-		padding-top: 20px;
-		margin-left: 4px;
-	}
-
-	.splitthree {
-		display: inline-block;
-		padding-top: 0px;
-		padding-left: 0;
-		margin-left: 0;
-		margin-top: 8px;
+		margin-top: 13px;
 	}
 
 	.one {
@@ -715,7 +743,7 @@ p {
 	}
 
 	.choose {
-		margin-top: 6px;
+		margin-top: -14px;
 	}
 
 	.numtwo {
@@ -807,6 +835,11 @@ p {
 		padding-top: 2px;
 	}
 
+	.comptextdisplay {
+		margin-top: -1px;
+		padding-top: 0;
+	}
+
 	.pinq {
 		line-height: 1.7;
 	}
@@ -832,8 +865,30 @@ p {
 	}
 
 	.clilog {
-        width: auto;
-		height: 70px;
+        height: auto; 
+	    width: auto; 
+	    max-width: 192px; 
+	    max-height: 80px;
+    	margin-top: -10px;
+    	margin-left: 18px;
+    }
+
+    .clilogcont {
+    	height: 80px;
+    	margin-left: -7px;
+    	margin-right: 5px;
+    }
+
+    .splitthree {
+    	margin-top: -4px;
+    }
+
+    .plus {
+		padding-top: 13px;
+	}
+
+	.equals {
+		margin-top: 13px;
 	}
 
 	.lifetime {
@@ -856,7 +911,11 @@ p {
 	}
 
 	.corypic {
-		max-width: 21%;
+		float: right;
+		position: relative;
+		display: inline-block;
+		max-width: 75%;
+		display: block;
 	}
 }
 
@@ -867,8 +926,20 @@ p {
 		line-height: 1.7;
 	}
 
+	.choose {
+		margin-top: -19px;
+	}
+
 	.averagedol {
 		padding-bottom: 10px;
+	}
+
+	.splitthree {
+		margin-top: -3px;
+	}
+
+	.logcont {
+		padding-top: 20px;
 	}
 
 	.timeperyrbuy {
@@ -888,16 +959,21 @@ p {
 	}
 
 	.plus {
-		margin-top: 10px;
+		margin-top: 2px;
+		margin-left: -5px;
 	}
 
 	.equals {
-		margin-top: 28px;
+		margin-top: 20px;
 	}
 
 	.corypic {
-    	max-width: 12%;
-    }
+		float: right;
+		position: relative;
+		display: inline-block;
+		max-width: 75%;
+		display: block;
+	}
 
     .labels {
 		margin-left:72px;
@@ -919,9 +995,21 @@ p {
 	}
 
 	.clilog {
-        width: auto;
-		height: 110px;
-	}
+        height: auto; 
+	    width: auto; 
+	    max-width: 226px; 
+	    max-height: 80px;
+    	margin-top: 4px;
+    	margin-left: 14px;
+    	/*display: table-cell;
+    	vertical-align: middle;*/
+    }
+
+    .clilogcont {
+    	height: 80px;
+    	margin-left: -7px;
+    	margin-right: 5px;
+    }
 
 	.lifetime {
 		text-indent: 0px;
@@ -950,6 +1038,18 @@ p {
 		line-height: 1.7;
 	}
 
+	.splitthree {
+		margin-top: -2px;
+	}
+
+	.comptextdisplay {
+		margin-top: 2px;
+	}
+
+	.choose {
+		margin-top: -22px;
+	}
+
 	.inchoose {
 		margin-top: 40px;
 	}
@@ -975,16 +1075,20 @@ p {
 	}
 
 	.plus {
-		margin-top: 12px;
+		margin-top: -1px;
 	}
 
 	.equals {
-		margin-top: 32px;
+		margin-top: 17px;
 	}
 
 	.corypic {
-    	max-width: 13%;
-    }
+		float: right;
+		position: relative;
+		display: inline-block;
+		max-width: 75%;
+		display: block;
+	}
 
     .labels {
 		margin-left:60px;
@@ -1002,9 +1106,19 @@ p {
 	}
 
 	.clilog {
-        width: auto;
-		height: 101px;
-	}
+        height: auto; 
+	    width: auto; 
+	    max-width: 210px; 
+	    max-height: 80px;
+    	margin-top: -3px;
+    	margin-left: 16px;
+    }
+
+    .clilogcont {
+    	height: 80px;
+    	margin-left: -7px;
+    	margin-right: 5px;
+    }
 
 	.lifetime {
 		text-indent: 0px;
@@ -1024,6 +1138,10 @@ p {
 	.fontchange {
 		margin-top: 23px;
 	}
+
+	.logcont {
+		padding-top: 24px;
+	}
 }
 
 /* Landscape phones and portrait tablets */
@@ -1039,9 +1157,22 @@ p {
 		margin-top:30px;
 	}
 
+	.choose {
+		margin-top: -18px;
+	}
+
 	.corypic {
-    	max-width: 14%;
-    }
+		float: right;
+		position: relative;
+		display: inline-block;
+		max-width: 75%;
+		display: block;
+	}
+
+	.comptextdisplay {
+		margin-top: -1px;
+		margin-left: 3px;
+	}
 
 	.averagedol {
 		padding-bottom: 10px;
@@ -1064,11 +1195,11 @@ p {
 	}
 
 	.equals {
-		margin-top: 22px;
+		margin-top: 14px;
 	}
 
 	.plus {
-		margin-top: 2px;
+		margin-top: -4px;
 	}
 
 	.labels {
@@ -1087,9 +1218,23 @@ p {
 	}
 
 	.clilog {
-        width: auto;
-		height: 90px;
-	}
+        height: auto; 
+	    width: auto; 
+	    max-width: 190px; 
+	    max-height: 80px;
+    	margin-top: -9px;
+    	margin-left: 11px;
+    }
+
+    .clilogcont {
+    	height: 80px;
+    	margin-left: 2px;
+    	margin-right: 5px;
+    }
+
+    .splitthree {
+    	margin-top: -4px;
+    }
 
 	.lifetime {
 		text-indent: 0px;
@@ -1119,13 +1264,38 @@ p {
 		max-width: 100%;
 	}
 
+	.comptextdisplay {
+		margin-top: 2px;
+		margin-left: 3px;
+	}
+
+	.info {
+		display: block;
+		font-size: 6pt;
+		float: right;
+		text-align: right;
+	}
+
 	.inchoose {
 		margin-top:30px;
 	}
 
+	.choose {
+		margin-top: -18px;
+		margin-left: 4px;
+	}
+
+	.splitthree {
+		margin-top: 1px;
+	}
+
 	.corypic {
-    	max-width: 21%;
-    }
+		float: right;
+		position: relative;
+		display: inline-block;
+		max-width: 75%;
+		display: block;
+	}
 
 	.averagedol {
 		padding-bottom: 10px;
@@ -1148,11 +1318,12 @@ p {
 	}
 
 	.equals {
-		margin-top: 21px;
+		margin-top: 15px;
 	}
 
 	.plus {
-		margin-top: 2px;
+		margin-top: -2px;
+		margin-left: -5px;
 	}
 
 	.labels {
@@ -1171,9 +1342,19 @@ p {
 	}
 
 	.clilog {
-        width: auto;
-		height: 90px;
-	}
+        height: auto; 
+	    width: auto; 
+	    max-width: 175px; 
+	    max-height: 80px;
+    	margin-top: -4px;
+    	margin-left: 13px;
+    }
+
+    .clilogcont {
+    	height: 80px;
+    	margin-left: 2px;
+    	margin-right: 5px;
+    }
 
 	.lifetime {
 		text-indent: 0px;
@@ -1201,6 +1382,33 @@ p {
 		font-size: 12pt;
 		line-height: 1.7;
 	}
+
+	.info {
+		display: block;
+		font-size: 5.8pt;
+		float: right;
+		text-align: right;
+	}
+
+	.clilog {
+        height: auto; 
+	    width: auto; 
+	    max-width: 160px; 
+	    max-height: 80px;
+    	margin-top: -22px;
+    	margin-left: 12px;
+    }
+
+    .clilogcont {
+    	height: 80px;
+    	margin-left: 2px;
+    	margin-right: 5px;
+    }
+
+    .comptextdisplay {
+		margin-top: -7px;
+	}
+
 	.calculate>p {
 		font-size: 12pt;
 	}
@@ -1210,7 +1418,7 @@ p {
 	}
 
 	.splitthree {
-		padding-top: 5px;
+		margin-top: 2px;
 	}
 
 	.one {
@@ -1218,11 +1426,12 @@ p {
     }
 
     .plus {
-    	margin-top: -4px;
+    	margin-top: -11px;
+    	margin-left: -5px;
     }
 
     .equals {
-    	margin-top:15px
+    	margin-top:7px
     }
 
     .inchoose {
@@ -1237,9 +1446,19 @@ p {
 		display: none;
 	}
 
+	.choose {
+		margin-top: -17px;
+		margin-left: 5px;
+
+	}
+
 	.corypic {
-    	max-width: 22%;
-    }
+		float: right;
+		position: relative;
+		display: inline-block;
+		max-width: 85%;
+		display: block;
+	}
 
     .yr {
 		margin-top: -20px;
@@ -1279,12 +1498,6 @@ p {
 		text-indent: 13px;
 	}
 
-	.clilog {
-        width: auto;
-		height: 64px;
-		margin-top: 10px;
-	}
-
 	.lifetime {
 		text-indent: 0px;
 	}
@@ -1300,6 +1513,14 @@ p {
 		font-size: 12pt;
 		line-height: 1.7;
 	}
+
+	.info {
+		display: block;
+		font-size: 5pt;
+		float: right;
+		text-align: right;
+	}
+
 	.calculate>p {
 		font-size: 12pt;
 	}
@@ -1308,8 +1529,13 @@ p {
 		margin-bottom: 0px;
 	}
 
+	 .comptextdisplay {
+		margin-top: -6px;
+	}
+
 	.splitthree {
-		padding-top: 8px;
+		margin-top: 1px;
+		margin-left: 4px;
 	}
 
 	.one {
@@ -1317,16 +1543,27 @@ p {
     }
 
     .clilog {
-        width: auto;
-		height: 69px;
-	}
+        height: auto; 
+	    width: auto; 
+	    max-width: 139px; 
+	    max-height: 80px;
+    	margin-top: -20px;
+    	margin-left: 13px;
+    }
+
+    .clilogcont {
+    	height: 80px;
+    	margin-left: 5px;
+    	margin-right: 5px;
+    }
 
     .plus {
-    	margin-top: -4px;
+    	margin-top: -10px;
+    	margin-left: -5px;
     }
 
     .equals {
-    	margin-top:15px;
+    	margin-top:8px;
     }
 
     input[type="file"] {
@@ -1337,9 +1574,18 @@ p {
 		display: none;
 	}
 
+	.choose {
+		margin-top: -18px;
+		margin-left: 5px;
+	}
+
 	.corypic {
-    	max-width: 22%;
-    }
+		float: right;
+		position: relative;
+		display: inline-block;
+		max-width: 100%;
+		display: block;
+	}
 
     .yr {
 		margin-top: -20px;
@@ -1398,19 +1644,41 @@ p {
     	font-size: 7.5pt;
     }
 
+     .comptextdisplay {
+		margin-top: -17px;
+	}
+
+    .info {
+		display: block;
+		font-size: 5pt;
+		float: right;
+		text-align: right;
+	}
+
     .splitthree {
-		padding-top: 8px;
+		margin-top: -6px;
+		margin-left: 2px;
 	}
 
 	.clilog {
-        width: auto;
-		height: 69px;
-	}
+        height: auto; 
+	    width: auto; 
+	    max-width: 139px; 
+	    max-height: 62px;
+    	margin-top: -15px;
+    	margin-left: 14px;
+    }
+
+    .clilogcont {
+    	height: 52px;
+    	margin-left: -5px;
+    	margin-right: 5px;
+    }
 
 	.plus {
 		margin-right: 8px;
 		margin-left: 0px;
-		margin-top: -8px;
+		margin-top: -21px;
 	}
 
 	.calctitle {
@@ -1439,7 +1707,7 @@ p {
 	}
 
 	.equals {
-		margin-top: 12px;
+		margin-top: -3px;
 	}
 
 	.qdisplayprops {
@@ -1498,25 +1766,26 @@ p {
 	    display: none;
 	}
 
+	.logcont {
+		padding-top: 17px;
+	}
+
 	.choose {
-		/*border: 1px solid #ccc;
-	    display: inline-block;
-	    padding: 8px;
-	    cursor: pointer;
-	    margin-top: -5px;
-	    font-size: 8pt;
-	    text-align: center;
-	    line-height: 8pt;*/
+		margin-top: -22px;
+	}
+
+	.corypic {
+		float: right;
+		position: relative;
+		display: inline-block;
+		max-width: 100%;
+		display: block;
 	}
 
 	.form-control {
 		max-width: 100%;
 		padding: 0;
 	}
-
-	.corypic {
-    	max-width: 13%;
-    }
 
     .labels {
 		margin-left:30px;
@@ -1570,19 +1839,40 @@ p {
     	font-size: 7.5pt;
     }
 
+    .info {
+		display: block;
+		font-size: 5pt;
+		float: right;
+		text-align: right;
+	}
+
     .splitthree {
-		padding-top: 0px;
+		margin-top: 1px;
+		margin-left: 2px;
+	}
+
+	.comptextdisplay {
+		margin-top: -10px;
 	}
 
 	.clilog {
-        width: auto;
-		height: 63px;
-	}
+        height: auto; 
+	    width: auto; 
+	    max-width: 139px; 
+	    max-height: 52px;
+    	margin-left: 12px;
+    }
+
+    .clilogcont {
+    	height: 52px;
+    	margin-left: -5px;
+    	margin-right: 5px;
+    }
 
 	.plus {
 		margin-right: 8px;
-		margin-left: 0px;
-		margin-top: -12px;
+		margin-left: -4px;
+		margin-top: -15px;
 	}
 
 	.calctitle {
@@ -1611,7 +1901,7 @@ p {
 	}
 
 	.equals {
-		margin-top: 8px;
+		margin-top: 3px;
 	}
 
 	.qdisplayprops {
@@ -1675,20 +1965,25 @@ p {
 	    display: inline-block;
 	    padding: 8px;
 	    cursor: pointer;
-	    margin-top: 15px;
+		margin-top: -2px;
+		margin-left: 4px;
 	    font-size: 8pt;
 	    text-align: center;
 	    line-height: 8pt;
+	}
+
+	.corypic {
+		float: right;
+		position: relative;
+		display: inline-block;
+		max-width: 100%;
+		display: block;
 	}
 
 	.form-control {
 		max-width: 100%;
 		padding: 0;
 	}
-
-	.corypic {
-    	max-width: 13%;
-    }
 
     .labels {
 		margin-left:30px;
@@ -1737,19 +2032,39 @@ p {
     	font-size: 7.5pt;
     }
 
+    .info {
+		display: block;
+		font-size: 4pt;
+		float: right;
+		text-align: right;
+	}
+	.comptextdisplay {
+		margin-top: -10px;
+	}
+
     .splitthree {
-		padding-top: 0px;
+		margin-top: 2px;
+		margin-left: 4px;
 	}
 
 	.clilog {
-        width: auto;
-    	height: 60px;
+        height: auto; 
+	    width: auto; 
+	    max-width: 123px; 
+	    max-height: 52px;
+    	margin-left: 12px;
+    }
+
+    .clilogcont {
+    	height: 52px;
+    	margin-left: -5px;
+    	margin-right: 5px;
     }
 
 	.plus {
 		margin-right: 8px;
-		margin-left: 0px;
-		margin-top: -12px;
+		margin-left: -4px;
+		margin-top: -15px;
 	}
 
 	.calctitle {
@@ -1778,7 +2093,8 @@ p {
 	}
 
 	.equals {
-		margin-top: 8px;
+		margin-top: 3px;
+		margin-left: -3px;
 	}
 
 	.qdisplayprops {
@@ -1842,10 +2158,11 @@ p {
 	    display: inline-block;
 	    padding: 8px;
 	    cursor: pointer;
-	    margin-top: 15px;
+	    margin-top: -4px;
 	    font-size: 8pt;
 	    text-align: center;
 	    line-height: 8pt;
+	    margin-left: 4px;
 	}
 
 	.form-control {
@@ -1854,8 +2171,12 @@ p {
 	}
 
 	.corypic {
-    	max-width: 13%;
-    }
+		float: right;
+		position: relative;
+		display: inline-block;
+		max-width: 100%;
+		display: block;
+	}
 
     .labels {
 		margin-left:24px;
@@ -1907,12 +2228,32 @@ p {
     }
 
     .splitthree {
-		padding-top: 0px;
+		margin-top: 3px;
+		margin-left: 4px;
+	}
+
+	.logcont {
+		margin-top: 4px;
+	}
+
+	.comptextdisplay {
+		margin-top: -12px;
+		margin-right: 4px;
 	}
 
 	.clilog {
-        width: auto;
+        height: auto; 
+	    width: auto; 
+	    max-width: 112px; 
+	    max-height: 52px;
+    	margin-top: -6px;
+    	margin-left: 9px;
+    }
+
+    .clilogcont {
     	height: 52px;
+    	margin-left: -5px;
+    	margin-right: 5px;
     }
 
     .lifetime {
@@ -1921,8 +2262,8 @@ p {
 
 	.plus {
 		margin-right: 8px;
-		margin-left: 0px;
-		margin-top: -12px;
+		margin-left: -9px;
+		margin-top: -16px;
 	}
 
 	.calctitle {
@@ -1951,7 +2292,8 @@ p {
 	}
 
 	.equals {
-		margin-top: 8px;
+		margin-top: 1px;
+		margin-left: -2px;
 	}
 
 	.qdisplayprops {
@@ -2016,10 +2358,11 @@ p {
 	    display: inline-block;
 	    padding: 8px;
 	    cursor: pointer;
-	    margin-top: 15px;
+	    margin-top: -6px;
 	    font-size: 8pt;
 	    text-align: center;
 	    line-height: 8pt;
+	    margin-left: 4px;
 	}
 
 	.form-control {
@@ -2028,8 +2371,16 @@ p {
 	}
 
 	.corypic {
-    	max-width: 23%;
+    	max-width: 100%;
     }
+
+    .info {
+    	margin-top: 5px;
+		display: block;
+		font-size: 3.9pt;
+		float: right;
+		text-align: right;
+	}
 
     .labels {
 		margin-left:20px;
@@ -2073,6 +2424,11 @@ p {
 		margin-top: 21px;
 		margin-left: 8px;
 	}
+
+	.textchoice {
+		border-style: solid;
+		border-width: 1px;
+	}
 }
 
 @media (max-width: 320px) {
@@ -2080,17 +2436,40 @@ p {
 		margin-top: -26px;
 	}
 
+	.info {
+		display: block;
+		font-size: 3.5pt;
+		float: right;
+		text-align: right;
+	}
+
 	.submit {
 		margin-top: -6px;
 	}
 
 	.equals {
-		margin-top: 2px;
+		margin-top: -6px;
+		margin-left: -4px;
+		margin-right: 3px;
+	}
+
+	.logcont {
+		margin-top: 4px;
 	}
 
 	.clilog {
-    	height: 43px;
-    	width: auto;
+        height: auto; 
+	    width: auto; 
+	    max-width: 98px; 
+	    max-height: 52px;
+    	margin-top: -21px;
+    	margin-left: 9px;
+    }
+
+    .clilogcont {
+    	height: 52px;
+    	margin-left: -5px;
+    	margin-right: 5px;
     }
 
 	.one {
@@ -2099,19 +2478,20 @@ p {
 
     .corypic {
     	margin-top: 10px;
-    	max-width: 23%;
+    	max-width: 100%;
     }
 
     .splitthree {
 		padding-top: 0px;
-		margin-top: 5px;
+		margin-top: 0px;
 		margin-left: 4px;
 	}
 
 	.plus {
 		margin-right: 10px;
-		margin-left: -2px;
-		margin-top: -18px;
+		margin-left: -10px;
+		margin-top: -24px;
+		padding-left: 0px;
 	}
 
 	.calctitle {
@@ -2183,15 +2563,20 @@ p {
 	    display: none;
 	}
 
+	.textchoice {
+		border-style: solid;
+		border-width: 1px;
+	}
+
 	.choose {
 		border: 1px solid #ccc;
 	    display: inline-block;
-	    padding: 0;
+	    padding: 2px;
 	    cursor: pointer;
 	    font-size: 8pt;
 	    text-align: center;
 	    line-height: 8pt;
-	    margin-top: 17px;
+	    margin-top: -6px;
 	}
 
 	.labels {

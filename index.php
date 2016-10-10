@@ -25,11 +25,10 @@
 <script>
 	function previewFile(){
        var preview = document.querySelector('.clilog'); //selects the query named img
-       var file    = document.querySelector('d').files[0]; //sames as here
+       var file    = document.querySelector('input[type=file]').files[0]; //sames as here
        var reader  = new FileReader();
-       $(".clilog").css('display', 'block');
        $(".choose").hide();
-       $(".textchoice").hide();
+       $(".clilogcont").css('display', 'flex');
 
        reader.onloadend = function () {
            preview.src = reader.result;
@@ -46,23 +45,29 @@
 <div class="container">
 	<div class="row">
 		<div class="calccont col-lg-20 col-lg-offset-8 col-md-24 col-md-offset-6 col-sm-30 col-sm-offset-3 col-xs-36">
-			<div class="logomore col-lg-29 col-md-29 col-sm-29 col-xs-28">
-				<img class="vallog col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-12" src="images/valpaklogo.png"></img>
+			<div class="logcont col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-7">
+				<img class="vallog col-lg-36 col-lg-offset-0 col-md-36 col-md-offset-0 col-sm-36 col-sm-offset-0 col-xs-36" src="images/valpaklogo.png"></img><br>
+				<img class="vallogunder col-lg-36 col-lg-offset-0 col-md-36 col-md-offset-0 col-sm-36 col-sm-offset-0 col-xs-36" src="images/vallogunder.jpg"></img>
+			</div>
+			<div class="logomore col-lg-22 col-md-22 col-sm-22 col-xs-22">
+				
 				<div class="plus col-lg-2 col-md-2 col-sm-2 col-xs-2"> + </div>
 				
-			    <img class="clilog col-lg-12 col-md-12 col-sm-12 col-xs-12" src="" style="display: none"/>
-			    <label class="choose col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="clilogcont col-lg-18 col-md-18 col-sm-18 col-xs-18" style="display: none">
+			    	<img class="clilog col-lg-36 col-md-36 col-sm-36 col-xs-36" src=""/>
+			    </div>
+			    <label class="choose col-lg-18 col-md-18 col-sm-18 col-xs-18">
 			    	<input class="inchoose col-lg-36 col-md-36 col-sm-36 col-xs-36" id="imageUpload" type="file" name="image" onchange="previewFile()"/>
 			    	<input class="textchoice col-lg-26 col-md-26 col-sm-26 col-xs-26" type="text"/><button class="companytext col-lg-10 col-md-10 col-sm-10 col-xs-10">ADD</button>
 			    </label>
-			    <div class="comptextdisplay col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+			    <div class="comptextdisplay col-lg-18 col-md-18 col-sm-18 col-xs-18"></div>
 				
 				<div class="equals col-lg-2 col-md-2 col-sm-2 col-xs-2"> = </div>
-				<div class="splitthree col-lg-9 col-md-9 col-sm-9 col-xs-9">
+				<div class="splitthree col-lg-13 col-md-13 col-sm-13 col-xs-12">
 					<img class="newcust col-lg-36 col-lg-offset-0 col-md-36 col-md-offset-0 col-sm-36 col-sm-offset-0 col-xs-36" src="images/newcust.jpg"></img>
 				</div>
 			</div>
-			<div class="newpicspot col-lg-7 col-md-7 col-sm-7 col-xs-8">
+			<div class="newpicspot col-lg-7 col-md-7 col-sm-7 col-xs-7">
 				<img class="corypic col-lg-36 col-md-36 col-sm-36 col-xs-36" src="images/cwood.jpg"></img>
 				<div class="info col-lg-36 col-md-36 col-sm-36 col-xs-36">Cory Brown<br>Valpak of Va<br>703-622-4083<br>cwood@valpakva.com</div>
 			</div>
@@ -209,14 +214,6 @@
 			<div class="coupons col-lg-36 col-md-36 col-sm-36 col-xs-36">
 				<img class="couponpic col-lg-12 col-lg-offset-3 col-md-12 col-md-offset-3 col-sm-12 col-sm-offset-3 col-xs-12 col-xs-offset-3" src=""></img>
 				<img class="couponpic col-lg-12 col-lg-offset-6 col-md-12 col-md-offset-6 col-sm-12 col-sm-offset-6 col-xs-12 col-xs-offset-6" src=""></img>
-			</div>
-			<div class="postwords col-lg-36 col-md-36 col-sm-36 col-xs-36">
-				<div class="qtext lineheightback postwordsize">
-					We mail directly to over 800,000 households in Northern Virginia
-					(Prince William County, Fairfox County, Loudoon County, Arlington County, Alexandria City, Stafford, Fredericksburg, Fauquier County, and beyond). 
-					Each mailing zone consists of 10,000 of the best demographic households. (Nova Map)<br><br>
-					We mail every month.
-				</div>
 			</div>
 		</div>
 	</div>
