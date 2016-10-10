@@ -58,12 +58,14 @@
 			    </div>
 			    <label class="choose col-lg-18 col-md-18 col-sm-18 col-xs-18">
 			    	<input class="inchoose col-lg-36 col-md-36 col-sm-36 col-xs-36" id="imageUpload" type="file" name="image" onchange="previewFile()"/>
-			    	<input class="textchoice col-lg-26 col-md-26 col-sm-26 col-xs-26" type="text"/><button class="companytext col-lg-10 col-md-10 col-sm-10 col-xs-10">ADD</button>
+			    </label>
+			    <label class="choosey col-lg-18 col-md-18 col-sm-18 col-xs-18">
+			    	<input class="textchoice col-lg-26 col-md-26 col-sm-26 col-xs-22" type="text"/><button class="companytext col-lg-10 col-md-10 col-sm-10 col-xs-14">ADD</button>
 			    </label>
 			    <div class="comptextdisplay col-lg-18 col-md-18 col-sm-18 col-xs-18"></div>
 				
 				<div class="equals col-lg-2 col-md-2 col-sm-2 col-xs-2"> = </div>
-				<div class="splitthree col-lg-13 col-md-13 col-sm-13 col-xs-12">
+				<div class="splitthree col-lg-13 col-md-13 col-sm-12 col-xs-12">
 					<img class="newcust col-lg-36 col-lg-offset-0 col-md-36 col-md-offset-0 col-sm-36 col-sm-offset-0 col-xs-36" src="images/newcust.jpg"></img>
 				</div>
 			</div>

@@ -844,6 +844,12 @@ p {
 		line-height: 1.7;
 	}
 
+	.textchoice {
+		border-style: solid;
+		border-width: 1px;
+		margin-top: 2px;
+	}
+
 	.inchoose {
 		font-size: 9pt;
 		line-height: 9pt;
@@ -880,7 +886,7 @@ p {
     }
 
     .splitthree {
-    	margin-top: -4px;
+    	margin-top: -32px;
     }
 
     .plus {
@@ -888,7 +894,7 @@ p {
 	}
 
 	.equals {
-		margin-top: 13px;
+		margin-top: -22px;
 	}
 
 	.lifetime {
@@ -916,6 +922,26 @@ p {
 		display: inline-block;
 		max-width: 75%;
 		display: block;
+	}
+
+	.choosey {
+		border: 1px solid #ccc;
+	    padding: 2px;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	    margin-left: 4px;
+	}
+
+	.choose {
+		margin-top: -4px;
+	}
+
+	.companytext {
+		margin-top: 3px;
+		border-style: solid;
+		border-width: 1px;
 	}
 }
 
@@ -2228,7 +2254,7 @@ p {
     }
 
     .splitthree {
-		margin-top: 3px;
+		margin-top: -21px;
 		margin-left: 4px;
 	}
 
@@ -2239,6 +2265,10 @@ p {
 	.comptextdisplay {
 		margin-top: -12px;
 		margin-right: 4px;
+	}
+
+	.companytext {
+		margin-top: 0px;
 	}
 
 	.clilog {
@@ -2292,7 +2322,7 @@ p {
 	}
 
 	.equals {
-		margin-top: 1px;
+		margin-top: -24px;
 		margin-left: -2px;
 	}
 
@@ -2365,6 +2395,16 @@ p {
 	    margin-left: 4px;
 	}
 
+	.choosey {
+		border: 1px solid #ccc;
+	    padding: 2px;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	    margin-left: 4px;
+	}
+
 	.form-control {
 		max-width: 100%;
 		padding: 0;
@@ -2428,6 +2468,7 @@ p {
 	.textchoice {
 		border-style: solid;
 		border-width: 1px;
+		margin-top: 0px;
 	}
 }
 
@@ -2445,7 +2486,7 @@ p {
 
 	.info {
 		display: block;
-		font-size: 3.5pt;
+		font-size: 3pt;
 		float: right;
 		text-align: right;
 	}
@@ -2454,8 +2495,12 @@ p {
 		margin-top: -6px;
 	}
 
+	.companytext {
+		margin-top: 0px;
+	}
+
 	.equals {
-		margin-top: -6px;
+		margin-top: -24px;
 		margin-left: -4px;
 		margin-right: 3px;
 	}
@@ -2490,7 +2535,7 @@ p {
 
     .splitthree {
 		padding-top: 0px;
-		margin-top: 0px;
+		margin-top: -18px;
 		margin-left: 4px;
 	}
 
@@ -2573,6 +2618,7 @@ p {
 	.textchoice {
 		border-style: solid;
 		border-width: 1px;
+		margin-top: 0px;
 	}
 
 	.choose {
@@ -2583,7 +2629,23 @@ p {
 	    font-size: 8pt;
 	    text-align: center;
 	    line-height: 8pt;
-	    margin-top: -6px;
+	    margin-top: -16px;
+	}
+
+	.choosey {
+		border: 1px solid #ccc;
+	    padding: 2px;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	}
+
+	.choosediv {
+		padding-bottom: 5px;
+		padding-top:6px;
+		border-style: solid;
+		border-width: 1px;
 	}
 
 	.labels {
