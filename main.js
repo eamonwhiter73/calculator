@@ -379,7 +379,7 @@ jQuery(document).ready(function( $ ) {
             }
         }
 
-        if($(window).width() < 417) {
+        if($(window).width() < 417 && $(window).width() > 320) {
             if($('.comptextdisplay>span').text().length < 8) {
                 console.log("in if********asdfasdfasdf")
                 if(isOdd($('.textchoice').val().length)) {
@@ -408,6 +408,40 @@ jQuery(document).ready(function( $ ) {
                     }
                     else {
                         $('.comptextdisplay>span').css('padding-left', '32px');
+                    }
+                }
+            }
+        }
+
+        if($(window).width() < 321) {
+            if($('.comptextdisplay>span').text().length < 8) {
+                console.log("in if********asdfasdfasdf")
+                if(isOdd($('.textchoice').val().length)) {
+                    if($('.textchoice').val().length == 3) {
+                        $('.comptextdisplay>span').css('padding-left', '10px');
+                    }
+                    else if($('.textchoice').val().length == 5) {
+                        $('.comptextdisplay>span').css('padding-left', '0px');
+                    }
+                    else if($('.textchoice').val().length == 7) {
+                        $('.comptextdisplay>span').css('padding-left', '0px');
+                    }
+                    else{
+                        $('.comptextdisplay>span').css('padding-left', '30px');
+                    }
+                }
+                else {
+                    if($('.textchoice').val().length == 4) {
+                        $('.comptextdisplay>span').css('padding-left', '0px');
+                    }
+                    else if($('.textchoice').val().length == 6) {
+                        $('.comptextdisplay>span').css('padding-left', '0px');
+                    }
+                    else if($('.textchoice').val().length == 8) {
+                        $('.comptextdisplay>span').css('padding-left', '0px');
+                    }
+                    else {
+                        $('.comptextdisplay>span').css('padding-left', '22px');
                     }
                 }
             }
