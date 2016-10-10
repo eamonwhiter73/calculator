@@ -251,7 +251,7 @@ p {
 .textchoice {
 	font-size: 10pt;
 	line-height: 10pt;
-	margin-top: 8px;
+	margin-top: 0px;
 	height: 20px;
 	display: block;
 }
@@ -261,9 +261,19 @@ p {
 	display: inline-block;
 	position: relative;
 	height: 20px;
-	margin-top: 8px;
+	margin-top: 0px;
 	font-size: 6pt;
 	line-height: 6pt;
+}
+
+.choosey {
+	border: 1px solid #ccc;
+	padding: 2px;
+	cursor: pointer;
+	font-size: 8pt;
+	text-align: center;
+	line-height: 8pt;
+	margin-left: 10px;
 }
 
 .comptextdisplay {
@@ -310,7 +320,7 @@ p {
 }
 
 .equals {
-	margin-top: 18px;
+	margin-top: -26px;
 	font-size: 24pt;
 	color: #000;
 	margin-left: 4px;
@@ -323,7 +333,7 @@ p {
 	font-size: 24pt;
 	color: #000;
 	padding-top: 18px;
-	margin-left: 4px;
+	margin-left: -9px;
 	font-family: 'Baloo Bhai', cursive;
 }
 
@@ -332,7 +342,7 @@ p {
 	padding-top: 0px;
 	padding-left: 0;
 	margin-left: 0;
-	margin-top: -2px;
+	margin-top: -44px;
 }
 
 .one {
@@ -699,15 +709,16 @@ p {
     }
 
     .splitthree {
-    	margin-top: -4px;
+    	margin-top: -44px;
     }
 
     .plus {
 		padding-top: 13px;
+		margin-left: -9px;
 	}
 
 	.equals {
-		margin-top: 13px;
+		margin-top: -27px;
 	}
 
 	.one {
@@ -744,6 +755,24 @@ p {
 
 	.choose {
 		margin-top: -14px;
+	}
+
+	.companytext {
+		margin-top: 0px;
+	}
+
+	.textchoice {
+		margin-top: 0px;
+	}
+
+	.choosey {
+		border: 1px solid #ccc;
+	    padding: 2px;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	    margin-left: 10px;
 	}
 
 	.numtwo {
@@ -847,7 +876,7 @@ p {
 	.textchoice {
 		border-style: solid;
 		border-width: 1px;
-		margin-top: 2px;
+		margin-top: 1px;
 	}
 
 	.inchoose {
@@ -939,7 +968,7 @@ p {
 	}
 
 	.companytext {
-		margin-top: 3px;
+		margin-top: 1px;
 		border-style: solid;
 		border-width: 1px;
 	}
@@ -956,12 +985,30 @@ p {
 		margin-top: -19px;
 	}
 
+	.companytext {
+		margin-top: 0px;
+	}
+
+	.textchoice {
+		margin-top: 0px;
+	}
+
+	.choosey {
+		border: 1px solid #ccc;
+	    padding: 2px;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	    margin-left: 10px;
+	}
+
 	.averagedol {
 		padding-bottom: 10px;
 	}
 
 	.splitthree {
-		margin-top: -3px;
+		margin-top: -48px;
 	}
 
 	.logcont {
@@ -990,7 +1037,7 @@ p {
 	}
 
 	.equals {
-		margin-top: 20px;
+		margin-top: -27px;
 	}
 
 	.corypic {
@@ -1065,11 +1112,29 @@ p {
 	}
 
 	.splitthree {
-		margin-top: -2px;
+		margin-top: -45px;
 	}
 
 	.comptextdisplay {
 		margin-top: 2px;
+	}
+
+	.companytext {
+		margin-top: 0px;
+	}
+
+	.textchoice {
+		margin-top: 0px;
+	}
+
+	.choosey {
+		border: 1px solid #ccc;
+	    padding: 2px;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	    margin-left: 10px;
 	}
 
 	.choose {
@@ -1105,7 +1170,7 @@ p {
 	}
 
 	.equals {
-		margin-top: 17px;
+		margin-top: -27px;
 	}
 
 	.corypic {
@@ -1200,6 +1265,24 @@ p {
 		margin-left: 3px;
 	}
 
+	.companytext {
+		margin-top: 0px;
+	}
+
+	.textchoice {
+		margin-top: 0px;
+	}
+
+	.choosey {
+		border: 1px solid #ccc;
+	    padding: 2px;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	    margin-left: 10px;
+	}
+
 	.averagedol {
 		padding-bottom: 10px;
 	}
@@ -1221,7 +1304,7 @@ p {
 	}
 
 	.equals {
-		margin-top: 14px;
+		margin-top: -23px;
 	}
 
 	.plus {
@@ -1259,7 +1342,7 @@ p {
     }
 
     .splitthree {
-    	margin-top: -4px;
+    	margin-top: -39px;
     }
 
 	.lifetime {
@@ -1295,6 +1378,24 @@ p {
 		margin-left: 3px;
 	}
 
+	.companytext {
+		margin-top: 0px;
+	}
+
+	.textchoice {
+		margin-top: 0px;
+	}
+
+	.choosey {
+		border: 1px solid #ccc;
+	    padding: 2px;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	    margin-left: 10px;
+	}
+
 	.info {
 		display: block;
 		font-size: 6pt;
@@ -1312,7 +1413,7 @@ p {
 	}
 
 	.splitthree {
-		margin-top: 1px;
+		margin-top: -34px;
 	}
 
 	.corypic {
@@ -1344,7 +1445,7 @@ p {
 	}
 
 	.equals {
-		margin-top: 15px;
+		margin-top: -22px;
 	}
 
 	.plus {
@@ -1416,6 +1517,24 @@ p {
 		text-align: right;
 	}
 
+	.companytext {
+		margin-top: 0px;
+	}
+
+	.textchoice {
+		margin-top: 0px;
+	}
+
+	.choosey {
+		border: 1px solid #ccc;
+	    padding: 2px;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	    margin-left: 10px;
+	}
+
 	.clilog {
         height: auto; 
 	    width: auto; 
@@ -1444,7 +1563,7 @@ p {
 	}
 
 	.splitthree {
-		margin-top: 2px;
+		margin-top: -33px;
 	}
 
 	.one {
@@ -1457,7 +1576,7 @@ p {
     }
 
     .equals {
-    	margin-top:7px
+    	margin-top:-26px
     }
 
     .inchoose {
@@ -1547,6 +1666,24 @@ p {
 		text-align: right;
 	}
 
+	.companytext {
+		margin-top: 0px;
+	}
+
+	.textchoice {
+		margin-top: 0px;
+	}
+
+	.choosey {
+		border: 1px solid #ccc;
+	    padding: 2px;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	    margin-left: 10px;
+	}
+
 	.calculate>p {
 		font-size: 12pt;
 	}
@@ -1560,7 +1697,7 @@ p {
 	}
 
 	.splitthree {
-		margin-top: 1px;
+		margin-top: -26px;
 		margin-left: 4px;
 	}
 
@@ -1584,12 +1721,12 @@ p {
     }
 
     .plus {
-    	margin-top: -10px;
+    	margin-top: -9px;
     	margin-left: -5px;
     }
 
     .equals {
-    	margin-top:8px;
+    	margin-top:-23px;
     }
 
     input[type="file"] {
@@ -1602,7 +1739,7 @@ p {
 
 	.choose {
 		margin-top: -18px;
-		margin-left: 5px;
+		margin-left: 8px;
 	}
 
 	.corypic {
@@ -1670,8 +1807,26 @@ p {
     	font-size: 7.5pt;
     }
 
-     .comptextdisplay {
+    .comptextdisplay {
 		margin-top: -17px;
+	}
+
+	.companytext {
+		margin-top: 0px;
+	}
+
+	.textchoice {
+		margin-top: 0px;
+	}
+
+	.choosey {
+		border: 1px solid #ccc;
+	    padding: 2px;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	    margin-left: 4px;
 	}
 
     .info {
@@ -1682,7 +1837,7 @@ p {
 	}
 
     .splitthree {
-		margin-top: -6px;
+		margin-top: -29px;
 		margin-left: 2px;
 	}
 
@@ -1703,7 +1858,7 @@ p {
 
 	.plus {
 		margin-right: 8px;
-		margin-left: 0px;
+		margin-left: -8px;
 		margin-top: -21px;
 	}
 
@@ -1733,7 +1888,7 @@ p {
 	}
 
 	.equals {
-		margin-top: -3px;
+		margin-top: -27px;
 	}
 
 	.qdisplayprops {
@@ -1872,14 +2027,33 @@ p {
 		text-align: right;
 	}
 
-    .splitthree {
-		margin-top: 1px;
-		margin-left: 2px;
-	}
-
 	.comptextdisplay {
 		margin-top: -10px;
 	}
+
+	.companytext {
+		margin-top: 0px;
+	}
+
+	.textchoice {
+		margin-top: 0px;
+	}
+
+    .splitthree {
+		margin-top: -29px;
+		margin-left: 4px;
+	}
+
+	.choosey {
+		border: 1px solid #ccc;
+	    padding: 2px;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	    margin-left: 4px;
+	}
+
 
 	.clilog {
         height: auto; 
@@ -1897,7 +2071,7 @@ p {
 
 	.plus {
 		margin-right: 8px;
-		margin-left: -4px;
+		margin-left: -9px;
 		margin-top: -15px;
 	}
 
@@ -1927,7 +2101,7 @@ p {
 	}
 
 	.equals {
-		margin-top: 3px;
+		margin-top: -26px;
 	}
 
 	.qdisplayprops {
@@ -2068,9 +2242,27 @@ p {
 		margin-top: -10px;
 	}
 
+	.companytext {
+		margin-top: 0px;
+	}
+
+	.textchoice {
+		margin-top: 0px;
+	}
+
     .splitthree {
-		margin-top: 2px;
+		margin-top: -25px;
 		margin-left: 4px;
+	}
+
+	.choosey {
+		border: 1px solid #ccc;
+	    padding: 2px;
+	    cursor: pointer;
+	    font-size: 8pt;
+	    text-align: center;
+	    line-height: 8pt;
+	    margin-left: 4px;
 	}
 
 	.clilog {
@@ -2119,7 +2311,7 @@ p {
 	}
 
 	.equals {
-		margin-top: 3px;
+		margin-top: -26px;
 		margin-left: -3px;
 	}
 
