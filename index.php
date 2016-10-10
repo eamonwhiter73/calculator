@@ -27,8 +27,8 @@
        var preview = document.querySelector('.clilog'); //selects the query named img
        var file    = document.querySelector('input[type=file]').files[0]; //sames as here
        var reader  = new FileReader();
-       $(".choose").hide();
-       $(".clilogcont").css('display', 'flex');
+       $(".chooseif").hide();
+       $(".tochange").css('display', 'flex');
 
        reader.onloadend = function () {
            preview.src = reader.result;
@@ -53,16 +53,18 @@
 				
 				<div class="plus col-lg-2 col-md-2 col-sm-2 col-xs-2"> + </div>
 				
-				<div class="clilogcont col-lg-18 col-md-18 col-sm-18 col-xs-18" style="display: none">
+				<div class="clilogcont tochange col-lg-18 col-md-18 col-sm-18 col-xs-18" style="display: none">
 			    	<img class="clilog col-lg-36 col-md-36 col-sm-36 col-xs-36" src=""/>
 			    </div>
-			    <label class="choose col-lg-18 col-md-18 col-sm-18 col-xs-18">
-			    	<input class="inchoose col-lg-36 col-md-36 col-sm-36 col-xs-36" id="imageUpload" type="file" name="image" onchange="previewFile()"/>
-			    </label>
-			    <label class="choosey col-lg-18 col-md-18 col-sm-18 col-xs-18">
-			    	<input class="textchoice col-lg-26 col-md-26 col-sm-26 col-xs-22" type="text"/><button class="companytext col-lg-10 col-md-10 col-sm-10 col-xs-14">ADD</button>
-			    </label>
-			    <div class="comptextdisplay col-lg-18 col-md-18 col-sm-18 col-xs-18"></div>
+			    <div class="clilogcont chooseif col-lg-18 col-md-18 col-sm-18 col-xs-18">
+				    <label class="choose col-lg-36 col-md-36 col-sm-36 col-xs-36">
+				    	<input class="inchoose col-lg-36 col-md-36 col-sm-36 col-xs-36" id="imageUpload" type="file" name="image" onchange="previewFile()"/>
+				    </label>
+				    <label class="choosey col-lg-36 col-md-36 col-sm-36 col-xs-36">
+				    	<input class="textchoice col-lg-26 col-md-26 col-sm-26 col-xs-22" type="text"/><button class="companytext col-lg-10 col-md-10 col-sm-10 col-xs-14">ADD</button>
+				    </label>
+			    	<div class="comptextdisplay col-lg-36 col-md-36 col-sm-36 col-xs-36"></div>
+			    </div>
 				
 				<div class="equals col-lg-2 col-md-2 col-sm-2 col-xs-2"> = </div>
 				<div class="splitthree col-lg-13 col-md-13 col-sm-12 col-xs-12">

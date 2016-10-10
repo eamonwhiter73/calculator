@@ -320,7 +320,7 @@ p {
 }
 
 .equals {
-	margin-top: -26px;
+	margin-top: 17px;
 	font-size: 24pt;
 	color: #000;
 	margin-left: 4px;
@@ -342,7 +342,7 @@ p {
 	padding-top: 0px;
 	padding-left: 0;
 	margin-left: 0;
-	margin-top: -44px;
+	margin-top: -2px;
 }
 
 .one {
@@ -709,7 +709,7 @@ p {
     }
 
     .splitthree {
-    	margin-top: -44px;
+    	margin-top: -7px;
     }
 
     .plus {
@@ -718,7 +718,7 @@ p {
 	}
 
 	.equals {
-		margin-top: -27px;
+		margin-top: 11px;
 	}
 
 	.one {
@@ -910,12 +910,12 @@ p {
 
     .clilogcont {
     	height: 80px;
-    	margin-left: -7px;
+    	margin-left: -2px;
     	margin-right: 5px;
     }
 
     .splitthree {
-    	margin-top: -32px;
+    	margin-top: -2px;
     }
 
     .plus {
@@ -923,7 +923,7 @@ p {
 	}
 
 	.equals {
-		margin-top: -22px;
+		margin-top: 11px;
 	}
 
 	.lifetime {
@@ -1008,7 +1008,7 @@ p {
 	}
 
 	.splitthree {
-		margin-top: -48px;
+		margin-top: -4px;
 	}
 
 	.logcont {
@@ -1037,7 +1037,7 @@ p {
 	}
 
 	.equals {
-		margin-top: -27px;
+		margin-top: 19px;
 	}
 
 	.corypic {
@@ -1112,7 +1112,7 @@ p {
 	}
 
 	.splitthree {
-		margin-top: -45px;
+		margin-top: -4px;
 	}
 
 	.comptextdisplay {
@@ -1170,7 +1170,7 @@ p {
 	}
 
 	.equals {
-		margin-top: -27px;
+		margin-top: 17px;
 	}
 
 	.corypic {
@@ -1304,7 +1304,7 @@ p {
 	}
 
 	.equals {
-		margin-top: -23px;
+		margin-top: 14px;
 	}
 
 	.plus {
@@ -1342,7 +1342,7 @@ p {
     }
 
     .splitthree {
-    	margin-top: -39px;
+    	margin-top: -2px;
     }
 
 	.lifetime {
@@ -1413,7 +1413,7 @@ p {
 	}
 
 	.splitthree {
-		margin-top: -34px;
+		margin-top: -1px;
 	}
 
 	.corypic {
@@ -1445,7 +1445,7 @@ p {
 	}
 
 	.equals {
-		margin-top: -22px;
+		margin-top: 15px;
 	}
 
 	.plus {
@@ -1563,7 +1563,7 @@ p {
 	}
 
 	.splitthree {
-		margin-top: -33px;
+		margin-top: -6px;
 	}
 
 	.one {
@@ -1576,7 +1576,7 @@ p {
     }
 
     .equals {
-    	margin-top:-26px
+    	margin-top:6px
     }
 
     .inchoose {
@@ -1697,7 +1697,7 @@ p {
 	}
 
 	.splitthree {
-		margin-top: -26px;
+		margin-top: 2px;
 		margin-left: 4px;
 	}
 
@@ -1726,7 +1726,7 @@ p {
     }
 
     .equals {
-    	margin-top:-23px;
+    	margin-top:8px;
     }
 
     input[type="file"] {
@@ -1837,7 +1837,7 @@ p {
 	}
 
     .splitthree {
-		margin-top: -29px;
+		margin-top: -5px;
 		margin-left: 2px;
 	}
 
@@ -1888,7 +1888,7 @@ p {
 	}
 
 	.equals {
-		margin-top: -27px;
+		margin-top: -2px;
 	}
 
 	.qdisplayprops {
@@ -2251,7 +2251,7 @@ p {
 	}
 
     .splitthree {
-		margin-top: -25px;
+		margin-top: 1px;
 		margin-left: 4px;
 	}
 
@@ -2311,7 +2311,7 @@ p {
 	}
 
 	.equals {
-		margin-top: -26px;
+		margin-top: 2px;
 		margin-left: -3px;
 	}
 
@@ -2446,7 +2446,7 @@ p {
     }
 
     .splitthree {
-		margin-top: -21px;
+		margin-top: 3px;
 		margin-left: 4px;
 	}
 
@@ -2514,7 +2514,7 @@ p {
 	}
 
 	.equals {
-		margin-top: -24px;
+		margin-top: 2px;
 		margin-left: -2px;
 	}
 
@@ -2692,7 +2692,7 @@ p {
 	}
 
 	.equals {
-		margin-top: -24px;
+		margin-top: -7px;
 		margin-left: -4px;
 		margin-right: 3px;
 	}
@@ -2727,7 +2727,7 @@ p {
 
     .splitthree {
 		padding-top: 0px;
-		margin-top: -18px;
+		margin-top: -1px;
 		margin-left: 4px;
 	}
 
@@ -2831,6 +2831,7 @@ p {
 	    font-size: 8pt;
 	    text-align: center;
 	    line-height: 8pt;
+	    margin-left: 0px;
 	}
 
 	.choosediv {
@@ -2889,6 +2890,8 @@ p {
 		margin-top: 19px;
 		margin-left: 6px;
 	}
+
+	.choosey
 }
 
 .fontchangeag {
