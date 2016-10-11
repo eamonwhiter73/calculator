@@ -9,6 +9,10 @@
 	float: left;
 }
 
+.fontchangeag {
+	font-size: 7pt;
+}
+
 .i {
 	width: auto;
 }
@@ -58,7 +62,7 @@
 }
 
 .yr {
-	margin-top: -28px;
+	margin-top: -38px;
 	text-align: center;
 }
 
@@ -81,13 +85,27 @@
 }
 
 .labels {
-	margin-left:86px;
-	position: absolute;
+	margin-left: 74px;
+    position: absolute;
+    height: 56px;
+    background-color: white;
+    padding-right: 2px;
+    margin-top: 2px;
+    font-size: 20px;
+    padding-top: 4px;
+    padding-left: 2px;
 }
 
 .labelsyrs {
-	margin-left:102px;
-	position: absolute;
+    margin-left: 88px;
+    position: absolute;
+    background-color: white;
+    height: 56px;
+    margin-top: 2px;
+    font-size: 26px;
+    padding-right: 2px;
+    padding-top: 6px;
+    padding-left: 2px;
 }
 
 .labelsdol {
@@ -446,7 +464,7 @@ p {
 }
 
 .q1indentno {
-	padding-top: 24px;
+	padding-top: 0px;
 	float: right;
 	padding-bottom: 0px;
 	text-indent: 0px;
@@ -478,6 +496,14 @@ p {
 	font-size: 16pt;
 	margin-top: 24px;
 	margin-left: 0px;
+}
+
+.fontchanger {
+	position: relative;
+	font-size: 16pt;
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-top: 1px;
 }
 
 .displayinword {
@@ -540,7 +566,7 @@ p {
 	}
 
 	.yr {
-		margin-top: -28px;
+		margin-top: -38px;
 		text-align: center;
 	}
 
@@ -570,12 +596,12 @@ p {
 	}
 
 	.labels {
-		margin-left:86px;
+		margin-left:73px;
 		position: absolute;
 	}
 
 	.labelsyrs {
-		margin-left:102px;
+		margin-left:86px;
 		position: absolute;
 	}
 
@@ -843,7 +869,7 @@ p {
 	}
 
 	.q1indentno {
-		padding-top: 24px;
+		padding-top: 0px;
 		float: right;
 		padding-bottom: 0px;
 		text-indent: 0px;
@@ -922,7 +948,8 @@ p {
 	}
 
 	.q1indentno {
-		padding-top: 24px;
+		padding-top: 0px;
+		font-size: 19px;
 	}
 
 	.pinq {
@@ -943,11 +970,15 @@ p {
 	.labels {
 		margin-left:46px;
 		position: absolute;
+		font-size: 15px;
+		padding-top: 10px;
 	}
 
 	.labelsyrs {
-		margin-left:62px;
+		margin-left:54px;
 		position: absolute;
+		font-size: 22px;
+		padding-top: 9px;
 	}
 
 	.labelsdol {
@@ -962,6 +993,10 @@ p {
 	    max-height: 80px;
     	margin-top: -10px;
     	margin-left: 18px;
+    }
+
+    .yr {
+    	margin-top: -30px;
     }
 
     .clilogcont {
@@ -1106,13 +1141,20 @@ p {
 	}
 
     .labels {
-		margin-left:72px;
+		right: 7px;
 		position: absolute;
+		font-size: 17px;
+		padding-top: 8px;
 	}
 
 	.labelsyrs {
-		margin-left:88px;
 		position: absolute;
+		margin-top: 2px;
+		right: 7px;
+	}
+
+	.yr {
+		margin-top:-35px;
 	}
 
 	.labelsdol {
@@ -1159,6 +1201,10 @@ p {
 	.fontchange {
 		margin-top: 23px;
 	}
+
+	.q1indentno {
+		font-size: 22px;
+	}
 }
 
 /* Landscape phones and portrait tablets */
@@ -1175,7 +1221,8 @@ p {
 	}
 
 	.q1indentno {
-		padding-top: 24px;
+		padding-top: 0px;
+		font-size: 22px;
 	}
 
 	.splitthree {
@@ -1249,13 +1296,22 @@ p {
 	}
 
     .labels {
-		margin-left:60px;
 		position: absolute;
+		font-size: 17px;
+		padding-top: 8px;
+		right: 7px;
 	}
 
 	.labelsyrs {
-		margin-left:76px;
 		position: absolute;
+		margin-top: 2px;
+		padding-top: 11px;
+		right: 7px;
+		font-size: 22px;
+	}
+
+	.yr {
+		margin-top:-35px;
 	}
 
 	.labelsdol {
@@ -1316,10 +1372,6 @@ p {
 		text-indent: 3px;
 		padding-left: 17px;
 		padding-bottom: 5px;
-	}
-
-	.q1indentno {
-		padding-top: 24px;
 	}
 
 	.inchoose {
@@ -1390,13 +1442,27 @@ p {
 	}
 
 	.labels {
-		margin-left:48px;
-		position: absolute;
+		/* margin-left: 48px; */
+	    position: absolute;
+	    font-size: 16px;
+	    right: 7px;
+	    padding-top: 9px;
+	}
+
+	.yr {
+		margin-top: -30px;
 	}
 
 	.labelsyrs {
-		margin-left:64px;
-		position: absolute;
+	    position: absolute;
+	    right: 7px;
+	    font-size: 22px;
+	    padding-top: 11px;
+	}
+
+	.q1indentno {
+		padding-top: 0px;
+		font-size: 19px;
 	}
 
 	.labelsdol {
@@ -1533,13 +1599,27 @@ p {
 	}
 
 	.labels {
-		margin-left:48px;
-		position: absolute;
+		/* margin-left: 48px; */
+	    position: absolute;
+	    font-size: 16px;
+	    right: 7px;
+	    padding-top: 9px;
+	}
+
+	.yr {
+		margin-top: -30px;
 	}
 
 	.labelsyrs {
-		margin-left:64px;
-		position: absolute;
+	    position: absolute;
+	    right: 7px;
+	    font-size: 22px;
+	    padding-top: 11px;
+	}
+
+	.q1indentno {
+		padding-top: 0px;
+		font-size: 19px;
 	}
 
 	.labelsdol {
@@ -1588,10 +1668,6 @@ p {
 	.lifetime {
 		text-indent: 0px;
 		padding-left: 0px;
-	}
-
-	.q1indentno {
-		padding-top: 20px;
 	}
 }
 
@@ -1697,20 +1773,28 @@ p {
 		display: block;
 	}
 
-    .yr {
-		margin-top: -20px;
-		text-align: center;
+    .labels {
+		/* margin-left: 48px; */
+	    position: absolute;
+	    font-size: 13px;
+	    right: 7px;
+	    padding-top: 13px;
 	}
 
-    .labels {
-		margin-left:46px;
-		position: absolute;
-		font-size: 8pt;
+	.yr {
+		margin-top: -25px;
 	}
 
 	.labelsyrs {
-		margin-left:52px;
-		position: absolute;
+	    position: absolute;
+	    right: 7px;
+	    font-size: 20px;
+	    padding-top: 11px;
+	}
+
+	.q1indentno {
+		padding-top: 0px;
+		font-size: 19px;
 	}
 
 	.labelsdol {
@@ -1721,6 +1805,10 @@ p {
 	.fontchange {
 		font-size: 14pt;
 		margin-top: 27px;
+	}
+
+	.fontchanger {
+	    font-size: 14pt;
 	}
 
 	.dol {
@@ -1748,7 +1836,7 @@ p {
 	}
 
 	.q1indentno {
-		padding-top: 10px;
+		padding-top: 0px;
 	}
 }
 
@@ -1855,14 +1943,18 @@ p {
 	}
 
     .labels {
-		margin-left:40px;
+		right: 7px;	    
 		position: absolute;
-		font-size: 8pt;
+	    font-size: 8pt;
+	    background-color: transparent;
 	}
 
 	.labelsyrs {
-		margin-left:46px;
-		position: absolute;
+		right: 7px;
+	    position: absolute;
+	    margin-top: -6px;
+	    font-size: 19px;
+	    background-color: transparent;
 	}
 
 	.labelsdol {
@@ -1873,6 +1965,10 @@ p {
 	.fontchange {
 		font-size: 13pt;
 		margin-top: 28px;
+	}
+
+	.fontchanger {
+	    font-size: 13pt;
 	}
 
 	.dol {
@@ -1890,7 +1986,8 @@ p {
 	}
 
 	.q1indentno {
-		padding-top: 10px;
+		padding-top: 19px;
+		font-size: 20px;
 	}
 
 	.inchoose {
@@ -2014,8 +2111,12 @@ p {
 
 	.fontchange {
 		font-size: 11pt;
-		margin-top: 24px;
+		margin-top: 30px;
 		margin-left: 0px;
+	}
+
+	.fontchanger {
+	    font-size: 11pt;
 	}
 
 	.qcont {
@@ -2078,11 +2179,15 @@ p {
 		margin-left:30px;
 		position: absolute;
 		font-size: 8pt;
+		background-color: transparent;
 	}
 
 	.labelsyrs {
-		margin-left:38px;
-		position: absolute;
+		right: 8px;
+	    position: absolute;
+	    font-size: 18px;
+	    padding-top: 0;
+	    background-color: transparent;
 	}
 
 	.labelsdol {
@@ -2122,12 +2227,8 @@ p {
 		margin-left: 10px;
 	}
 
-	.fontchange{
-		margin-top: 30px;
-	}
-
 	.q1indentno {
-		padding-top: 10px;
+		padding-top: 20px;
 	}
 }
 
@@ -2242,6 +2343,10 @@ p {
 		margin-left: 0px;
 	}
 
+	.fontchanger {
+	    font-size: 11pt;
+	}
+
 	.qcont {
 		padding-bottom: 0;
 		padding-top: 0;
@@ -2306,15 +2411,19 @@ p {
 		margin-left:30px;
 		position: absolute;
 		font-size: 8pt;
+		background-color: transparent;
 	}
 
 	.labelsyrs {
-		margin-left:38px;
-		position: absolute;
+		right: 8px;
+	    position: absolute;
+	    font-size: 18px;
+	    padding-top: 0;
+	    background-color: transparent;
 	}
 
 	.q1indentno {
-		padding-top: 10px;
+		padding-top: 20px;
 	}
 
 	.labelsdol {
@@ -2463,6 +2572,10 @@ p {
 		margin-left: 0px;
 	}
 
+	.fontchanger {
+	    font-size: 11pt;
+	}
+
 	.qcont {
 		padding-bottom: 0;
 		padding-top: 0;
@@ -2525,18 +2638,24 @@ p {
 	}
 
     .labels {
-		margin-left:24px;
-		position: absolute;
-		font-size: 8pt;
+		right: 6px;
+	    position: absolute;
+	    font-size: 8pt;
+	    height: 41px;
+	    padding-top: 0px;
+	    background-color: transparent;
 	}
 
 	.labelsyrs {
-		margin-left:32px;
-		position: absolute;
+		right: 8px;
+	    position: absolute;
+	    font-size: 16px;
+	    padding-top: 0;
+	    background-color: transparent;
 	}
 
 	.q1indentno {
-		padding-top: 16px;
+		padding-top: 22px;
 	}
 
 	.labelsdol {
@@ -2669,8 +2788,12 @@ p {
 
 	.fontchange {
 		font-size: 10pt;
-		margin-top: 24px;
+		margin-top: 30px;
 		margin-left: 0px;
+	}
+
+	.fontchanger {
+	    font-size: 10pt;
 	}
 
 	.qcont {
@@ -2749,14 +2872,24 @@ p {
 	}
 
     .labels {
-		margin-left:20px;
-		position: absolute;
-		font-size: 8pt;
+		right: 6px;
+	    position: absolute;
+	    font-size: 8pt;
+	    height: 41px;
+	    padding-top: 0px;
+	    background-color: transparent;
 	}
 
 	.labelsyrs {
-		margin-left:28px;
-		position: absolute;
+		right: 8px;
+	    position: absolute;
+	    font-size: 16px;
+	    padding-top: 0;
+	    background-color: transparent;
+	}
+
+	.q1indentno {
+		padding-top: 22px;
 	}
 
 	.labelsdol {
@@ -2772,10 +2905,6 @@ p {
 		font-size: 18px;
 		margin-top: 9px;
 		display: inline-block;
-	}
-
-	.fontchange {
-		margin-top: 31px;
 	}
 
 	.q1box {
@@ -2918,6 +3047,10 @@ p {
 		margin-left: 0px;
 	}
 
+	.fontchanger {
+	    font-size: 8.5pt;
+	}
+
 	.qcont {
 		padding-bottom: 0;
 		padding-top: 0;
@@ -2984,14 +3117,24 @@ p {
 	}
 
 	.labels {
-		margin-left:11px;
-		position: absolute;
-		font-size: 8pt;
+		right: 6px;
+	    position: absolute;
+	    font-size: 8pt;
+	    height: 41px;
+	    padding-top: 0px;
+	    background-color: transparent;
 	}
 
 	.labelsyrs {
-		margin-left:19px;
-		position: absolute;
+		right: 8px;
+	    position: absolute;
+	    font-size: 16px;
+	    padding-top: 0;
+	    background-color: transparent;
+	}
+
+	.q1indentno {
+		padding-top: 22px;
 	}
 
 	.labelsdol {
@@ -3033,11 +3176,6 @@ p {
 		margin-top: -4px;
 	}
 
-	.q1indentno {
-		float: right;
-		padding-top:16px;
-	}
-
 	.lifetime {
 		text-indent: 0px;
 	}
@@ -3050,12 +3188,4 @@ p {
 	.addfont {
 		font-size: 7pt;
 	}
-}
-
-.fontchangeag {
-	font-size: 7pt;
-}
-
-.addfont {
-
 }

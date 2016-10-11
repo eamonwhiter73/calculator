@@ -184,7 +184,7 @@
 					</div>
 				</div>
 				<div class="q1res col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-4 col-xs-6 col-xs-offset-4">
-					<input class="q1indentno tpr col-lg-36 col-md-36 col-sm-36 col-xs-36" type="text"><span class='labels'><div class="times" >times</div><br><div class="yr">yr</div></span>
+					<input class="q1indentno tpr col-lg-36 col-md-36 col-sm-36 col-xs-36" type="text"><div class='labels'><div class="times" >times</div><br><div class="yr">yr</div></div>
 				</div>
 			</div>
 			<div class="qdisplayprops timeperyrbis col-lg-36 col-md-36 col-sm-36 col-xs-36">
@@ -216,7 +216,7 @@
 				<p style="text-align: center;">CALCULATE RESULTS<p>
 			</div>
 			<div class="qdisplayprops result col-lg-36 col-md-36 col-sm-36 col-xs-36">
-				<div class="qtext fontchange col-lg-24 col-md-26 col-sm-26 col-xs-26">The lifetime value of this customer is ...</div><div class="dol reslife">$</div>
+				<div class="qtext fontchange col-lg-24 col-md-26 col-sm-26 col-xs-26">The lifetime value of this <p class="qtext2 fontchanger i">customer</p> is ...</div><div class="dol reslife">$</div>
 				<div class="q1res col-lg-8 col-lg-offset-0 col-md-8 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-8 col-xs-offset-0">
 					<div class="q1box lifetime col-lg-36 col-md-36 col-sm-36 col-xs-36" style="text-indent: 0px;"></div>
 				</div>
