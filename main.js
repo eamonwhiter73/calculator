@@ -103,6 +103,59 @@ jQuery(document).ready(function( $ ) {
                     break;
                 }
             }
+
+            fitWidth = parseInt($('.lifetime').css('width'));
+            //$(this).find('span').each(function() {
+            //var c = 0;
+            spanWidth = parseInt($('.lifetime>span').width());
+            while (fitWidth > spanWidth + 12 && parseInt($('.lifetime').css('font-size')) < 41) {
+                //$div.find('span').each(function() {
+                var fontSize = parseInt($('.lifetime').css('font-size'));
+                //var line = parseInt($('.lifetime>span').css('line-height'));
+
+                
+
+                //if(line < 54) {
+                    //line = line + 1 + "px";
+                fontSize = fontSize + 1 + "px";
+                //}
+                //else {
+                    //break;
+                //}
+                //$('.lifetime>span').css('line-height', line);
+                $('.lifetime').css('font-size', fontSize);
+                //});
+                spanWidth = parseInt($('.lifetime>span').width());
+                //c++;
+                //if (c > 999) {
+                    //$('.lifetime').css('background', 'red');
+                    //break;
+                //}
+            }
+            while (fitWidth < (spanWidth + 12) && parseInt($('.lifetime').css('font-size')) > 4) {
+                //$div.find('span').each(function() {
+                var fontSize = parseInt($('.lifetime').css('font-size'));
+                //var line = parseInt($('.lifetime>span').css('line-height'));
+
+                
+
+                //if(line < 54) {
+                    //line = line + 1 + "px";
+                fontSize = fontSize + -1 + "px";
+                //}
+                //else {
+                    //break;
+                //}
+                //$('.lifetime>span').css('line-height', line);
+                $('.lifetime').css('font-size', fontSize);
+                //});
+                spanWidth = parseInt($('.lifetime>span').width());
+                //c++;
+                //if (c > 999) {
+                    //$('.lifetime').css('background', 'red');
+                    //break;
+                //}
+            }
           
 
         if($(window).width() > 1199) {
@@ -465,12 +518,134 @@ jQuery(document).ready(function( $ ) {
 
         var result = ((parseInt(avgr) * parseInt(tpr)) * (parseInt(yrs) + 1)) - (avgr - avg);
 
-        $(".lifetime").attr("value", result);
+        $(".lifetime").html("<span>"+result+"</span>");
+
+        var fitWidth = parseInt($('.lifetime').css('width'));
+        //$(this).find('span').each(function() {
+        //var c = 0;
+        var spanWidth = parseInt($('.lifetime>span').width());
+        while (fitWidth > spanWidth + 12 && parseInt($('.lifetime').css('font-size')) < 41) {
+            //$div.find('span').each(function() {
+            var fontSize = parseInt($('.lifetime').css('font-size'));
+            //var line = parseInt($('.lifetime>span').css('line-height'));
+
+            
+
+            //if(line < 54) {
+                //line = line + 1 + "px";
+            fontSize = fontSize + 1 + "px";
+            //}
+            //else {
+                //break;
+            //}
+            //$('.lifetime>span').css('line-height', line);
+            $('.lifetime').css('font-size', fontSize);
+            //});
+            spanWidth = parseInt($('.lifetime>span').width());
+            //c++;
+            //if (c > 999) {
+                //$('.lifetime').css('background', 'red');
+                //break;
+            //}
+        }
 
         $('.displayinword').html('<p class="pchange">$'+result+'</p>');
 
         calcclick = true;
     })
+
+    $('.s').change(function(){
+        populateSelectS();
+    });
+
+    $('.d').change(function(){
+        populateSelectD();
+    });
+
+    $('.f').change(function(){
+        populateSelectF();
+    });
+
+    $('.g').change(function(){
+        populateSelectG();
+    });
+
+    $('.h').change(function(){
+        populateSelectH();
+    });
+
+    $('.i').change(function(){
+        populateSelectI();
+    });
+
+    cars=new Array("customer's","client's","patient's","diner's","student's");
+    phones=new Array('order','sale','spend','ticket','repair','bill','check','visit','installation');
+    customer=new Array('customer','client','patient','diner','student');
+
+    function populateSelectS(){
+        // get the value that was selected so we can populate the other one
+        // clear the other select box
+        
+        // now fill with new code depending on the slection
+        if($('.s option:selected')){
+            console.log("inisndfin88****555666");
+            $('.f').empty();
+            console.log($('.s').html());
+            console.log($('.s option:selected').html());
+
+            $('.f').append($('.s option:selected').html());
+            //$('.s option:selected').remove();
+
+            //var y = $('.s option:selected');
+            //$('.s option:selected').remove();
+
+            //var x = $('.s').html();
+            //console.log(x);
+            //$('.s').append(y);
+            //$('.f').append(x);
+            //$('.s').append(x);
+        }
+    }
+
+    function populateSelectD(){
+
+        if($('.d option:selected')){
+            console.log("inisndfin88****555666");
+            $('.g').empty();
+
+            $('.g').append($('.d option:selected').html());
+            //$('.s option:selected').remove();
+
+            //var y = $('.d option:selected');
+            //$('.d option:selected').remove();
+
+            //var x = $('.d').html();
+            //console.log(x);
+            //$('.d').append(y);
+            //$('.g').append(x);
+            //$('.s').append(x);
+        }
+    }
+
+    function populateSelectH(){
+
+        if($('.h option:selected')){
+            console.log("inisndfin88****555666");
+            $('.i').empty();
+
+            $('.i').append($('.h option:selected').html());
+            //$('.s option:selected').remove();
+
+            //var y = $('.h option:selected');
+            //$('.h option:selected').remove();
+
+            //var x = $('.h').html();
+            //console.log(x);
+            //$('.h').append(y);
+            //$('.i').append(x);
+            //$('.s').append(x);
+        }
+    }
 
     $(".q1box").on('input',function(e){
 
@@ -503,12 +678,12 @@ jQuery(document).ready(function( $ ) {
 
 
         if(parseInt(this.value) > 99){
-            $(this).next(".labelsdol").hide();
-            $(this).css('text-indent', '0px');
+            //$(this).next(".labelsdol").hide();
+            //$(this).css('text-indent', '0px');
         }
         else {
-            $(this).next(".labelsdol").show();
-            $(this).css('text-indent', '13px');
+            //$(this).next(".labelsdol").show();
+            //$(this).css('text-indent', '13px');
         }     
     });
 
@@ -545,10 +720,10 @@ jQuery(document).ready(function( $ ) {
 
 
         if(parseInt(this.value) > 999){
-            $(this).next().hide();
+            //$(this).next().hide();
         }
         else {
-            $(this).next().show();
+            //$(this).next().show();
         }          
     });
 

@@ -9,6 +9,10 @@
 	float: left;
 }
 
+.i {
+	width: auto;
+}
+
 .clearfix:after { 
    content: " ";
    display: block; 
@@ -20,12 +24,37 @@
 	text-decoration: underline;
 }
 
+.fonty {
+	font-weight: 700;
+	text-align: center;
+}
+
 .yrs {
 
 }
 
+.q1box {
+	float: right;
+	text-indent: 3px;
+	padding-left: 17px;
+	padding-bottom: 5px;
+}
+
 .lifetime {
 	text-indent: 0px;
+	padding-left: 3px;
+	color: #000;
+    height: 60px;
+    font-size: 5px;
+    background-color: #FFF;
+    border-style: solid;
+    border-width: 1px;
+    padding-bottom: 0;
+
+}
+
+.lifetime>span {
+	line-height: 54px;
 }
 
 .yr {
@@ -42,13 +71,6 @@
 .reslife {
 	margin-top: 28px;
 	margin-left: 54px;
-}
-
-.q1indentno {
-	float: right;
-	padding-bottom: 0px;
-	text-indent: 0px;
-	line-height: 1;
 }
 
 .info {
@@ -359,6 +381,7 @@ p {
 	position: relative;
 	font-size: 25pt;
 	font-family: 'Karla', sans-serif;
+	text-align: center;
 
 }
 
@@ -376,6 +399,18 @@ p {
 	font-size: 14pt;
 	text-align: left;
 	font-family: 'Karla', sans-serif;
+
+}
+
+.qtext2 {
+	position: relative;
+	display: inline-block;
+	font-size: 14pt;
+	text-align: left;
+	font-family: 'Karla', sans-serif;
+	color: #000;
+	margin-bottom: 0;
+	padding-top: 10px;
 
 }
 
@@ -410,10 +445,11 @@ p {
 	padding-bottom: 8px;
 }
 
-.q1box {
+.q1indentno {
+	padding-top: 24px;
 	float: right;
 	padding-bottom: 0px;
-	text-indent: 20px;
+	text-indent: 0px;
 	line-height: 1;
 }
 
@@ -496,6 +532,11 @@ p {
 
 	.lifetime {
 		text-indent: 0px;
+		padding-left: 0px;
+	}
+
+	.lifetime>span {
+		line-height: 54px;
 	}
 
 	.yr {
@@ -519,13 +560,6 @@ p {
 	.reslife {
 		margin-top: 28px;
 		margin-left: 20px;
-	}
-
-	.q1indentno {
-		float: right;
-		padding-bottom: 0px;
-		text-indent: 0px;
-		line-height: 1;
 	}
 
 	.info {
@@ -713,12 +747,12 @@ p {
     }
 
     .plus {
-		padding-top: 13px;
+		padding-top: 15px;
 		margin-left: -9px;
 	}
 
 	.equals {
-		margin-top: 11px;
+		margin-top: 15px;
 	}
 
 	.one {
@@ -798,9 +832,21 @@ p {
 	}
 
 	.q1box {
+		text-indent: 3px;
+		padding-left: 17px;
+		padding-bottom: 5px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+		padding-left: 0px;
+	}
+
+	.q1indentno {
+		padding-top: 24px;
 		float: right;
 		padding-bottom: 0px;
-		text-indent: 20px;
+		text-indent: 0px;
 		line-height: 1;
 	}
 
@@ -869,6 +915,16 @@ p {
 		padding-top: 0;
 	}
 
+	.q1box {
+		text-indent: 3px;
+		padding-left: 20px;
+		padding-bottom: 5px;
+	}
+
+	.q1indentno {
+		padding-top: 24px;
+	}
+
 	.pinq {
 		line-height: 1.7;
 	}
@@ -923,11 +979,12 @@ p {
 	}
 
 	.equals {
-		margin-top: 11px;
+		margin-top: 13px;
 	}
 
 	.lifetime {
 		text-indent: 0px;
+		padding-left: 0px;
 	}
 
 	.dol {
@@ -1037,7 +1094,7 @@ p {
 	}
 
 	.equals {
-		margin-top: 19px;
+		margin-top: 20px;
 	}
 
 	.corypic {
@@ -1109,6 +1166,16 @@ p {
 	.pinq {
 		font-size: 10.5pt;
 		line-height: 1.7;
+	}
+
+	.q1box {
+		text-indent: 3px;
+		padding-left: 17px;
+		padding-bottom: 5px;
+	}
+
+	.q1indentno {
+		padding-top: 24px;
 	}
 
 	.splitthree {
@@ -1213,6 +1280,7 @@ p {
 
 	.lifetime {
 		text-indent: 0px;
+		padding-left: 0px;
 	}
 
 	.dol {
@@ -1242,6 +1310,16 @@ p {
 		line-height: 1.7;
 		float: none;
 		max-width: 100%;
+	}
+
+	.q1box {
+		text-indent: 3px;
+		padding-left: 17px;
+		padding-bottom: 5px;
+	}
+
+	.q1indentno {
+		padding-top: 24px;
 	}
 
 	.inchoose {
@@ -1347,6 +1425,7 @@ p {
 
 	.lifetime {
 		text-indent: 0px;
+		padding-left: 0px;
 	}
 
 	.dol {
@@ -1445,7 +1524,7 @@ p {
 	}
 
 	.equals {
-		margin-top: 15px;
+		margin-top: 16px;
 	}
 
 	.plus {
@@ -1483,9 +1562,7 @@ p {
     	margin-right: 5px;
     }
 
-	.lifetime {
-		text-indent: 0px;
-	}
+	
 
 	.dol {
 		font-size: 18px;
@@ -1500,6 +1577,21 @@ p {
 
 	.fontchange {
 		margin-top: 23px;
+	}
+
+	.q1box {
+		padding-bottom: 6px;
+		text-indent: 3px;
+		padding-left: 17px;
+	}
+
+	.lifetime {
+		text-indent: 0px;
+		padding-left: 0px;
+	}
+
+	.q1indentno {
+		padding-top: 20px;
 	}
 }
 
@@ -1563,7 +1655,7 @@ p {
 	}
 
 	.splitthree {
-		margin-top: -6px;
+		margin-top: -1px;
 	}
 
 	.one {
@@ -1576,7 +1668,7 @@ p {
     }
 
     .equals {
-    	margin-top:6px
+    	margin-top:7px;
     }
 
     .inchoose {
@@ -1638,18 +1730,25 @@ p {
 	}
 
 	.q1box {
-		float: right;
-		padding-top: 22px;
-		text-indent: 13px;
+	    float: right;
+	    padding-top: 0px;
+	    text-indent: 3px;
+	    padding-left: 17px;
+	    padding-bottom: 5px;
 	}
 
 	.lifetime {
 		text-indent: 0px;
+		padding-left: 3px;
 	}
 
 	.reslife {
 		margin-top: 27px;
 		margin-left: 10px;
+	}
+
+	.q1indentno {
+		padding-top: 10px;
 	}
 }
 
@@ -1784,8 +1883,14 @@ p {
 
 	.q1box {
 		float: right;
-		padding-top: 22px;
-		text-indent: 13px;
+		padding-top: 0px;
+		text-indent: 3px;
+		padding-left: 17px;
+		padding-bottom: 4px;
+	}
+
+	.q1indentno {
+		padding-top: 10px;
 	}
 
 	.inchoose {
@@ -1794,6 +1899,7 @@ p {
 
 	.lifetime {
 		text-indent: 0px;
+		padding-left: 3px;
 	}
 
 	.reslife {
@@ -1996,12 +2102,19 @@ p {
 
 	.q1box {
 		float: right;
-		padding-top: 22px;
-		text-indent: 13px;
+		padding-top: 0px;
+		text-indent: 3px;
+		padding-left: 15px;
+		padding-top: 4px;
 	}
 
 	.lifetime {
 		text-indent: 0px;
+		padding-left: 3px;
+	}
+
+	.lifetime>span {
+		line-height: 50px;
 	}
 
 	.reslife {
@@ -2011,6 +2124,10 @@ p {
 
 	.fontchange{
 		margin-top: 30px;
+	}
+
+	.q1indentno {
+		padding-top: 10px;
 	}
 }
 
@@ -2040,7 +2157,7 @@ p {
 	}
 
     .splitthree {
-		margin-top: -29px;
+		margin-top: -1px;
 		margin-left: 4px;
 	}
 
@@ -2101,7 +2218,7 @@ p {
 	}
 
 	.equals {
-		margin-top: -26px;
+		margin-top: 2px;
 	}
 
 	.qdisplayprops {
@@ -2196,6 +2313,10 @@ p {
 		position: absolute;
 	}
 
+	.q1indentno {
+		padding-top: 10px;
+	}
+
 	.labelsdol {
 		margin-left:6px;
 		position: absolute;
@@ -2213,12 +2334,18 @@ p {
 
 	.q1box {
 		float: right;
-		padding-top: 22px;
-		text-indent: 13px;
+		padding-top: 5px;
+		text-indent: 3px;
+		padding-left: 15px;
 	}
 
 	.lifetime {
 		text-indent: 0px;
+		padding-left: 3px;
+	}
+
+	.lifetime>span {
+		line-height: 46px;
 	}
 
 	.reslife {
@@ -2365,6 +2492,7 @@ p {
 
 	input {
 	    font-size: 14px;
+	    height: 45px;
 	}
 
 	input[type="file"] {
@@ -2407,6 +2535,10 @@ p {
 		position: absolute;
 	}
 
+	.q1indentno {
+		padding-top: 16px;
+	}
+
 	.labelsdol {
 		margin-left:6px;
 		position: absolute;
@@ -2424,12 +2556,14 @@ p {
 
 	.q1box {
 		float: right;
-		padding-top: 22px;
-		text-indent: 13px;
+		padding-top: 2px;
+		text-indent: 3px;
+		padding-left: 15px;
 	}
 
 	.lifetime {
 		text-indent: 0px;
+		padding-left: 3px;
 		float: right;
 		display: inline-block;
 	}
@@ -2479,7 +2613,7 @@ p {
     }
 
     .lifetime {
-		text-indent: 0px;
+		padding-left: 3px;
 	}
 
 	.plus {
@@ -2640,20 +2774,28 @@ p {
 		display: inline-block;
 	}
 
+	.fontchange {
+		margin-top: 31px;
+	}
+
 	.q1box {
 		float: right;
-		padding-top: 0px;
-		text-indent: 13px;
+		padding-top: 2px;
+		text-indent: 1px;
+		padding-left: 17px;
 	}
 
 	.lifetime {
 		text-indent: 0px;
-		float: right;
-		display: inline-block;
+		padding-left: 3px;
+	}
+
+	.lifetime>span {
+		line-height: 54px;
 	}
 
 	.reslife {
-		margin-top: 21px;
+		margin-top: 28px;
 		margin-left: 8px;
 	}
 
@@ -2763,7 +2905,7 @@ p {
 	}
 
 	.fontchanget {
-		font-size: 6.1pt;
+		font-size: 7pt;
 	}
 
 	.calculate>p {
@@ -2869,8 +3011,22 @@ p {
 
 	.q1box {
 		float: right;
-		padding-top: 0px;
-		text-indent: 13px;
+		padding-top: 1px;
+		text-indent: 3px;
+		padding-left: 15px;
+	}
+
+	.form-control {
+		border-radius: 0;
+		margin-bottom: 3px;
+		height: 26px;
+		line-height: 12px;
+		font-size: 9.5pt;
+		max-width: 38%;
+		margin-right: 0px;
+		margin: 0;
+		display: inline-block;
+		padding: 0px 0px;
 	}
 
 	.yrs {
@@ -2879,7 +3035,7 @@ p {
 
 	.q1indentno {
 		float: right;
-		padding-top:12px;
+		padding-top:16px;
 	}
 
 	.lifetime {
@@ -2891,7 +3047,9 @@ p {
 		margin-left: 6px;
 	}
 
-	.choosey
+	.addfont {
+		font-size: 7pt;
+	}
 }
 
 .fontchangeag {

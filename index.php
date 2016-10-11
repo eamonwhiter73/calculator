@@ -18,7 +18,8 @@
 	<!--<script src="https://use.fontawesome.com/cfbe62a5e3.js"></script>-->
 	<script type="text/javascript" src="main.js"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Karla|Lato|Open+Sans|Rubik|Work+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Lato|Open+Sans|Rubik|Work+Sans" rel="stylesheet">
 <head>
 <body>
 
@@ -76,8 +77,8 @@
 				<div class="info col-lg-36 col-md-36 col-sm-36 col-xs-36">Cory Brown<br>Valpak of Va<br>703-622-4083<br>cwood@valpakva.com</div>
 			</div>
 			<div class="titlephoto col-lg-36 col-md-36 col-sm-36 col-xs-36">
-				<div class="calctitle col-lg-28 col-md-28 col-sm-28 col-xs-27">How much is a New Customer Worth to 
-					<div class ="calctitleu" style="text-decoration: underline">Your Business?</div>
+				<div class="calctitle col-lg-36 col-md-36 col-sm-36 col-xs-36">HOW MUCH IS A <div class='fonty'>NEW CUSTOMER</div> WORTH TO 
+					<div class ="calctitleu" style="text-decoration: underline">YOUR BUSINESS?</div>
 				</div>
 			</div>
 			<div class="forshadow">
@@ -90,24 +91,29 @@
 						  <!--<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						    customer's
 						  </button>-->
-						  <select class="form-control">
+						  <select class="form-control s">
 						  	<option class="dropdown-item" href="#">customer's</option>
-						    <option class="dropdown-item" href="#">patient's</option>
 						    <option class="dropdown-item" href="#">client's</option>
+						    <option class="dropdown-item" href="#">patient's</option>
 						    <option class="dropdown-item" href="#">diner's</option>
 						    <option class="dropdown-item" href="#">student's</option>
 						  </select>
 						<!--</div>-->
-						<p class="pinq">first</p>
+						<p class="pinq">FIRST</p>
 						<!--<div class="btn-group">
 						  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						    sale
 						  </button>-->
-						  <select class="form-control">
+						  <select class="form-control d">
+						  	<option class="dropdown-item" href="#">order</option>
 						  	<option class="dropdown-item" href="#">sale</option>
-						    <option class="dropdown-item" href="#">repair</option>
+						    <option class="dropdown-item" href="#">spend</option>
 						    <option class="dropdown-item" href="#">ticket</option>
+						    <option class="dropdown-item" href="#">repair</option>
 						    <option class="dropdown-item" href="#">bill</option>
+						    <option class="dropdown-item" href="#">check</option>
+						    <option class="dropdown-item" href="#">visit</option>
+						    <option class="dropdown-item" href="#">installation</option>
 						  </select>
 						<!--</div>-->
 						<p class="pinq">?</p>
@@ -121,29 +127,36 @@
 				<div class="qcont col-lg-26 col-md-26 col-sm-30 col-xs-30">
 					<div class="qtext">
 						<p class="pinq">What is the average DOLLAR amount of a</p>
+						<p class="pinq f">customer's</p>
 						<!--<div class="btn-group">
 						  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						    customer's
 						  </button>-->
-						  <select class="form-control">
+						  <!--<select class="form-control f">
 						  	<option class="dropdown-item" href="#">customer's</option>
-						    <option class="dropdown-item" href="#">patient's</option>
 						    <option class="dropdown-item" href="#">client's</option>
+						    <option class="dropdown-item" href="#">patient's</option>
 						    <option class="dropdown-item" href="#">diner's</option>
 						    <option class="dropdown-item" href="#">student's</option>
-						  </select>
+						  </select>-->
 						<!--</div>-->
 						<!--<div class="btn-group">
 						  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						    TBD
 						  </button>-->
-						  <select class="form-control">
+						  <!--<select class="form-control g">
+						  	<option class="dropdown-item" href="#">order</option>
 						  	<option class="dropdown-item" href="#">sale</option>
-						    <option class="dropdown-item" href="#">repair</option>
+						    <option class="dropdown-item" href="#">spend</option>
 						    <option class="dropdown-item" href="#">ticket</option>
+						    <option class="dropdown-item" href="#">repair</option>
 						    <option class="dropdown-item" href="#">bill</option>
-						  </select>
+						    <option class="dropdown-item" href="#">check</option>
+						    <option class="dropdown-item" href="#">visit</option>
+						    <option class="dropdown-item" href="#">installation</option>
+						  </select>-->
 						<!--</div>-->
+						<p class="pinq g">order</p>
 						<p class="pinq">?</p>
 					</div>
 				</div>
@@ -159,10 +172,10 @@
 						  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						    customer
 						  </button>-->
-						  <select class="form-control">
+						  <select class="form-control h">
 						  	<option class="dropdown-item" href="#">customer</option>
-						    <option class="dropdown-item" href="#">patient</option>
 						    <option class="dropdown-item" href="#">client</option>
+						    <option class="dropdown-item" href="#">patient</option>
 						    <option class="dropdown-item" href="#">diner</option>
 						    <option class="dropdown-item" href="#">student</option>
 						  </select>
@@ -177,20 +190,21 @@
 			<div class="qdisplayprops timeperyrbis col-lg-36 col-md-36 col-sm-36 col-xs-36">
 				<div class="qcont col-lg-28 col-md-28 col-sm-28 col-xs-30">
 					<div class="qtext">
-						<p class="pinq fontchanget addfont">On average how many years does a</p>
+						<p class="pinq fontchanget">On average how many years does a</p>
+						<p class="pinq fontchanget i">customer</p>
 						<!--<div class="btn-group">
 						  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						    customer
 						  </button>-->
-						  <select class="form-control">
+						  <!--<select class="form-control i">
 						  	<option class="dropdown-item" href="#">customer</option>
-						    <option class="dropdown-item" href="#">patient</option>
 						    <option class="dropdown-item" href="#">client</option>
+						    <option class="dropdown-item" href="#">patient</option>
 						    <option class="dropdown-item" href="#">diner</option>
 						    <option class="dropdown-item" href="#">student</option>
-						  </select>
+						  </select>-->
 						<!--</div><br>-->
-						<p class="pinq fontchanget addfont">continue doing business with you?</p>
+						<p class="pinq fontchanget">continue doing business with you?</p>
 					</div>
 				</div>
 				<div class="q1res col-lg-8 col-md-8 col-sm-6 col-xs-6">
@@ -204,15 +218,15 @@
 			<div class="qdisplayprops result col-lg-36 col-md-36 col-sm-36 col-xs-36">
 				<div class="qtext fontchange col-lg-24 col-md-26 col-sm-26 col-xs-26">The lifetime value of this customer is ...</div><div class="dol reslife">$</div>
 				<div class="q1res col-lg-8 col-lg-offset-0 col-md-8 col-md-offset-0 col-sm-8 col-sm-offset-0 col-xs-8 col-xs-offset-0">
-					<input class="q1box lifetime col-lg-36 col-md-36 col-sm-36 col-xs-36" type="text" style="text-indent: 0px;">
+					<div class="q1box lifetime col-lg-36 col-md-36 col-sm-36 col-xs-36" style="text-indent: 0px;"></div>
 				</div>
 			</div>
 			<div class="words col-lg-36 col-md-36 col-sm-36 col-xs-36">
-				<div class="qtext lineheightback">Now that you know that just one new customer is worth
+				<div class="qtext lineheightback">Now that you know that just one new <p class="qtext2 i">customer</p> is worth
 					<div class="displayinword"><p class="pchange">$</p></div> to your business, planning your marketing plan should be easier.<br><br>
-					As long as you can obtain a new customer for less than <div class="displayinword"><p class="pchange">$</p></div>, you will receive a positive return on your
+					As long as you can obtain a new <p class="qtext2 i">customer</p> for less than <div class="displayinword"><p class="pchange">$</p></div>, you will receive a positive return on your
 					marketing dollars!<br><br>
-					VALPAK's targeted marketing to the local households looking to do business with you is the EASIEST and MOST COST EFFECTIVE to capture the new clients you need and deserve!
+					VALPAK's targeted marketing to the local households looking to do business with you is the EASIEST and MOST COST EFFECTIVE way to capture the new clients you need and deserve!
 				</div>
 			</div>
 			<div class="coupons col-lg-36 col-md-36 col-sm-36 col-xs-36">
