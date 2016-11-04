@@ -1,0 +1,2342 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude -->
+<html itemscope="" itemtype="http://schema.org/QAPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>lat lon - Measuring accuracy of latitude and longitude? - Geographic Information Systems Stack Exchange</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/Sites/gis/img/favicon.ico?v=c4fb15381c2d">
+    <link rel="apple-touch-icon image_src" href="http://cdn.sstatic.net/Sites/gis/img/apple-touch-icon.png?v=5bbd8af2ce1b">
+    <link rel="search" type="application/opensearchdescription+xml" title="Geographic Information Systems Stack Exchange" href="http://gis.stackexchange.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@StackGIS">
+    <meta name="twitter:domain" content="gis.stackexchange.com">
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="http://cdn.sstatic.net/Sites/gis/img/apple-touch-icon@2.png?v=54e3ab1edcf3&amp;a">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="Measuring accuracy of latitude and longitude?">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="I am very new to GPS stuff. 
+
+I have latitude and longitude as 19.0649070739746 and 73.1308670043945 respectively. 
+
+In this case both coordinates are 13 decimal places long, but sometimes I also get ">
+    <meta property="og:url" content="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude">
+    <link rel="canonical" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude">
+
+    
+    
+    <script async="" src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/quant.js"></script><script async="" src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/beacon.js"></script><script async="" src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/analytics.js"></script><script type="text/javascript" async="" src="http://static.adzerk.net/ados.js"></script><script src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/jquery.min.js"></script>
+    <script src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/stub.en.js"></script>
+    <link rel="stylesheet" type="text/css" href="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/all.css">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;Measuring accuracy of latitude and longitude?&#39;" href="http://gis.stackexchange.com/feeds/question/8650">
+            <meta name="twitter:app:country" content="US">
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:iphone" content="871299723">
+            <meta name="twitter:app:url:iphone" content="se-zaphod://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude">
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:ipad" content="871299723">
+            <meta name="twitter:app:url:ipad" content="se-zaphod://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude">
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:4,shownCommentCount:4,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:8650});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('79', '8650');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text'); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.ready(function () {
+                        StackExchange.realtime.init('wss://qa.sockets.stackexchange.com,ws://qa.sockets.stackexchange.com');
+            StackExchange.realtime.subscribeToReputationNotifications('79');
+                StackExchange.realtime.subscribeToTopBarNotifications('79');
+        });
+    </script>
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","serverTime":1477387396,"routeName":"Questions/Show","site":{"name":"Geographic Information Systems Stack Exchange","description":"Q&A for cartographers, geographers and GIS professionals","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdsB7sSAAAAAAzjgEF_Hd8vXv-C42sa_KyofaGR","recaptchaAudioLang":"en","enableNewTagCreationWarning":false,"insertSpaceAfterNameTabCompletion":false,"id":79,"enableInsertDocLinkDialog":false,"enableSocialMediaInSharePopup":true},"user":{"fkey":"e816fd1babb290fe3efb95bd5191a9f7","rep":0,"isAnonymous":true,"isAnonymousOnThisSite":true,"ab":{"anon_vote_popup":{"v":"make_signup_a_link","g":1}}},"realtime":{"newest":true,"active":true,"tagged":true,"workerIframeDomain":"http://cdn.sstatic.net"},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}}}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"snippets":{"renderDomain":"stacksnippets.net"},"markdown":{"asteriskIntraWordEmphasis":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"34bc1979cad0","js/moderator.en.js":"1e6659dca06d","js/full-anon.en.js":"8d72b5f2da99","js/full.en.js":"658b762e353a","js/wmd.en.js":"662a4ff5cfe6","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"29ca548cffd4","js/help.en.js":"41e2b9d43396","js/tageditor.en.js":"2178711359dd","js/tageditornew.en.js":"64171cb02bc6","js/inline-tag-editing.en.js":"77dde44800e2","js/revisions.en.js":"db5a160e1690","js/review.en.js":"aa70eef833e8","js/tagsuggestions.en.js":"d1ff9b84abe5","js/post-validation.en.js":"687493522215","js/explore-qlist.en.js":"d33e3ab2f2e0","js/events.en.js":"67fc7f6cf368","js/keyboard-shortcuts.en.js":"d1c39740c9fc","js/external-editor.en.js":"9d2dbfbb087d"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+<script async="" src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/full-anon.en.js"></script><script async="" src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/post-validation.en.js"></script></head>
+<body class="question-page new-topbar">
+    <noscript>&lt;div id="noscript-padding"&gt;&lt;/div&gt;</noscript>
+    
+
+
+
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+
+    <div class="topbar-dialog siteSwitcher-dialog dno">
+        <div class="header">
+            <h3><a href="http://gis.stackexchange.com/">current community</a>
+            </h3>
+        </div>
+        <div class="modal-content current-site-container">
+            <ul class="current-site">
+                    <li>
+                            <div class="related-links">
+            <a href="http://gis.blogoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:7 })">blog</a>
+                    <a href="http://chat.stackexchange.com/?tab=site&amp;host=gis.stackexchange.com" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+                    <a href="http://gis.stackexchange.com/users/logout" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:8 })">log out</a>
+    </div>
+
+
+
+
+    <a href="http://gis.stackexchange.com/" class="current-site-link site-link js-gps-track" data-id="79" data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-gis" title="Geographic Information Systems"></div>
+        Geographic Information Systems
+    </a>
+
+                    </li>
+                    <li class="related-site">
+                            <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                        
+
+
+
+    <a href="http://meta.gis.stackexchange.com/" class="site-link js-gps-track" data-id="80" data-gps-track="
+            site.switch({ target_site:80, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-gismeta" title="Geographic Information Systems Meta"></div>
+        Geographic Information Systems Meta
+    </a>
+
+                    </li>
+            </ul>
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+                    <a href="http://stackexchange.com/users/2644575/?tab=accounts">your communities</a>
+            </h3>
+
+                <a href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#" id="edit-pinned-sites">edit</a>
+                <a href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#" id="cancel-pinned-sites" style="display: none;">cancel</a>
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <ul class="my-sites">
+                        <li>
+                            
+
+
+
+    <a href="http://stackoverflow.com/" class="site-link js-gps-track" data-id="1" data-gps-track="
+            site.switch({ target_site:1, item_type:3 }),
+        site_switcher.click({ item_type:1 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+            <span class="rep-score">539</span>
+    </a>
+
+                        </li>
+                        <li>
+                            
+
+
+
+    <a href="http://physics.stackexchange.com/" class="site-link js-gps-track" data-id="151" data-gps-track="
+            site.switch({ target_site:151, item_type:3 }),
+        site_switcher.click({ item_type:1 })">
+        <div class="site-icon favicon favicon-physics" title="Physics"></div>
+        Physics
+            <span class="rep-score">143</span>
+    </a>
+
+                        </li>
+                        <li>
+                            
+
+
+
+    <a href="http://superuser.com/" class="site-link js-gps-track" data-id="3" data-gps-track="
+            site.switch({ target_site:3, item_type:3 }),
+        site_switcher.click({ item_type:1 })">
+        <div class="site-icon favicon favicon-superuser" title="Super User"></div>
+        Super User
+            <span class="rep-score">118</span>
+    </a>
+
+                        </li>
+                        <li>
+                            
+
+
+
+    <a href="http://sound.stackexchange.com/" class="site-link js-gps-track" data-id="512" data-gps-track="
+            site.switch({ target_site:512, item_type:3 }),
+        site_switcher.click({ item_type:1 })">
+        <div class="site-icon favicon favicon-sound" title="Sound Design"></div>
+        Sound Design
+            <span class="rep-score">113</span>
+    </a>
+
+                        </li>
+                        <li>
+                            
+
+
+
+    <a href="http://startups.stackexchange.com/" class="site-link js-gps-track" data-id="573" data-gps-track="
+            site.switch({ target_site:573, item_type:3 }),
+        site_switcher.click({ item_type:1 })">
+        <div class="site-icon favicon favicon-startups" title="Startups"></div>
+        Startups
+            <span class="rep-score">106</span>
+    </a>
+
+                        </li>
+                </ul>
+                    <div class="pinned-site-editor-container" style="display: none;">
+                        <input id="js-site-search-txt" type="text" class="site-filter-input" value="" placeholder="Add a Stack Exchange community">
+                        <input type="submit" id="pin-site-btn" value="Add" disabled="disabled">
+                        <ul class="js-found-sites found-sites"></ul>
+                        <ul class="pinned-site-list sortable" data-custom-list="False">
+                        </ul>
+                        <input type="submit" value="Save" id="save-pinned-sites-btn" disabled="disabled">
+                        <a href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#" id="reset-pinned-sites">reset to default list</a>
+                    </div>
+        </div>
+
+        <div class="header">
+            <h3><a href="http://stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <a href="http://blog.stackoverflow.com/" class="fr">company blog</a>
+        </div>
+        <div class="modal-content">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+        </div>
+
+        <div class="network-items">
+                <a href="http://stackexchange.com/" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 162 Stack Exchange sites">
+                    <span class="hidden-text">Stack Exchange</span>
+                </a>
+
+    <a href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#" class="topbar-icon icon-inbox yes-hover js-inbox-button" title="Recent inbox messages">
+        <span class="hidden-text">Inbox</span>
+        <span class="unread-count" style="display:none"></span>
+    </a>
+    <a href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#" class="topbar-icon icon-achievements yes-hover js-achievements-button " data-unread-class="" title="Recent achievements: reputation, badges, and privileges earned">
+        <span class="hidden-text">Reputation and Badges</span>
+        <span class="unread-count" style="display:none">
+            
+        </span>
+    </a>
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                <a href="https://gis.stackexchange.com/users/join?ssrc=head&amp;returnurl=http%3a%2f%2fgis.stackexchange.com%2fquestions%2f8650%2fmeasuring-accuracy-of-latitude-and-longitude" class="login-link">join this community</a>
+
+                            <a href="http://gis.stackexchange.com/tour">tour</a>
+        <a href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#" class="icon-help js-help-button" title="Help Center and other resources">
+            help
+            <span class="triangle"></span>
+        </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://gis.stackexchange.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://gis.stackexchange.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                        <li>
+                            <a href="http://meta.gis.stackexchange.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                                Meta
+                                <span class="item-summary">
+                                    Discuss the workings and policies of this site
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                                About Us
+                                <span class="item-summary">
+                                    Learn more about Stack Overflow the company
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://business.stackoverflow.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                                Business
+                                <span class="item-summary">
+                                    Learn more about hiring developers or posting ads with us
+                                </span>
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+                                            </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="http://gis.stackexchange.com/search" method="get" autocomplete="off">
+                    <input name="q" type="text" placeholder="Search Q&amp;A" value="" tabindex="1" autocomplete="off" maxlength="240">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://gis.stackexchange.com/">
+                    Geographic Information Systems
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                            <li class="youarehere">
+        <a id="nav-questions" href="http://gis.stackexchange.com/questions" class="js-gps-track" data-gps-track="top_nav.click({is_current:true, location:3, destination:1})">
+        Questions
+        </a>
+    </li>
+
+                                                    <li>
+        <a id="nav-tags" href="http://gis.stackexchange.com/tags" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:2})">
+        Tags
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-users" href="http://gis.stackexchange.com/users" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:3})">
+        Users
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-badges" href="http://gis.stackexchange.com/help/badges" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:4})">
+        Badges
+        </a>
+    </li>
+
+    <li>
+        <a id="nav-unanswered" href="http://gis.stackexchange.com/unanswered" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:5})">
+        Unanswered
+        </a>
+    </li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://gis.stackexchange.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content">
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+    <link itemprop="image" href="http://cdn.sstatic.net/Sites/gis/img/apple-touch-icon.png?v=5bbd8af2ce1b">
+
+
+    <div id="herobox">
+        <div id="hero-content">
+                <div id="close"><a title="click to minimize">_</a></div>
+            <div id="blurb">
+                Geographic Information Systems Stack Exchange is a question and answer site for cartographers, geographers and GIS professionals. Join them; it only takes a minute:
+                <br>
+                <br>
+                <a href="http://gis.stackexchange.com/users/signup?ssrc=hero&amp;returnurl=http%3a%2f%2fgis.stackexchange.com%2fquestions%2f8650%2fmeasuring-accuracy-of-latitude-and-longitude" id="tell-me-more" class="button">Join</a>
+            </div>
+            <div id="desc">
+                <b>Here's how it works:</b>
+                <ol id="hiw">
+                    <li id="q">Anybody can ask a question
+                    </li>
+                    <li id="an">Anybody can answer
+                    </li>
+                    <li id="b">The best answers are voted up and rise to the top
+                    </li>
+                </ol>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+<script>
+    StackExchange.ready(function () {
+
+        var location = 0;
+        if ($("body").hasClass("questions-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("question-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("faq-page")) {
+            location = 5;;
+        } else if ($("body").hasClass("home-page")) {
+            location = 3;;
+        }
+
+        $('#tell-me-more').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+            });
+        });
+        $('#herobox #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "minimize", location: location }, true);
+            });
+            $.cookie("hero", "mini", { path: "/", expires: 365 });
+            $.ajax({
+                url: "/hero-mini",
+                success: function (data) {
+                    $("#herobox").fadeOut("fast", function () {
+                        $("#herobox").replaceWith(data);
+                        $("#herobox-mini").fadeIn("fast");
+                    });
+                }
+            });
+            return false;
+        });
+    });
+
+</script>			<div id="question-header">
+                <h1 itemprop="name"><a href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude" class="question-hyperlink">Measuring accuracy of latitude and longitude?</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="8650" id="question">
+
+        <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="8650">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">214</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#">favorite</a>
+        <div class="favoritecount"><b>164</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>I am very new to GPS stuff. </p>
+
+<p>I have latitude and longitude as <code>19.0649070739746</code> and <code>73.1308670043945</code> respectively. </p>
+
+<p>In this case both coordinates are <code>13</code> decimal places long, but sometimes I also get coordinates which are <code>6</code> decimal places long. </p>
+
+<ul>
+<li>Does fewer decimal points affect accuracy? </li>
+<li>What does every digit after the decimal place signify?</li>
+</ul>
+    </div>
+    <div class="post-taglist">
+        <a href="http://gis.stackexchange.com/questions/tagged/lat-lon" class="post-tag js-gps-track" title="show questions tagged &#39;lat-lon&#39;" rel="tag">lat-lon</a> <a href="http://gis.stackexchange.com/questions/tagged/accuracy" class="post-tag js-gps-track" title="show questions tagged &#39;accuracy&#39;" rel="tag">accuracy</a> <a href="http://gis.stackexchange.com/questions/tagged/gis-principle" class="post-tag js-gps-track" title="show questions tagged &#39;gis-principle&#39;" rel="tag">gis-principle</a> <a href="http://gis.stackexchange.com/questions/tagged/precision" class="post-tag js-gps-track" title="show questions tagged &#39;precision&#39;" rel="tag">precision</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://gis.stackexchange.com/q/8650" title="short permalink to this question" class="short-link" id="link-post-8650">share</a><span class="lsep">|</span><a href="http://gis.stackexchange.com/posts/8650/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="http://gis.stackexchange.com/posts/8650/revisions" title="show all edits to this post">edited <span title="2016-08-16 09:52:34Z" class="relativetime">Aug 16 at 9:52</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://gis.stackexchange.com/users/115/polygeo"><div class="gravatar-wrapper-32"><img src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/5bdb495c960b3384649e2a7e49c39cb9" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://gis.stackexchange.com/users/115/polygeo">PolyGeo</a><span class="mod-flair" title="moderator">♦</span>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 39,347" dir="ltr">39.3k</span><span title="13 gold badges"><span class="badge1"></span><span class="badgecount">13</span></span><span title="58 silver badges"><span class="badge2"></span><span class="badgecount">58</span></span><span title="149 bronze badges"><span class="badge3"></span><span class="badgecount">149</span></span>
+        </div>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2011-04-18 07:16:43Z" class="relativetime">Apr 18 '11 at 7:16</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://gis.stackexchange.com/users/2692/saurabh"><div class="gravatar-wrapper-32"><img src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/0df59697201df5a73a07983eb897e26e" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://gis.stackexchange.com/users/2692/saurabh">Saurabh</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,184</span><span title="3 gold badges"><span class="badge1"></span><span class="badgecount">3</span></span><span title="10 silver badges"><span class="badge2"></span><span class="badgecount">10</span></span><span title="8 bronze badges"><span class="badge3"></span><span class="badgecount">8</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-8650" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-25925" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">What does the symbol ' and " means in the measures of latitude and/or longitude means? For example: 10 degrees 11'07"</span>
+		            –&nbsp;<span class="comment-user">user5633</span>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment25925_8650"><span title="2012-01-25 12:18:02Z" class="relativetime-clean">Jan 25 '12 at 12:18</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-25926" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Welcome to our site, Jorge!  Please start by reviewing our <a href="http://gis.stackexchange.com/faq">FAQ</a> and follow its guidelines for asking questions.  (However, yours is so straightforward it can be answered easily, so maybe we can spare you the effort: ' stands for minutes (1/60 degree) and " stands for seconds (1/3600 degree).)</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/664/whuber" title="49,356 reputation" class="comment-user">whuber<span class="mod-flair" title="moderator">♦</span></a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment25926_8650"><span title="2012-01-25 15:06:59Z" class="relativetime-clean">Jan 25 '12 at 15:06</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-111744" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">The approved answer has "cm" which is confusing. Why not show mm instead for all the smaller values?</span>
+		            –&nbsp;<span class="comment-user">user25115</span>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment111744_8650"><span title="2013-12-19 23:00:26Z" class="relativetime-clean">Dec 19 '13 at 23:00</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-153504" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I don't know what you mean by the "approved" answer, user25115. In my answer (which does not use centimeters) I took some care to use units that vary by a factor of 1000--kilometers, meters, millimeters, and microns (the latter was used only once, to make a point about overprecision). I employed these units to make the reported numbers of easily comprehensible size.</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/664/whuber" title="49,356 reputation" class="comment-user">whuber<span class="mod-flair" title="moderator">♦</span></a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment153504_8650"><span title="2014-08-02 18:47:30Z" class="relativetime-clean">Aug 2 '14 at 18:47</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-8650" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#" onclick=""></a>
+        </div>         
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								6 Answers
+                                <span style="display:none;" itemprop="answerCount">6</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active" data-shortcut="A">
+            active</a>
+        <a href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest" data-shortcut="O">
+            oldest</a>
+        <a class="youarehere" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes" data-shortcut="V">
+            votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="8674"></a>
+<div id="answer-8674" class="answer accepted-answer" data-answerid="8674" itemscope="" itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="8674">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">369</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p><em>Accuracy</em> is the tendency of your measurements to agree with the true values.  <em>Precision</em> is the degree to which your measurements pin down an actual value.  The question is about an interplay of accuracy and precision.</p>
+
+<p>As a general principle, you don't need much more precision in recording your measurements than there is accuracy built into them.  Using too much precision can mislead people into believing the accuracy is greater than it really is.</p>
+
+<p>Generally, when you degrade precision--that is, use fewer decimal places--you can lose some accuracy.  But how much?  It's good to know that the meter was originally defined (by the French, around the time of their revolution when they were throwing out the old systems and zealously replacing them by new ones) so that <a href="http://www.meterstoyards.com/meters.htm">ten million of them</a> would take you from the equator to a pole.  That's 90 degrees, so one degree of latitude covers about 10^7/90 = 111,111 meters.  ("About," because the meter's length has changed a little bit in the meantime.  But that doesn't matter.)  Furthermore, a degree of longitude (east-west) is about the same or less in length than a degree of latitude, because the circles of latitude shrink down to the earth's axis as we move from the equator towards either pole.  Therefore, it's always safe to figure that <em>the sixth decimal place in one decimal degree has 111,111/10^6 = about 1/9 meter = about 4 inches of precision.</em></p>
+
+<p>Accordingly, if your accuracy needs are, say, give or take 10 meters, than 1/9 meter is nothing: you lose essentially no accuracy by using six decimal places.  If your accuracy need is sub-centimeter, then you need at least seven and probably eight decimal places, but more will do you little good.</p>
+
+<p>Thirteen decimal places will pin down the location to 111,111/10^13 = about 1 angstrom, around half the thickness of a small atom.</p>
+
+<p>Using these ideas we can construct a <strong>table of what each digit in a decimal degree signifies:</strong></p>
+
+<ul>
+<li>The <strong>sign</strong> tells us whether we are north or south, east or west on the globe.</li>
+<li>A nonzero <strong>hundreds digit</strong> tells us we're using longitude, not latitude!</li>
+<li>The <strong>tens digit</strong> gives a position to about 1,000 kilometers.  It gives us useful information about what continent or ocean we are on.</li>
+<li>The <strong>units digit</strong> (one decimal degree) gives a position up to 111 kilometers (60 nautical miles, about 69 miles).  It can tell us roughly what large state or country we are in.</li>
+<li>The <strong>first decimal place</strong> is worth up to 11.1 km: it can distinguish the position of one large city from a neighboring large city.</li>
+<li>The <strong>second decimal place</strong> is worth up to 1.1 km: it can separate one village from the next.</li>
+<li>The <strong>third decimal place</strong> is worth up to 110 m: it can identify a large agricultural field or institutional campus.</li>
+<li>The <strong>fourth decimal place</strong> is worth up to 11 m: it can identify a parcel of land.  It is comparable to the typical accuracy of an uncorrected GPS unit with no interference.</li>
+<li>The <strong>fifth decimal place</strong> is worth up to 1.1 m: it distinguish trees from each other.  Accuracy to this level with commercial GPS units can only be achieved with <a href="http://en.wikipedia.org/wiki/Differential_GPS">differential correction</a>.</li>
+<li>The <strong>sixth decimal place</strong> is worth up to 0.11 m: you can use this for laying out structures in detail, for designing landscapes, building roads.  It should be more than good enough for tracking movements of glaciers and rivers.  This can be achieved by taking painstaking measures with GPS, such as differentially corrected GPS.</li>
+<li>The <strong>seventh decimal place</strong> is worth up to 11 mm: this is good for much surveying and is near the limit of what GPS-based techniques can achieve.</li>
+<li>The <strong>eighth decimal place</strong> is worth up to 1.1 mm: this is good for charting motions of tectonic plates and movements of volcanoes.  Permanent, corrected, constantly-running GPS base stations might be able to achieve this level of accuracy.</li>
+<li>The <strong>ninth decimal place</strong> is worth up to 110 microns: we are getting into the range of microscopy.  For almost any conceivable application with earth positions, this is overkill and will be more precise than the accuracy of any surveying device.</li>
+<li><strong>Ten or more decimal places</strong> indicates a computer or calculator was used and that no attention was paid to the fact that the extra decimals are useless.  Be careful, because unless you are the one reading these numbers off the device, this can indicate low quality processing!</li>
+</ul>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://gis.stackexchange.com/a/8674" title="short permalink to this answer" class="short-link" id="link-post-8674">share</a><span class="lsep">|</span><a href="http://gis.stackexchange.com/posts/8674/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://gis.stackexchange.com/posts/8674/revisions" title="show all edits to this post">edited <span title="2015-04-09 15:26:34Z" class="relativetime">Apr 9 '15 at 15:26</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-04-18 16:17:29Z" class="relativetime">Apr 18 '11 at 16:17</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://gis.stackexchange.com/users/664/whuber"><div class="gravatar-wrapper-32"><img src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/66c15ca582c60477dc4b535d8b39558b" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://gis.stackexchange.com/users/664/whuber">whuber</a><span class="mod-flair" title="moderator">♦</span>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 49,356" dir="ltr">49.4k</span><span title="9 gold badges"><span class="badge1"></span><span class="badgecount">9</span></span><span title="126 silver badges"><span class="badge2"></span><span class="badgecount">126</span></span><span title="195 bronze badges"><span class="badge3"></span><span class="badgecount">195</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-8674" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="12" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-93543" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="warm">6</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">"...can indicate low quality processing" may be a little unfair. Perhaps "...can indicate low quality <i>presentation</i>" is fairer.</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/3195/martin-f" title="4,952 reputation" class="comment-user">Martin F</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment93543_8674"><span title="2013-08-15 21:00:51Z" class="relativetime-clean">Aug 15 '13 at 21:00</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-132819" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Is this accuracy applies to both Latitude and Longitude? I'm aware that the vertical and horizontal circumference of Earth is slightly different.</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/29885/baby" title="106 reputation" class="comment-user">Baby</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment132819_8674"><span title="2014-05-05 03:39:31Z" class="relativetime-clean">May 5 '14 at 3:39</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-143811" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">For Longitude values the accuracy/precision question only starts to make an order of magnitude difference from the answer given here at 85 Degrees Latitude and higher. At 90 Degrees the question is irrelevant. See the Wiki Page at - <a href="http://en.wikipedia.org/wiki/Longitude" rel="nofollow">link</a></span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/23715/user23715" title="549 reputation" class="comment-user">user23715</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment143811_8674"><span title="2014-06-20 23:02:13Z" class="relativetime-clean">Jun 20 '14 at 23:02</span></a></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-237472" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@sepideh I like the idea of encouraging questions about the broader uses and applications of GIS, aka "Geomatics."  Perhaps a better place to have such a discussion would be on our meta site.</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/664/whuber" title="49,356 reputation" class="comment-user">whuber<span class="mod-flair" title="moderator">♦</span></a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment237472_8674"><span title="2015-08-30 15:01:19Z" class="relativetime-clean">Aug 30 '15 at 15:01</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-237907" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@sepideh Thank you very much!  I am grateful for your help.</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/664/whuber" title="49,356 reputation" class="comment-user">whuber<span class="mod-flair" title="moderator">♦</span></a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment237907_8674"><span title="2015-09-01 16:14:27Z" class="relativetime-clean">Sep 1 '15 at 16:14</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-8674" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#" onclick="">show <b>12</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="8655"></a>
+<div id="answer-8655" class="answer" data-answerid="8655" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="8655">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">118</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>The Wikipedia page <a href="http://en.wikipedia.org/wiki/Decimal_degrees">Decimal Degrees</a> has a table on <em>Degree Precision vs. Length</em>. Also the accuracy of your coordinates depends on the instrument used to collect the coordinates - A-GPS used in cell phones, DGPS etc.</p>
+
+<pre><code>decimal
+places   degrees          distance
+-------  -------          --------
+0        1                111&nbsp; km
+1        0.1              11.1&nbsp;km
+2        0.01             1.11&nbsp;km
+3        0.001            111  m
+4        0.0001           11.1 m
+5        0.00001          1.11 m
+6        0.000001         11.1 cm
+7        0.0000001        1.11&nbsp;cm
+8        0.00000001       1.11&nbsp;mm
+</code></pre>
+
+<p>If we were to extend this chart all the way to <code>13</code> decimal places:</p>
+
+<pre><code>decimal
+places   degrees          distance
+-------  -------          --------
+9        0.000000001      111  μm
+10       0.0000000001     11.1 μm
+11       0.00000000001    1.11 μm
+12       0.000000000001   111  nm
+13       0.0000000000001  11.1 nm
+</code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://gis.stackexchange.com/a/8655" title="short permalink to this answer" class="short-link" id="link-post-8655">share</a><span class="lsep">|</span><a href="http://gis.stackexchange.com/posts/8655/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://gis.stackexchange.com/posts/8655/revisions" title="show all edits to this post">edited <span title="2014-05-13 05:59:04Z" class="relativetime">May 13 '14 at 5:59</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://gis.stackexchange.com/users/24685/user664833"><div class="gravatar-wrapper-32"><img src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/814bed2c4c2d0e69ec65a28a166c01b7" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://gis.stackexchange.com/users/24685/user664833">user664833</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">109</span><span title="4 bronze badges"><span class="badge3"></span><span class="badgecount">4</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-04-18 07:37:52Z" class="relativetime">Apr 18 '11 at 7:37</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://gis.stackexchange.com/users/1217/chethan-s"><div class="gravatar-wrapper-32"><img src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/3d52f30902195380b1850238ef1a623c" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://gis.stackexchange.com/users/1217/chethan-s">Chethan S.</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">2,680</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="13 silver badges"><span class="badge2"></span><span class="badgecount">13</span></span><span title="34 bronze badges"><span class="badge3"></span><span class="badgecount">34</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-8655" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="1" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-10246" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Hi Chetan, your answer helped me a lot. This has solved my problem. Thanks a ton.</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/2692/saurabh" title="1,184 reputation" class="comment-user owner">Saurabh</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment10246_8655"><span title="2011-04-18 07:42:20Z" class="relativetime-clean">Apr 18 '11 at 7:42</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-10247" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Glad to know that!</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/1217/chethan-s" title="2,680 reputation" class="comment-user">Chethan S.</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment10247_8655"><span title="2011-04-18 07:45:53Z" class="relativetime-clean">Apr 18 '11 at 7:45</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-10248" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="warm">14</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Its important to also distinguish between accuracy and precision: your device may report any number of digits (its precision) but many of the decimal places might be just erroneous. As Chethan mentions, it's important to check with the instrument which may also provide accuracy information when using the device (typically an error range around the true location).</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/143/scw" title="13,208 reputation" class="comment-user">scw</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment10248_8655"><span title="2011-04-18 07:56:18Z" class="relativetime-clean">Apr 18 '11 at 7:56</span></a></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-10252" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">good point scw.</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/685/jakub" title="13,002 reputation" class="comment-user">Jakub</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment10252_8655"><span title="2011-04-18 11:18:20Z" class="relativetime-clean">Apr 18 '11 at 11:18</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-88378" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">4</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">These days even a very cheap phone GPS should be perfectly accurate at 4 decimal places (11 meters) if you have a clear view of the sky. The remaining digits will not be accurate but if you collect many values and average it out, then they are still useful to have.</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/4787/abhi-beckert" title="316 reputation" class="comment-user">Abhi Beckert</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment88378_8655"><span title="2013-07-07 12:40:41Z" class="relativetime-clean">Jul 7 '13 at 12:40</span></a></span>
+                    <span class="edited-yes" title="this comment was edited 2 times"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-8655" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#" onclick="">show <b>1</b> more comment</a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="109178"></a>
+<div id="answer-109178" class="answer" data-answerid="109178" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="109178">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">36</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Here's my rule of thumb table...</p>
+
+<p>Latitude coordinate precision by the actual cartographic scale they purport:</p>
+
+<pre>Decimal Places   Aprox. Distance    Say What?
+1                10 kilometers      6.2 miles
+2                1 kilometer        0.62 miles
+3                100 meters         About 328 feet
+4                10 meters          About 33 feet
+5                1 meter            About 3 feet
+6                10 centimeters     About 4 inches
+7                1.0 centimeter     About ½ an inch
+8                1.0 millimeter     The width of paperclip wire.
+9                0.1 millimeter     The width of a strand of hair.
+10               10 microns         A speck of pollen.
+11               1.0 micron         A piece of cigarette smoke.
+12               0.1 micron         You're doing virus-level mapping at this point.
+13               10 nanometers      Does it matter how big this is?
+14               1.0 nanometer      Your fingernail grows about this far in one second.
+15               0.1 nanometer      An atom. An atom! What are you mapping?
+</pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://gis.stackexchange.com/a/109178" title="short permalink to this answer" class="short-link" id="link-post-109178">share</a><span class="lsep">|</span><a href="http://gis.stackexchange.com/posts/109178/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://gis.stackexchange.com/posts/109178/revisions" title="show all edits to this post">edited <span title="2014-08-02 03:12:34Z" class="relativetime">Aug 2 '14 at 3:12</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://gis.stackexchange.com/users/753/blah238"><div class="gravatar-wrapper-32"><img src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/30d20326e7fda6768304f200da88b093" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://gis.stackexchange.com/users/753/blah238">blah238</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 29,693" dir="ltr">29.7k</span><span title="5 gold badges"><span class="badge1"></span><span class="badgecount">5</span></span><span title="61 silver badges"><span class="badge2"></span><span class="badgecount">61</span></span><span title="128 bronze badges"><span class="badge3"></span><span class="badgecount">128</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2014-08-02 02:12:13Z" class="relativetime">Aug 2 '14 at 2:12</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://gis.stackexchange.com/users/15443/don-meltz"><div class="gravatar-wrapper-32"><img src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/423ef255f739198170dd3bbb289473b0" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://gis.stackexchange.com/users/15443/don-meltz">Don Meltz</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">2,876</span><span title="19 silver badges"><span class="badge2"></span><span class="badgecount">19</span></span><span title="28 bronze badges"><span class="badge3"></span><span class="badgecount">28</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-109178" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-266818" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This is perfect, we're mapping atoms in a room. (we're not)</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/65667/william-isted" title="101 reputation" class="comment-user">William Isted</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment266818_109178"><span title="2016-01-21 14:59:36Z" class="relativetime-clean">Jan 21 at 14:59</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-109178" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="65465"></a>
+<div id="answer-65465" class="answer" data-answerid="65465" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="65465">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">12</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I'll try to explain it in different terms:</p>
+
+<ul>
+<li>Earth's equatorial circumference is about <code>40,000</code> kilometers (<code>25,000</code> miles).</li>
+<li>A latitude/longitude value breaks that distance up into <code>360</code> degrees, starting at <code>-180</code> and ending at <code>180</code>.</li>
+</ul>
+
+<p>This means that one degree is <code>40,000</code> km (or <code>25,000</code> miles) divided by <code>360</code>:</p>
+
+<ul>
+<li><code>40,000 / 360 = 111</code></li>
+<li><code>25,000 / 360 = 69</code></li>
+</ul>
+
+<p>(So, one degree is <code>111</code> kilometers, or <code>69</code> miles.)</p>
+
+<p>For fractions of a degree, you divide it by <code>10</code> for each decimal place, as @ChethanS's chart nicely demonstrates (in km):</p>
+
+<pre><code>   decimal
+   places   degrees     distance
+   -------  -------     --------  
+   0        1           111   km
+   1        0.1         11.1  km
+   2        0.01        1.11  km
+   3        0.001       111   m
+   4        0.0001      11.1  m
+   5        0.00001     1.11  m
+   6        0.000001    0.111 m
+   7        0.0000001   1.11  cm
+   8        0.00000001  1.11  mm
+</code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://gis.stackexchange.com/a/65465" title="short permalink to this answer" class="short-link" id="link-post-65465">share</a><span class="lsep">|</span><a href="http://gis.stackexchange.com/posts/65465/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://gis.stackexchange.com/posts/65465/revisions" title="show all edits to this post">edited <span title="2014-05-13 00:34:30Z" class="relativetime">May 13 '14 at 0:34</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://gis.stackexchange.com/users/24685/user664833"><div class="gravatar-wrapper-32"><img src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/814bed2c4c2d0e69ec65a28a166c01b7" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://gis.stackexchange.com/users/24685/user664833">user664833</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">109</span><span title="4 bronze badges"><span class="badge3"></span><span class="badgecount">4</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-07-07 12:42:46Z" class="relativetime">Jul 7 '13 at 12:42</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://gis.stackexchange.com/users/4787/abhi-beckert"><div class="gravatar-wrapper-32"><img src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/nEJ48.jpg" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://gis.stackexchange.com/users/4787/abhi-beckert">Abhi Beckert</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">316</span><span title="4 silver badges"><span class="badge2"></span><span class="badgecount">4</span></span><span title="10 bronze badges"><span class="badge3"></span><span class="badgecount">10</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-65465" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-182350" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Since the Earth is not a perfect shape, are all the degrees equal? Will <code>x</code> degree give you twice the length of <code>2x</code> degree regardless of what value it is?</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/43199/pacerier" title="103 reputation" class="comment-user">Pacerier</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment182350_65465"><span title="2014-12-20 16:11:14Z" class="relativetime-clean">Dec 20 '14 at 16:11</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-182460" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Pacerier the coordinate system is relative to the centre of the earth and is a perfect sphere, so the answer is yes. But obviously if you want to measure the distance between two points and there is a 3,000 foot mountain in between them then you need to take that into account and add the extra distance to climb over the mountain. You need to take into account the shape of the terrain if you want to calculate the distance over land between two points.</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/4787/abhi-beckert" title="316 reputation" class="comment-user">Abhi Beckert</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment182460_65465"><span title="2014-12-22 03:35:41Z" class="relativetime-clean">Dec 22 '14 at 3:35</span></a></span>
+                    <span class="edited-yes" title="this comment was edited 2 times"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-65465" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="208739"></a>
+<div id="answer-208739" class="answer" data-answerid="208739" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="208739">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">2</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p><strong>POINT #1. lets differentiate <em>Precision</em> from <em>Accuracy</em></strong></p>
+
+<p><a href="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/LGTLQ.png" rel="nofollow"><img src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/LGTLQ.png" alt="enter image description here"></a></p>
+
+<p>As it is clear from the picture we can talk about <em>Accuracy</em> of a measurement (e.g. GPS measurement) if we already know the actual value (exact position). Then we can say how accurate a measurement is. On the other hand if you have some measurements and don't know the actual value you can just talk about the precision of the measurement.</p>
+
+<p><strong>POINT #2. Lets consider the <em>latitude</em> of the point</strong></p>
+
+<p>If you are going to speak in cm or mm scale, it may be better to also consider the earth as an ellipsoid and not a sphere. Then as soon as you model the earth shape as an ellipsoid (two-axis ellipsoid), <strong>you can not map degree decimals to ground distance with a <em>single</em> table</strong>, because this relation change (for E/W distance measurements) with the change of latitude. Here is another table to show the changes:</p>
+
+<pre><code>decimal   
+places  degrees      N/S or E/W     E/W at         E/W at       E/W at
+                     at equator     lat=23N/S      lat=45N/S    lat=67N/S
+------- -------      ----------     ----------     ---------    ---------
+0       1            111.32 km      102.47 km      78.71 km     43.496 km
+1       0.1          11.132 km      10.247 km      7.871 km     4.3496 km
+2       0.01         1.1132 km      1.0247 km      787.1 m      434.96 m
+3       0.001        111.32 m       102.47 m       78.71 m      43.496 m
+4       0.0001       11.132 m       10.247 m       7.871 m      4.3496 m
+5       0.00001      1.1132 m       1.0247 m       787.1 mm     434.96 mm
+6       0.000001     11.132 cm      102.47 mm      78.71 mm     43.496 mm
+7       0.0000001    1.1132 cm      10.247 mm      7.871 mm     4.3496 mm
+8       0.00000001   1.1132 mm      1.0247 mm      0.7871mm     0.43496mm
+</code></pre>
+
+<p>As you can see it is not correct to say e.g.: every 0.1 degree is about 100km on the earth because it depends on the latitude (also direction); it is about 40km at 67N/S and 100km at equator (0N/S)</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://gis.stackexchange.com/a/208739" title="short permalink to this answer" class="short-link" id="link-post-208739">share</a><span class="lsep">|</span><a href="http://gis.stackexchange.com/posts/208739/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2016-08-29 14:38:30Z" class="relativetime">Aug 29 at 14:38</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://gis.stackexchange.com/users/14278/hossein-narimani-rad"><div class="gravatar-wrapper-32"><img src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/6e5ff54c9807002aa362f9f8c96f69e2" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://gis.stackexchange.com/users/14278/hossein-narimani-rad">Hossein Narimani Rad</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">159</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="7 bronze badges"><span class="badge3"></span><span class="badgecount">7</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-208739" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-208739" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="150671"></a>
+<div id="answer-150671" class="answer" data-answerid="150671" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="150671">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>The answers here are good.  I thought I would add to the answer by relating how the digits in longitude are affected by latitude.</p>
+
+<p>The charts given above can have the longitude adjusted by multiplying the value in the table by Cos(latitude)</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://gis.stackexchange.com/a/150671" title="short permalink to this answer" class="short-link" id="link-post-150671">share</a><span class="lsep">|</span><a href="http://gis.stackexchange.com/posts/150671/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2015-06-11 18:13:49Z" class="relativetime">Jun 11 '15 at 18:13</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://gis.stackexchange.com/users/24576/randy-w"><div class="gravatar-wrapper-32"><img src="./lat lon - Measuring accuracy of latitude and longitude_ - Geographic Information Systems Stack Exchange_files/a097dbf9007e20829b876ea4c017b572" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://gis.stackexchange.com/users/24576/randy-w">Randy W.</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">51</span><span title="7 bronze badges"><span class="badge3"></span><span class="badgecount">7</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-150671" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-220951" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">There are several charts in this thread and they can appear in almost any sequence.  I can speak to the one in my answer: although I made a conscious decision not to include this information (any reference to trigonometry risks scaring off people who otherwise have the background to understand everything else), it's a great point and reminds us to make quantitative statements when we can.  +1.</span>
+                    –&nbsp;<a href="http://gis.stackexchange.com/users/664/whuber" title="49,356 reputation" class="comment-user">whuber<span class="mod-flair" title="moderator">♦</span></a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#comment220951_150671"><span title="2015-06-11 21:32:49Z" class="relativetime-clean">Jun 11 '15 at 21:32</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-150671" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+				    <div class="question-status">
+        <h2>                    <b>protected</b> by <a href="http://gis.stackexchange.com/users/-1/community">Community</a><span class="mod-flair" title="moderator">♦</span> <span dir="ltr"><span title="2014-01-11 20:37:44Z" class="relativetime">Jan 11 '14 at 20:37</span></span>
+</h2>
+        <p>
+Thank you for your interest in this question. 
+Because it has attracted low-quality or spam answers that had to be removed, posting an answer now requires 10 <a href="http://gis.stackexchange.com/help/whats-reputation">reputation</a> on this site (the <a href="http://gis.stackexchange.com/help/privileges/new-user">association bonus does not count</a>).
+<br><br>
+Would you like to answer one of these <a href="http://gis.stackexchange.com/unanswered?fromProtectedNotice=true">unanswered questions</a> instead?
+</p>
+    </div>
+
+
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://gis.stackexchange.com/questions/tagged/lat-lon" class="post-tag" title="show questions tagged &#39;lat-lon&#39;" rel="tag">lat-lon</a> <a href="http://gis.stackexchange.com/questions/tagged/accuracy" class="post-tag" title="show questions tagged &#39;accuracy&#39;" rel="tag">accuracy</a> <a href="http://gis.stackexchange.com/questions/tagged/gis-principle" class="post-tag" title="show questions tagged &#39;gis-principle&#39;" rel="tag">gis-principle</a> <a href="http://gis.stackexchange.com/questions/tagged/precision" class="post-tag" title="show questions tagged &#39;precision&#39;" rel="tag">precision</a>  or <a href="http://gis.stackexchange.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2011-04-18 07:16:43Z"><b>5 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>173856 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="http://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude?lastactivity" class="lastactivity-link" title="2016-08-29 14:38:30Z">1 month ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+			<div class="module community-bulletin" data-tracker="cb=1">
+    <div class="related">
+                <div class="bulletin-title">
+                    Blog
+                </div>
+                <hr>
+    <div class="spacer">
+        <div class="bulletin-item-type">
+                <a href="http://blog.stackoverflow.com/2016/10/Stack-Overflow-92-Podcast-The-Guerilla-Guide-to-Interviewing/?cb=1" class="question-hyperlink">
+<div class="favicon favicon-stackexchangemeta" title="Meta Stack Exchange"></div>                </a>
+            </div>
+                <div class="bulletin-item-content">
+                    <a href="http://blog.stackoverflow.com/2016/10/Stack-Overflow-92-Podcast-The-Guerilla-Guide-to-Interviewing/?cb=1" class="question-hyperlink">Stack Overflow Podcast #92 - The Guerilla Guide to Interviewing</a>
+                </div>
+                <br class="cbt">
+            </div>
+    </div>
+</div>			
+			<div style="margin-bottom: 10px;">
+        
+
+<style type="text/css">
+#newsletter-ad {
+    width: 270px;
+    height: 250px;
+    overflow: hidden;
+    background: url('//cdn.sstatic.net/Sites/gis/img/newsletter-ad.png?v=4');
+    padding: 0 15px 0 15px;
+}
+#newsletter-ad-header {
+    margin-top: 60px;
+}
+#newsletter-ad ul {
+    margin: 1em 0 1em 1.5em;
+}
+#newsletter-ad ul li {
+    margin-bottom: 5px;
+}
+#newsletter-signup-container {
+    text-align: center;
+}
+#newsletter-preview-container {
+    margin-top: 10px;
+    text-align: center;
+}
+#newsletter-email-input {
+    width: 200px;
+}
+</style>
+
+<script>
+    StackExchange.ready(function () {
+        StackExchange.newsletterAd.init();
+    });
+</script>
+
+<div id="newsletter-ad">
+        <p id="newsletter-ad-header">Get the <b>weekly newsletter!</b> In it, you'll get:</p>
+        <ul>
+            <li>The week's top questions and answers</li>
+            <li>Important community announcements</li>
+            <li>Questions that need answers</li>
+        </ul>
+    <div id="newsletter-signup-container"><input id="newsletter-signup" type="button" value="Sign up for the newsletter"></div>
+    <p id="newsletter-preview-container">see an <a href="http://stackexchange.com/newsletters/newsletter?site=gis.stackexchange.com" id="newsletter-preview">example newsletter</a></p>
+    <div class="dno">
+        
+<p class="privacy-policy-agreement">
+By subscribing, you agree to the <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.</p>
+<input type="hidden" name="legalLinksShown" value="1">
+    </div>
+</div>
+
+    </div><style type="text/css">
+    .ads { margin-left: 60px; }
+    .ad-container { width: 300px; height: 250px; margin-right: 20px; margin-bottom: 20px; }
+    .ad-container .ad { height: 250px; }
+    .ad-container .footer-container { overflow: hidden; height: 30px; position: relative; top: -30px; }
+    .ad-container .footer-container .footer { font-family: Arial,Helvetic,Sans-Serif; font-size: 12px; text-align: center; padding-top: 9px; background-color: #000; color: #EFF; opacity: 0.9; filter: alpha(opacity=90); top: 30px; height: 30px; position: relative; }
+    .ad-container a:hover { text-decoration: underline; }
+    #adzerk2 { height: 250px; }
+</style>
+<script>
+    StackExchange.ready(function () {
+        $(".ad-container").hover(
+            function () {
+                $(".ad-container .footer-container .footer").stop(true, true).animate({ top: "0px" }, "fast");
+            },
+            function () {
+                $(".ad-container .footer-container .footer").animate({ top: "30px" }, "fast");
+            });
+    });
+</script>
+    <script>
+        var ados = ados || {};ados.run = ados.run || [];
+        ados.run.push(function () { ados_add_placement(22, 12057, "adcm2", [5,17]).setZone(76); });
+    </script>
+    <div class="everyonelovesstackoverflow" id="adcm2">
+    </div> 
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    
+    
+        
+        ados.run.push(function () {
+                ados_setKeywords('qgis,python,sql,spatialite,x-user-registered,x-200plus-rep,x-host-gis.stackexchange.com');; ados_load();
+        });   
+        
+</script><div class="module" id="chat-feature">
+
+    <h4><a href="http://chat.stackexchange.com/" id="h-chat-link" title="94 users active in 56 rooms the last 60 minutes">94 People Chatting</a></h4>
+    <div class="related" id="ad502-rooms"><div class="ad502-room"><h3 class="ad502-room-h3"><span class="ad502-room-title" title="GIS"><a href="http://chat.stackexchange.com/rooms/939">GIS</a></span></h3><span title="2016-10-21 23:18:14Z" class="ad502-last-message">Oct 21 at 19:18 - <a href="http://chat.stackexchange.com/users/10537">PolyGeo</a></span><br><div class="ad502-users"></div></div><div class="ad502-room"><h3 class="ad502-room-h3"><span class="ad502-room-title" title="ST_Difference isn&#39;t removing a small intersection"><a href="http://chat.stackexchange.com/rooms/47200">ST_Difference isn't removing a small intersection</a></span></h3><span title="2016-10-21 21:31:32Z" class="ad502-last-message">Oct 21 at 17:31 - <a href="http://chat.stackexchange.com/users/135644">John Barça</a></span><br><div class="ad502-users"></div></div></div>
+    <script>
+    // <!--
+        StackExchange.ready(
+        function () {
+            var options = {
+                chatUrl: 'http://chat.stackexchange.com',
+                reloadUrl: '/api/recent-chat',
+                preloadData: {"activeUsers":94,"activeRooms":56,"rooms":[{"name":"GIS","id":939,"lastPost":1477091894,"posts":4916,"users":[],"messages":[{"date":1477091894,"user":"PolyGeo","userid":10537}],"singleImage":false,"tags":[]},{"name":"ST_Difference isn\u0027t removing a small intersection","id":47200,"lastPost":1477085492,"posts":2,"users":[],"messages":[{"date":1477085492,"user":"John Barça","userid":135644}],"singleImage":false,"tags":[]}]} 
+            };
+
+            StackExchange.chatAd.init(options);
+        });
+    // -->
+    </script>
+
+</div>
+			
+
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+
+<div class="spacer">
+	<a href="http://gis.stackexchange.com/q/30526?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">2</div>
+	</a>
+	<a href="http://gis.stackexchange.com/questions/30526/precision-of-x-decimal-points-in-meters?noredirect=1&amp;lq=1" class="question-hyperlink">Precision of x decimal points in meters?</a>
+</div>
+<div class="spacer">
+	<a href="http://gis.stackexchange.com/q/99711?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">2</div>
+	</a>
+	<a href="http://gis.stackexchange.com/questions/99711/decimal-degree-coordinates-how-many-decimal-places-to-use-for?noredirect=1&amp;lq=1" class="question-hyperlink">Decimal degree coordinates: how many decimal places to use for …?</a>
+</div>
+<div class="spacer">
+	<a href="http://gis.stackexchange.com/q/174058?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">1</div>
+	</a>
+	<a href="http://gis.stackexchange.com/questions/174058/degree-precision-vs-length?noredirect=1&amp;lq=1" class="question-hyperlink">Degree Precision vs. Length</a>
+</div>
+<div class="spacer">
+	<a href="http://gis.stackexchange.com/q/84130?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://gis.stackexchange.com/questions/84130/how-can-i-tell-the-accuracy-of-coordinates-conversion-by-cs2cs?noredirect=1&amp;lq=1" class="question-hyperlink">How can I tell the accuracy of coordinates conversion by cs2cs?</a>
+</div>
+<div class="spacer">
+	<a href="http://gis.stackexchange.com/q/48937?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">25</div>
+	</a>
+	<a href="http://gis.stackexchange.com/questions/48937/calculating-intersection-of-two-circles?noredirect=1&amp;lq=1" class="question-hyperlink">Calculating intersection of two Circles?</a>
+</div>
+<div class="spacer">
+	<a href="http://gis.stackexchange.com/q/115280?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">8</div>
+	</a>
+	<a href="http://gis.stackexchange.com/questions/115280/what-is-the-precision-of-a-geohash?noredirect=1&amp;lq=1" class="question-hyperlink">What is the precision of a Geohash</a>
+</div>
+<div class="spacer">
+	<a href="http://gis.stackexchange.com/q/45263?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">6</div>
+	</a>
+	<a href="http://gis.stackexchange.com/questions/45263/converting-geographic-coordinate-system-in-r?noredirect=1&amp;lq=1" class="question-hyperlink">Converting geographic coordinate system in R</a>
+</div>
+<div class="spacer">
+	<a href="http://gis.stackexchange.com/q/134129?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">1</div>
+	</a>
+	<a href="http://gis.stackexchange.com/questions/134129/display-latitude-and-longitude-on-googlemaps-on-click?noredirect=1&amp;lq=1" class="question-hyperlink">display latitude and longitude on googlemaps on click</a>
+</div>
+<div class="spacer">
+	<a href="http://gis.stackexchange.com/q/31944?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">5</div>
+	</a>
+	<a href="http://gis.stackexchange.com/questions/31944/how-to-calculate-new-point-coordinates-from-distance-and-angle-using-arcgis-sdk?noredirect=1&amp;lq=1" class="question-hyperlink">How to calculate new point coordinates from distance and angle using ArcGIS SDK for iOS?</a>
+</div>
+<div class="spacer">
+	<a href="http://gis.stackexchange.com/q/107992?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">4</div>
+	</a>
+	<a href="http://gis.stackexchange.com/questions/107992/converting-from-an-x-y-coordinate-system-to-latitude-longitude?noredirect=1&amp;lq=1" class="question-hyperlink">Converting from an x-y coordinate system to latitude/longitude</a>
+</div>					<div class="spacer more">
+				<a href="http://gis.stackexchange.com/questions/linked/8650?lq=1">see more linked questions…</a>
+			</div>
+	</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer js-gps-track"><a href="http://gis.stackexchange.com/q/26410?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">6</div></a><a href="http://gis.stackexchange.com/questions/26410/need-to-learn-more-about-precision-and-accuracy?rq=1" class="question-hyperlink">Need to learn more about Precision and Accuracy</a></div><div class="spacer js-gps-track"><a href="http://gis.stackexchange.com/q/59306?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://gis.stackexchange.com/questions/59306/a-machine-to-measure-latitude-to-6-decimal-places-of-a-degree?rq=1" class="question-hyperlink">A machine to measure latitude to 6 decimal places of a degree</a></div><div class="spacer js-gps-track"><a href="http://gis.stackexchange.com/q/69031?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">2</div></a><a href="http://gis.stackexchange.com/questions/69031/how-accurate-is-the-google-maps-latitude-and-longitude-i-am-using?rq=1" class="question-hyperlink">How accurate is the google maps latitude and longitude I am using?</a></div><div class="spacer js-gps-track"><a href="http://gis.stackexchange.com/q/80367?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">4</div></a><a href="http://gis.stackexchange.com/questions/80367/how-to-convert-6-7-digit-coordinates-to-degrees-latitude-longitude?rq=1" class="question-hyperlink">How to convert 6 &amp; 7 digit coordinates to degrees latitude &amp; longitude</a></div><div class="spacer js-gps-track"><a href="http://gis.stackexchange.com/q/92008?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">5</div></a><a href="http://gis.stackexchange.com/questions/92008/accuracy-vs-precision-gps?rq=1" class="question-hyperlink">Accuracy vs Precision GPS</a></div><div class="spacer js-gps-track"><a href="http://gis.stackexchange.com/q/143089?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">1</div></a><a href="http://gis.stackexchange.com/questions/143089/transfer-from-android-phone-to-windows-os-truncates-lat-long?rq=1" class="question-hyperlink">Transfer from Android phone to Windows OS truncates lat long</a></div><div class="spacer js-gps-track"><a href="http://gis.stackexchange.com/q/160103?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">2</div></a><a href="http://gis.stackexchange.com/questions/160103/how-to-choose-a-latitude-longitude-among-conflicting-sources?rq=1" class="question-hyperlink">How to choose a latitude-longitude among conflicting sources</a></div><div class="spacer js-gps-track"><a href="http://gis.stackexchange.com/q/189707?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">1</div></a><a href="http://gis.stackexchange.com/questions/189707/is-there-a-well-known-way-to-compare-the-relative-accuracy-of-2-latitude-longitu?rq=1" class="question-hyperlink">Is there a well-known way to compare the relative accuracy of 2 latitude/longitude results?</a></div><div class="spacer js-gps-track"><a href="http://gis.stackexchange.com/q/203921?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">1</div></a><a href="http://gis.stackexchange.com/questions/203921/how-much-is-the-error-in-physical-longitude-and-lagitude-e-g-meters-correspon?rq=1" class="question-hyperlink">How much is the error in physical longitude and lagitude (e.g. meters) corresponding to a +-0.0001 error in GPS coordinates?</a></div><div class="spacer js-gps-track"><a href="http://gis.stackexchange.com/q/213862?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">1</div></a><a href="http://gis.stackexchange.com/questions/213862/standard-name-for-a-latitude-longitude-pair?rq=1" class="question-hyperlink">Standard name for a latitude/longitude pair</a></div>
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="http://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-graphicdesign" title="Graphic Design Stack Exchange"></div><a href="http://graphicdesign.stackexchange.com/questions/79186/font-identification-dificulties" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:174 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Font identification dificulties
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-biology" title="Biology Stack Exchange"></div><a href="http://biology.stackexchange.com/questions/52776/what-stops-messenger-rna-from-binding-to-itself" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:375 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What stops messenger RNA from binding to itself?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/78584/thesis-reviewer-requests-update-to-literature-review-to-incorporate-last-four-ye" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Thesis reviewer requests update to literature review to incorporate last four years of research. Do I need to do this?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-travel" title="Travel Stack Exchange"></div><a href="http://travel.stackexchange.com/questions/81261/would-it-be-ok-to-eat-rice-using-spoon-in-front-of-westerners" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:273 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Would it be ok to eat rice using spoon in front of Westerners?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="http://tex.stackexchange.com/questions/335772/adding-pictures-to-a-table" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Adding pictures to a table
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/44895/numbers-at-the-corners-of-concentric-squares" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Numbers at the corners of concentric squares
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/59175/what-kind-of-weapons-could-squirrels-use" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What kind of weapons could squirrels use?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-security" title="Information Security Stack Exchange"></div><a href="http://security.stackexchange.com/questions/140584/why-dont-browser-dns-caches-mitigate-ddos-attacks-on-dns-providers" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:162 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why don't browser DNS caches mitigate DDOS attacks on DNS providers?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-ux" title="User Experience Stack Exchange"></div><a href="http://ux.stackexchange.com/questions/100726/is-it-a-good-ux-to-keep-both-star-and-smiley-rating-system-as-filters" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:102 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is it a Good UX to keep both star and smiley rating system as filters?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/89570/can-i-only-touch-other-creatures-with-spells-such-as-invisibility" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can I only touch other creatures with spells such as Invisibility?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/44894/presti-digit-ation" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Presti-digit-ation
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1983582/can-the-notion-of-squaring-be-extended-to-other-shapes" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can the notion of "squaring" be extended to other shapes?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/97294/draw-an-ascii-o-lantern-for-halloween" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Draw an ASCII-O'-Lantern for Halloween
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-space" title="Space Exploration Stack Exchange"></div><a href="http://space.stackexchange.com/questions/18771/drone-racing-on-moon" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:508 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Drone Racing on moon
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/44891/about-a-man-and-a-bee" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    About a man and a bee
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/97263/traveling-pumpkin-problem" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Traveling Pumpkin Problem
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/97184/wheres-the-0xbeef" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Where's the 0xBEEF?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/97305/print-some-json" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Print some JSON
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-bitcoin" title="Bitcoin Stack Exchange"></div><a href="http://bitcoin.stackexchange.com/questions/49158/why-do-you-use-bitcoin-addresses-instead-of-public-keys" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:308 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why do you use Bitcoin addresses instead of public keys?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1983745/choose-the-correct-product-notation-or-summation-for-the-expression" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Choose the correct product notation or summation for the expression.
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-movies" title="Movies &amp; TV Stack Exchange"></div><a href="http://movies.stackexchange.com/questions/62307/jokes-about-monicas-haircut" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:367 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Jokes about Monica's haircut
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-mathoverflow" title="MathOverflow"></div><a href="http://mathoverflow.net/questions/252671/surprising-examples-of-markov-chains" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:504 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    "Surprising" examples of Markov chains
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-matheducators" title="Mathematics Educators Stack Exchange"></div><a href="http://matheducators.stackexchange.com/questions/11566/misuse-of-parentheses-for-multiplication" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:548 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Misuse of parentheses for multiplication
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1983425/there-is-no-well-ordered-uncountable-set-of-real-numbers" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    "There is no well-ordered uncountable set of real numbers"
+                </a>
+
+            </li>
+    </ul>
+
+        
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="http://gis.stackexchange.com/feeds/question/8650" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/8650/ivc/c47d');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/8650/ivc/c47d" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang"></div></div>
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">            
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                    <a href="http://stackoverflow.com/company/about">about us</a>
+                        <a href="http://gis.stackexchange.com/tour">tour</a>
+                    <a href="http://gis.stackexchange.com/help">help</a>
+                    <a href="http://gis.blogoverflow.com/?blb=1">blog</a>
+                        <a href="http://chat.stackexchange.com/?tab=site&amp;host=gis.stackexchange.com">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackoverflow.com/company/work-here">work here</a>
+                    <a href="http://stackexchange.com/mediakit">advertising info</a>
+
+                    <a onclick="StackExchange.switchMobile(&quot;on&quot;)">mobile</a>
+                    <b><a href="http://gis.stackexchange.com/contact">contact us</a></b>
+                        <b><a href="http://meta.gis.stackexchange.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="4">
+                Technology
+            </th>
+            <th colspan="2">
+                Life / Arts
+            </th>
+            <th colspan="2">
+                Culture / Recreation
+            </th>
+            <th colspan="2">
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://softwareengineering.stackexchange.com/" title="professionals, academics, and students working within the systems development life cycle who care about creating, delivering, and maintaining software responsibly">Software Engineering</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="http://expressionengine.stackexchange.com/" title="administrators, end users, developers and designers for ExpressionEngine® CMS">ExpressionEngine® Answers</a></li>
+                        <li><a href="http://crypto.stackexchange.com/" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://codereview.stackexchange.com/" title="peer programmer code reviews">Code Review</a></li>
+                        <li><a href="http://magento.stackexchange.com/" title="users of the Magento e-Commerce platform">Magento</a></li>
+                        <li><a href="http://dsp.stackexchange.com/" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                        <li><a href="http://raspberrypi.stackexchange.com/" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                        <li><a href="http://codegolf.stackexchange.com/" title="programming puzzle enthusiasts and code golfers">Programming Puzzles &amp; Code Golf</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://movies.stackexchange.com/" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="http://music.stackexchange.com/" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (8)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://ell.stackexchange.com/" title="speakers of other languages learning English">English Language Learners</a></li>
+                        <li><a href="http://japanese.stackexchange.com/" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                        <li><a href="http://anime.stackexchange.com/" title="anime and manga fans">Anime &amp; Manga</a></li>
+                        <li><a href="http://mechanics.stackexchange.com/" title="mechanics and DIY enthusiast owners of cars, trucks, and motorcycles">Motor Vehicle Maintenance &amp; Repair</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (17)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://chemistry.stackexchange.com/" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="http://biology.stackexchange.com/" title="biology researchers, academics, and students">Biology</a></li>
+                        <li><a href="http://cs.stackexchange.com/" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://philosophy.stackexchange.com/" title="those interested in the study of the fundamental nature of knowledge, reality, and existence">Philosophy</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (3)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="http://talent.stackoverflow.com/">Stack Overflow Talent</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+            <div id="copyright">
+                site design / logo © 2016 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2016.10.24.4138
+            </div>
+                </div>
+    </div>
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Geographic Information Systems Stack Exchange works best with JavaScript enabled&lt;img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            
+            ga('create', 'UA-5620270-24', {'cookieDomain': 'stackexchange.com'});
+            ga('set', 'dimension2', '|lat-lon|accuracy|gis-principle|precision|');             ga('send', 'pageview');
+        
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+                qc.async = true;
+                qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                s.parentNode.insertBefore(qc, s);
+                _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+                            var sc=document.createElement('script');
+                sc.async=true;
+                sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+                s.parentNode.insertBefore(sc, s);
+                _comscore.push({ c1: "2", c2: "17440561" });
+        })();
+
+    </script>
+        
+    
+            <script type="text/javascript">
+                
+                (function(appendChild) {
+                    Node.prototype.appendChild = function() {
+                        var parent = this;
+                        var newNode = arguments[0];
+                        if (parent.nodeName === 'HEAD'
+                            && newNode
+                            && newNode.nodeName === 'SCRIPT'
+                            && newNode.src) {
+                            
+                            window.setTimeout(function() {
+                                var result = newNode.src.match(/^https:\/\/maps\.googleapis\.com\/maps\/api\/place\/js\/(\w+)Service\./i) || [];
+                                var service = result[1];
+                                if (service) {
+                                    if (service === 'Autocompletion') service =  2;
+                                    else if (service === 'Place') service = 1;
+                                    else service = 0;
+                                    StackExchange.using('gps', function() {
+                                        StackExchange.gps.track('google_maps_places_api.call', { service: service });
+                                    });
+                                }
+                            }, 0);
+                        }
+                        return appendChild.apply(this, arguments);
+                    };
+                })(Node.prototype.appendChild);
+            </script>
+    
+</body></html>

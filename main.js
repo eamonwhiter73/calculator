@@ -1,4 +1,40 @@
 jQuery(document).ready(function( $ ) {
+
+    $('#foremailchoice').click(function() {
+
+        var store;
+        console.log($('.chinto').css('display'));
+        if($('.chinto').css('display') == 'none') {
+            store = $('.changeit').text();
+        }
+        else {
+            store = $('.chinto').text();
+        }
+
+        setTimeout(function(){ 
+
+            $.ajax({
+              type: "POST",
+              url: "index.php",
+              data: { box1: $('.box1').val(),
+                      box2: $('.box2').val(),
+                      box3: $('.box3').val(),
+                      box4: $('.box4').val(),
+                      business: store,
+                      dd1s: $('.s').val(),
+                      dd2d: $('.d').val(),
+                      lifeval: $('.lifetime').text(),
+                      i: $('.i2').text(),
+                      email: $('.foremailinput').val()
+                    }
+            }).done(function( msg ) {
+              alert( "Email Sent!");
+            });    
+
+        }, 1000);
+        
+
+    });
     
     /*$('body').on('load', function(){
         if($(window).width() > 1199) {
@@ -72,39 +108,36 @@ jQuery(document).ready(function( $ ) {
 
     function doResize() {
 
-        var fitWidth = parseInt($('.comptextdisplay>span').parent().css('width'));
+        /*var fitWidth = parseInt($('.comptextdisplay>span').parent().css('width'));
         var $div = $('.comptextdisplay>span');
         //$(this).find('span').each(function() {
-            var c = 0;
             var spanWidth = parseInt($('.comptextdisplay>span').width());
-            while (fitWidth < spanWidth) {
+            if (fitWidth < spanWidth) {
+                var fontSize = $('.comptextdisplay>span').css('font-size');
+                console.log(fontSize);
                 //$div.find('span').each(function() {
-                    var fontSize = parseInt($('.comptextdisplay>span').css('font-size'));
-                    fontSize = fontSize - 1 + "px";
-                    $('.comptextdisplay>span').css('font-size', fontSize);
-                //});
-                spanWidth = parseInt($('.comptextdisplay>span').width());
-                c++;
-                if (c > 999) {
-                    $div.css('background', 'red');
-                    break;
-                }
-            }
-            while (fitWidth > spanWidth) {
-                //$div.find('span').each(function() {
-                    var fontSize = parseInt($('.comptextdisplay>span').css('font-size'));
-                    fontSize = fontSize + 1 + "px";
-                    $('.comptextdisplay>span').css('font-size', fontSize);
-                //});
-                spanWidth = parseInt($('.comptextdisplay>span').width());
-                c++;
-                if (c > 999) {
-                    $div.css('background', 'red');
-                    break;
-                }
-            }
+                $('.comptextdisplay>span').css('font-size', fontSize + 'vw');
 
-            fitWidth = parseInt($('.lifetime').css('width'));
+                //});
+                //if (c > 999) {
+                  //  $div.css('background', 'red');
+                    //break;
+                //}
+            }
+            if (fitWidth > spanWidth) {
+                //$div.find('span').each(function() {
+                    var fontSize = $('.comptextdisplay>span').css('font-size');
+                    //$div.find('span').each(function() {
+                    $('.comptextdisplay>span').css('font-size', fontSize);
+                //});
+
+                //if (c > 999) {
+                  //  $div.css('background', 'red');
+                    //break;
+                //}
+            }*/
+
+            /*fitWidth = parseInt($('.lifetime').css('width'));
             //$(this).find('span').each(function() {
             //var c = 0;
             spanWidth = parseInt($('.lifetime>span').width());
@@ -155,7 +188,7 @@ jQuery(document).ready(function( $ ) {
                     //$('.lifetime').css('background', 'red');
                     //break;
                 //}
-            }
+            }*/
           
 
         if($(window).width() > 1199) {
@@ -214,6 +247,7 @@ jQuery(document).ready(function( $ ) {
                 $('.choose').prepend('<div class="choosediv">Choose</div>');
             }
             $('.inchoose').hide();
+            $('.nullmiss').show();
 
         }
 
@@ -226,36 +260,37 @@ jQuery(document).ready(function( $ ) {
                 $('.choose').prepend('<div class="choosediv">Choose</div>');
             }
             $('.inchoose').hide();
+            $('.nullmiss').show();
         }
 
         if($(window).width() > 767) {
             console.log((4 - $('.textchoice').val().length) * 26 + 'px');
-            if($('.comptextdisplay>span').text().length < 8) {
+            if($('.textchoice').val().length < 8) {
                 console.log("in if********")
                 if(isOdd($('.textchoice').val().length)) {
                     if($('.textchoice').val().length == 3) {
-                        $('.comptextdisplay>span').css('padding-left', '52px');
+                        $('.comptextdisplay>span').css('padding-left', '45px');
                     }
                     else if($('.textchoice').val().length == 5) {
-                        $('.comptextdisplay>span').css('padding-left', '34px');
+                        $('.comptextdisplay>span').css('padding-left', '18px');
                     }
                     else if($('.textchoice').val().length == 7) {
                         $('.comptextdisplay>span').css('padding-left', '2px');
                     }
                     else{
-                        var px = Math.abs($('.textchoice').val().length - 4) * 26 + 'px';
+                        var px = Math.abs($('.textchoice').val().length - 4) * 26 - 6 + 'px';
                         $('.comptextdisplay>span').css('padding-left', px);
                     }
                 }
                 else {
                     if($('.textchoice').val().length == 4) {
-                        $('.comptextdisplay>span').css('padding-left', '44px');
+                        $('.comptextdisplay>span').css('padding-left', '34px');
                     }
                     else if($('.textchoice').val().length == 6) {
-                        $('.comptextdisplay>span').css('padding-left', '17px');
+                        $('.comptextdisplay>span').css('padding-left', '7px');
                     }
                     else {  
-                        var px = (Math.abs($('.textchoice').val().length - 4) * 26) + 13 + 'px';
+                        var px = (Math.abs($('.textchoice').val().length - 4) * 26) + 7 + 'px';
                         $('.comptextdisplay>span').css('padding-left', px);
                     }
                 }
@@ -263,17 +298,17 @@ jQuery(document).ready(function( $ ) {
         }
 
         if($(window).width() < 768 && $(window).width() > 748) {
-            if($('.comptextdisplay>span').text().length < 8) {
+            if($('.textchoice').val().length < 8) {
                 console.log("in if********")
                 if(isOdd($('.textchoice').val().length)) {
                     if($('.textchoice').val().length == 3) {
-                        $('.comptextdisplay>span').css('padding-left', '72px');
+                        $('.comptextdisplay>span').css('padding-left', '65px');
                     }
                     else if($('.textchoice').val().length == 5) {
-                        $('.comptextdisplay>span').css('padding-left', '45px');
+                        $('.comptextdisplay>span').css('padding-left', '39px');
                     }
                     else if($('.textchoice').val().length == 7) {
-                        $('.comptextdisplay>span').css('padding-left', '22px');
+                        $('.comptextdisplay>span').css('padding-left', '16px');
                     }
                     else{
                         $('.comptextdisplay>span').css('padding-left', '94px');
@@ -297,41 +332,41 @@ jQuery(document).ready(function( $ ) {
         }
 
         if($(window).width() < 749 && $(window).width() > 680) {
-            if($('.comptextdisplay>span').text().length < 8) {
+            if($('.textchoice').val().length < 8) {
                 console.log("in if********")
                 if(isOdd($('.textchoice').val().length)) {
                     if($('.textchoice').val().length == 3) {
-                        $('.comptextdisplay>span').css('padding-left', '72px');
+                        $('.comptextdisplay>span').css('padding-left', '58px');
                     }
                     else if($('.textchoice').val().length == 5) {
-                        $('.comptextdisplay>span').css('padding-left', '45px');
+                        $('.comptextdisplay>span').css('padding-left', '32px');
                     }
                     else if($('.textchoice').val().length == 7) {
-                        $('.comptextdisplay>span').css('padding-left', '22px');
+                        $('.comptextdisplay>span').css('padding-left', '16px');
                     }
                     else{
-                        $('.comptextdisplay>span').css('padding-left', '94px');
+                        $('.comptextdisplay>span').css('padding-left', '85px');
                     }
                 }
                 else {
                     if($('.textchoice').val().length == 4) {
-                        $('.comptextdisplay>span').css('padding-left', '60px');
+                        $('.comptextdisplay>span').css('padding-left', '48px');
                     }
                     else if($('.textchoice').val().length == 6) {
-                        $('.comptextdisplay>span').css('padding-left', '30px');
+                        $('.comptextdisplay>span').css('padding-left', '20px');
                     }
                     else if($('.textchoice').val().length == 8) {
-                        $('.comptextdisplay>span').css('padding-left', '8px');
+                        $('.comptextdisplay>span').css('padding-left', '13px');
                     }
                     else {
-                        $('.comptextdisplay>span').css('padding-left', '85px');
+                        $('.comptextdisplay>span').css('padding-left', '75px');
                     }
                 }
             }
         }
 
         if($(window).width() < 681 && $(window).width() > 608) {
-            if($('.comptextdisplay>span').text().length < 8) {
+            if($('.textchoice').val().length < 8) {
                 console.log("in if********asdfasdfasdf")
                 if(isOdd($('.textchoice').val().length)) {
                     if($('.textchoice').val().length == 3) {
@@ -365,14 +400,14 @@ jQuery(document).ready(function( $ ) {
         }
         
         if($(window).width() < 609  && $(window).width() > 480) {
-            if($('.comptextdisplay>span').text().length < 8) {
+            if($('.textchoice').val().length < 8) {
                 console.log("in if********asdfasdfasdf")
                 if(isOdd($('.textchoice').val().length)) {
                     if($('.textchoice').val().length == 3) {
-                        $('.comptextdisplay>span').css('padding-left', '44px');
+                        $('.comptextdisplay>span').css('padding-left', '33px');
                     }
                     else if($('.textchoice').val().length == 5) {
-                        $('.comptextdisplay>span').css('padding-left', '15px');
+                        $('.comptextdisplay>span').css('padding-left', '5px');
                     }
                     else if($('.textchoice').val().length == 7) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
@@ -383,13 +418,13 @@ jQuery(document).ready(function( $ ) {
                 }
                 else {
                     if($('.textchoice').val().length == 4) {
-                        $('.comptextdisplay>span').css('padding-left', '25px');
+                        $('.comptextdisplay>span').css('padding-left', '17px');
                     }
                     else if($('.textchoice').val().length == 6) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
                     }
                     else if($('.textchoice').val().length == 8) {
-                        $('.comptextdisplay>span').css('padding-left', '0px');
+                        $('.comptextdisplay>span').css('padding-left', '4px');
                     }
                     else {
                         $('.comptextdisplay>span').css('padding-left', '49px');
@@ -399,25 +434,25 @@ jQuery(document).ready(function( $ ) {
         }
 
         if($(window).width() < 481 && $(window).width() > 416) {
-            if($('.comptextdisplay>span').text().length < 8) {
+            if($('.textchoice').val().length < 8) {
                 console.log("in if********asdfasdfasdf")
                 if(isOdd($('.textchoice').val().length)) {
                     if($('.textchoice').val().length == 3) {
-                        $('.comptextdisplay>span').css('padding-left', '29px');
+                        $('.comptextdisplay>span').css('padding-left', '16px');
                     }
                     else if($('.textchoice').val().length == 5) {
-                        $('.comptextdisplay>span').css('padding-left', '8px');
+                        $('.comptextdisplay>span').css('padding-left', '4px');
                     }
                     else if($('.textchoice').val().length == 7) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
                     }
                     else{
-                        $('.comptextdisplay>span').css('padding-left', '50px');
+                        $('.comptextdisplay>span').css('padding-left', '42px');
                     }
                 }
                 else {
                     if($('.textchoice').val().length == 4) {
-                        $('.comptextdisplay>span').css('padding-left', '19px');
+                        $('.comptextdisplay>span').css('padding-left', '5px');
                     }
                     else if($('.textchoice').val().length == 6) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
@@ -426,18 +461,18 @@ jQuery(document).ready(function( $ ) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
                     }
                     else {
-                        $('.comptextdisplay>span').css('padding-left', '45px');
+                        $('.comptextdisplay>span').css('padding-left', '30px');
                     }
                 }
             }
         }
 
-        if($(window).width() < 417 && $(window).width() > 320) {
-            if($('.comptextdisplay>span').text().length < 8) {
+        if($(window).width() < 417) {
+            if($('.textchoice').val().length < 8) {
                 console.log("in if********asdfasdfasdf")
                 if(isOdd($('.textchoice').val().length)) {
                     if($('.textchoice').val().length == 3) {
-                        $('.comptextdisplay>span').css('padding-left', '16px');
+                        $('.comptextdisplay>span').css('padding-left', '13px');
                     }
                     else if($('.textchoice').val().length == 5) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
@@ -460,41 +495,7 @@ jQuery(document).ready(function( $ ) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
                     }
                     else {
-                        $('.comptextdisplay>span').css('padding-left', '32px');
-                    }
-                }
-            }
-        }
-
-        if($(window).width() < 321) {
-            if($('.comptextdisplay>span').text().length < 8) {
-                console.log("in if********asdfasdfasdf")
-                if(isOdd($('.textchoice').val().length)) {
-                    if($('.textchoice').val().length == 3) {
-                        $('.comptextdisplay>span').css('padding-left', '10px');
-                    }
-                    else if($('.textchoice').val().length == 5) {
-                        $('.comptextdisplay>span').css('padding-left', '0px');
-                    }
-                    else if($('.textchoice').val().length == 7) {
-                        $('.comptextdisplay>span').css('padding-left', '0px');
-                    }
-                    else{
-                        $('.comptextdisplay>span').css('padding-left', '30px');
-                    }
-                }
-                else {
-                    if($('.textchoice').val().length == 4) {
-                        $('.comptextdisplay>span').css('padding-left', '0px');
-                    }
-                    else if($('.textchoice').val().length == 6) {
-                        $('.comptextdisplay>span').css('padding-left', '0px');
-                    }
-                    else if($('.textchoice').val().length == 8) {
-                        $('.comptextdisplay>span').css('padding-left', '0px');
-                    }
-                    else {
-                        $('.comptextdisplay>span').css('padding-left', '22px');
+                        $('.comptextdisplay>span').css('padding-left', '28px');
                     }
                 }
             }
@@ -556,6 +557,7 @@ jQuery(document).ready(function( $ ) {
 
     $('.s').change(function(){
         populateSelectS();
+        populateSelectH();
     });
 
     $('.d').change(function(){
@@ -628,12 +630,11 @@ jQuery(document).ready(function( $ ) {
     }
 
     function populateSelectH(){
-
-        if($('.h option:selected')){
+        if($('.s option:selected')){
             console.log("inisndfin88****555666");
             $('.i').empty();
-
-            $('.i').append($('.h option:selected').html());
+            var str = $('.s option:selected').text();
+            $('.i').append('<p class="pinq fontchanget i">'+str.substring(0, str.length - 2)+'</p>');
             //$('.s option:selected').remove();
 
             //var y = $('.h option:selected');
@@ -727,10 +728,11 @@ jQuery(document).ready(function( $ ) {
         }          
     });
 
-    $('.companytext').click(function() {
+    $('.companytexthack').click(function() {
         console.log("herhe;arij;lewfrj");
         var text = $('.textchoice').val();
         $('.choose').hide();
+        $('.choosey').hide();
         $('.comptextdisplay').css('display', 'block');
         $('<span>'+text+'</span>').appendTo('.comptextdisplay');
 
@@ -783,28 +785,28 @@ jQuery(document).ready(function( $ ) {
                 console.log("in if********")
                 if(isOdd($('.textchoice').val().length)) {
                     if($('.textchoice').val().length == 3) {
-                        $('.comptextdisplay>span').css('padding-left', '52px');
+                        $('.comptextdisplay>span').css('padding-left', '45px');
                     }
                     else if($('.textchoice').val().length == 5) {
-                        $('.comptextdisplay>span').css('padding-left', '34px');
+                        $('.comptextdisplay>span').css('padding-left', '18px');
                     }
                     else if($('.textchoice').val().length == 7) {
                         $('.comptextdisplay>span').css('padding-left', '2px');
                     }
                     else{
-                        var px = Math.abs($('.textchoice').val().length - 4) * 26 + 'px';
+                        var px = Math.abs($('.textchoice').val().length - 4) * 26 - 6 + 'px';
                         $('.comptextdisplay>span').css('padding-left', px);
                     }
                 }
                 else {
                     if($('.textchoice').val().length == 4) {
-                        $('.comptextdisplay>span').css('padding-left', '44px');
+                        $('.comptextdisplay>span').css('padding-left', '34px');
                     }
                     else if($('.textchoice').val().length == 6) {
-                        $('.comptextdisplay>span').css('padding-left', '17px');
+                        $('.comptextdisplay>span').css('padding-left', '7px');
                     }
                     else {  
-                        var px = (Math.abs($('.textchoice').val().length - 4) * 26) + 13 + 'px';
+                        var px = (Math.abs($('.textchoice').val().length - 4) * 26) + 7 + 'px';
                         $('.comptextdisplay>span').css('padding-left', px);
                     }
                 }
@@ -816,13 +818,13 @@ jQuery(document).ready(function( $ ) {
                 console.log("in if********")
                 if(isOdd($('.textchoice').val().length)) {
                     if($('.textchoice').val().length == 3) {
-                        $('.comptextdisplay>span').css('padding-left', '72px');
+                        $('.comptextdisplay>span').css('padding-left', '65px');
                     }
                     else if($('.textchoice').val().length == 5) {
-                        $('.comptextdisplay>span').css('padding-left', '45px');
+                        $('.comptextdisplay>span').css('padding-left', '39px');
                     }
                     else if($('.textchoice').val().length == 7) {
-                        $('.comptextdisplay>span').css('padding-left', '22px');
+                        $('.comptextdisplay>span').css('padding-left', '16px');
                     }
                     else{
                         $('.comptextdisplay>span').css('padding-left', '94px');
@@ -850,30 +852,30 @@ jQuery(document).ready(function( $ ) {
                 console.log("in if********")
                 if(isOdd($('.textchoice').val().length)) {
                     if($('.textchoice').val().length == 3) {
-                        $('.comptextdisplay>span').css('padding-left', '72px');
+                        $('.comptextdisplay>span').css('padding-left', '58px');
                     }
                     else if($('.textchoice').val().length == 5) {
-                        $('.comptextdisplay>span').css('padding-left', '45px');
+                        $('.comptextdisplay>span').css('padding-left', '32px');
                     }
                     else if($('.textchoice').val().length == 7) {
-                        $('.comptextdisplay>span').css('padding-left', '22px');
+                        $('.comptextdisplay>span').css('padding-left', '16px');
                     }
                     else{
-                        $('.comptextdisplay>span').css('padding-left', '94px');
+                        $('.comptextdisplay>span').css('padding-left', '85px');
                     }
                 }
                 else {
                     if($('.textchoice').val().length == 4) {
-                        $('.comptextdisplay>span').css('padding-left', '60px');
+                        $('.comptextdisplay>span').css('padding-left', '48px');
                     }
                     else if($('.textchoice').val().length == 6) {
-                        $('.comptextdisplay>span').css('padding-left', '30px');
+                        $('.comptextdisplay>span').css('padding-left', '20px');
                     }
                     else if($('.textchoice').val().length == 8) {
-                        $('.comptextdisplay>span').css('padding-left', '8px');
+                        $('.comptextdisplay>span').css('padding-left', '13px');
                     }
                     else {
-                        $('.comptextdisplay>span').css('padding-left', '85px');
+                        $('.comptextdisplay>span').css('padding-left', '75px');
                     }
                 }
             }
@@ -921,7 +923,7 @@ jQuery(document).ready(function( $ ) {
                         $('.comptextdisplay>span').css('padding-left', '33px');
                     }
                     else if($('.textchoice').val().length == 5) {
-                        $('.comptextdisplay>span').css('padding-left', '15px');
+                        $('.comptextdisplay>span').css('padding-left', '5px');
                     }
                     else if($('.textchoice').val().length == 7) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
@@ -932,13 +934,13 @@ jQuery(document).ready(function( $ ) {
                 }
                 else {
                     if($('.textchoice').val().length == 4) {
-                        $('.comptextdisplay>span').css('padding-left', '25px');
+                        $('.comptextdisplay>span').css('padding-left', '17px');
                     }
                     else if($('.textchoice').val().length == 6) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
                     }
                     else if($('.textchoice').val().length == 8) {
-                        $('.comptextdisplay>span').css('padding-left', '0px');
+                        $('.comptextdisplay>span').css('padding-left', '4px');
                     }
                     else {
                         $('.comptextdisplay>span').css('padding-left', '49px');
@@ -952,21 +954,21 @@ jQuery(document).ready(function( $ ) {
                 console.log("in if********asdfasdfasdf")
                 if(isOdd($('.textchoice').val().length)) {
                     if($('.textchoice').val().length == 3) {
-                        $('.comptextdisplay>span').css('padding-left', '29px');
+                        $('.comptextdisplay>span').css('padding-left', '16px');
                     }
                     else if($('.textchoice').val().length == 5) {
-                        $('.comptextdisplay>span').css('padding-left', '8px');
+                        $('.comptextdisplay>span').css('padding-left', '4px');
                     }
                     else if($('.textchoice').val().length == 7) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
                     }
                     else{
-                        $('.comptextdisplay>span').css('padding-left', '50px');
+                        $('.comptextdisplay>span').css('padding-left', '42px');
                     }
                 }
                 else {
                     if($('.textchoice').val().length == 4) {
-                        $('.comptextdisplay>span').css('padding-left', '19px');
+                        $('.comptextdisplay>span').css('padding-left', '5px');
                     }
                     else if($('.textchoice').val().length == 6) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
@@ -975,7 +977,7 @@ jQuery(document).ready(function( $ ) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
                     }
                     else {
-                        $('.comptextdisplay>span').css('padding-left', '45px');
+                        $('.comptextdisplay>span').css('padding-left', '30px');
                     }
                 }
             }
@@ -986,7 +988,7 @@ jQuery(document).ready(function( $ ) {
                 console.log("in if********asdfasdfasdf")
                 if(isOdd($('.textchoice').val().length)) {
                     if($('.textchoice').val().length == 3) {
-                        $('.comptextdisplay>span').css('padding-left', '16px');
+                        $('.comptextdisplay>span').css('padding-left', '13px');
                     }
                     else if($('.textchoice').val().length == 5) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
@@ -1009,7 +1011,7 @@ jQuery(document).ready(function( $ ) {
                         $('.comptextdisplay>span').css('padding-left', '0px');
                     }
                     else {
-                        $('.comptextdisplay>span').css('padding-left', '32px');
+                        $('.comptextdisplay>span').css('padding-left', '28px');
                     }
                 }
             }
@@ -1023,4 +1025,25 @@ jQuery(document).ready(function( $ ) {
     function isOdd(n) {
        return Math.abs(n % 2) == 1;
     }
+
+    $('.changeit').click(function() {
+        
+        $('.changeit').hide();
+        $('.changeitback').hide();
+        $('.ch2').show();
+
+    });
+
+    $('.companytext').click(function() {
+        console.log("herhe;arij;lewfrj^^^%%%^^^^%%%");
+        var text = $('.t2').val();
+        console.log(text);
+        $('.ch2').hide();
+        $('.chinto').show().text(text);
+    });
+
+    $('.print').click(function() {
+        window.print();
+    });
+
 });
